@@ -1,65 +1,48 @@
+version: "3.9"
+
 services:
-  web:
-    build:
+  frontend:
+    build: 
       context: ./homeless-shelter-availability-web
       dockerfile: Dockerfile
-    container_name: homeless-shelter-availability-web
+    container_name: frontend
     ports:
       - "3000:80"
     environment:
       GOOGLE_MAPS_API_KEY: ${GOOGLE_MAPS_API_KEY:-}
-      API_BASE_URL: ${API_BASE_URL:-http://localhost:8081}
     depends_on:
-      - api
+      - backend
 
-  api:
+  backend:
+    image: deez
     build:
       context: ./homeless-shelter-availability-api
       dockerfile: Dockerfile
-    container_name: homeless-shelter-availability-api
+    container_name: backend
     ports:
       - "8081:8080"
-    environment:
-      DB_HOST: db
-      DB_PORT: 5432
-      DB_NAME: ${DB_NAME:-HSADB}
-      DB_USER: ${DB_USER:-postgres}
-      DB_PASSWORD: ${DB_PASSWORD:-ZkY6tG5lp}
-      APP_CORS_ALLOWED_ORIGIN: ${APP_CORS_ALLOWED_ORIGIN:-http://localhost:3000}
-      GOOGLE_PLACES_API_KEY: ${GOOGLE_PLACES_API_KEY:-}
     depends_on:
       db:
         condition: service_healthy
-
-  data:
-    build:
-      context: ./homeless-shelter-availability-data
-      dockerfile: Dockerfile
-    container_name: homeless-shelter-availability-data
-    ports:
-      - "8000:8000"
     environment:
-      DATABASE_URL: postgresql://${DB_USER:-postgres}:${DB_PASSWORD:-ZkY6tG5lp}@db:5432/${DB_NAME:-HSADB}
-      GOOGLE_PLACES_API_KEY: ${GOOGLE_PLACES_API_KEY:-}
-      IMPORT_FIXTURE_MODE: ${IMPORT_FIXTURE_MODE:-false}
-    depends_on:
-      db:
-        condition: service_healthy
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/HSADB
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=ZkY6tG5lp
 
   db:
     image: postgres:15
-    container_name: homeless-shelter-availability-db
+    container_name: database
     restart: always
     environment:
-      POSTGRES_USER: ${DB_USER:-postgres}
-      POSTGRES_PASSWORD: ${DB_PASSWORD:-ZkY6tG5lp}
-      POSTGRES_DB: ${DB_NAME:-HSADB}
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ZkY6tG5lp
+      POSTGRES_DB: HSADB
     ports:
       - "5432:5432"
     volumes:
       - db_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-postgres} -d ${DB_NAME:-HSADB}"]
+      test: ["CMD-SHELL", "pg_isready -U postgres -d HSADB"]
       interval: 5s
       timeout: 5s
       retries: 5

@@ -1,24 +1,24 @@
 package com.project.homeless_shelter_availability_api.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.project.homeless_shelter_availability_api.dto.CoordinatesResponse;
-import com.project.homeless_shelter_availability_api.dto.ShelterResponse;
+import com.project.homeless_shelter_availability_api.model.Shelter;
 import com.project.homeless_shelter_availability_api.service.ShelterService;
 import jakarta.persistence.EntityNotFoundException;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.http.MediaType;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.web.servlet.MockMvc;
 
-import java.time.Instant;
 import java.util.List;
 
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.eq;
+import static org.mockito.Mockito.*;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @WebMvcTest(ShelterController.class)
 class ShelterControllerTest {
@@ -32,85 +32,142 @@ class ShelterControllerTest {
     @Autowired
     private ObjectMapper objectMapper;
 
-    @Test
-    void getShelters_returnsFilteredResults() throws Exception {
-        ShelterResponse response = ShelterResponse.builder()
+    private Shelter shelter;
+
+    @BeforeEach
+    void setUp() {
+        shelter = Shelter.builder()
                 .id(1L)
-                .slug("hope-house-indianapolis")
-                .name("Hope House Indianapolis")
+                .name("Hope House")
                 .address("123 Main St")
-                .city("Indianapolis")
-                .state("IN")
-                .zip("46204")
-                .phone("555-1234")
-                .website("https://example.org")
-                .coordinates(CoordinatesResponse.builder().lat(39.7684).lng(-86.1581).build())
-                .hours("Open 24 hours")
-                .category("general")
-                .services(List.of("Emergency shelter"))
-                .eligibility(List.of("Adults"))
-                .availableBeds(8)
-                .totalBeds(30)
-                .availabilityStatus("available")
-                .lastUpdated(Instant.parse("2026-03-28T12:00:00Z"))
-                .description("A welcoming shelter")
-                .distanceMiles(1.2)
+                .city("Springfield")
+                .state("IL")
+                .zipCode("62701")
+                .phoneNumber("555-1234")
+                .email("hope@example.com")
+                .totalBeds(50)
+                .availableBeds(10)
+                .description("A welcoming shelter for all.")
                 .build();
+    }
 
-        when(shelterService.searchShelters(org.mockito.ArgumentMatchers.any())).thenReturn(List.of(response));
+    @Test
+    void getAllShelters_returnsList() throws Exception {
+        when(shelterService.getAllShelters()).thenReturn(List.of(shelter));
 
-        mockMvc.perform(get("/api/shelters")
-                        .queryParam("query", "46204")
-                        .queryParam("lat", "39.7684")
-                        .queryParam("lng", "-86.1581")
-                        .queryParam("radiusMiles", "10")
-                        .queryParam("category", "general")
-                        .queryParam("bedsAvailableOnly", "true"))
+        mockMvc.perform(get("/api/shelters"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.length()").value(1))
-                .andExpect(jsonPath("$[0].slug").value("hope-house-indianapolis"))
-                .andExpect(jsonPath("$[0].bedsAvailable").value(8))
-                .andExpect(jsonPath("$[0].availabilityStatus").value("available"))
-                .andExpect(jsonPath("$[0].coordinates.lat").value(39.7684));
-
-        verify(shelterService).searchShelters(org.mockito.ArgumentMatchers.any());
+                .andExpect(jsonPath("$[0].name").value("Hope House"))
+                .andExpect(jsonPath("$[0].city").value("Springfield"));
     }
 
     @Test
-    void getShelterBySlug_returnsShelter() throws Exception {
-        ShelterResponse response = ShelterResponse.builder()
-                .id(1L)
-                .slug("hope-house-indianapolis")
-                .name("Hope House Indianapolis")
+    void getAllShelters_returnsEmptyList() throws Exception {
+        when(shelterService.getAllShelters()).thenReturn(List.of());
+
+        mockMvc.perform(get("/api/shelters"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.length()").value(0));
+    }
+
+    @Test
+    void getShelterById_found_returnsShelter() throws Exception {
+        when(shelterService.getShelterById(1L)).thenReturn(shelter);
+
+        mockMvc.perform(get("/api/shelters/1"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.id").value(1))
+                .andExpect(jsonPath("$.name").value("Hope House"))
+                .andExpect(jsonPath("$.availableBeds").value(10));
+    }
+
+    @Test
+    void getShelterById_notFound_returns404() throws Exception {
+        when(shelterService.getShelterById(99L)).thenThrow(new EntityNotFoundException("Shelter not found with id: 99"));
+
+        mockMvc.perform(get("/api/shelters/99"))
+                .andExpect(status().isNotFound());
+    }
+
+    @Test
+    void createShelter_returnsCreated() throws Exception {
+        Shelter input = Shelter.builder()
+                .name("Hope House")
                 .address("123 Main St")
-                .city("Indianapolis")
-                .state("IN")
-                .zip("46204")
-                .phone("555-1234")
-                .category("general")
-                .services(List.of())
-                .eligibility(List.of())
-                .availabilityStatus("unknown")
+                .city("Springfield")
+                .state("IL")
+                .zipCode("62701")
+                .phoneNumber("555-1234")
+                .email("hope@example.com")
+                .totalBeds(50)
+                .availableBeds(10)
+                .description("A welcoming shelter for all.")
                 .build();
 
-        when(shelterService.getShelterBySlug("hope-house-indianapolis", 39.7684, -86.1581)).thenReturn(response);
+        when(shelterService.createShelter(any(Shelter.class))).thenReturn(shelter);
 
-        mockMvc.perform(get("/api/shelters/hope-house-indianapolis")
-                        .queryParam("lat", "39.7684")
-                        .queryParam("lng", "-86.1581"))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$.slug").value("hope-house-indianapolis"))
-                .andExpect(jsonPath("$.city").value("Indianapolis"))
-                .andExpect(jsonPath("$.availabilityStatus").value("unknown"));
+        mockMvc.perform(post("/api/shelters")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(input)))
+                .andExpect(status().isCreated())
+                .andExpect(jsonPath("$.id").value(1))
+                .andExpect(jsonPath("$.name").value("Hope House"));
     }
 
     @Test
-    void getShelterBySlug_notFound_returns404() throws Exception {
-        when(shelterService.getShelterBySlug("missing", null, null))
-                .thenThrow(new EntityNotFoundException("Shelter not found with slug: missing"));
+    void updateShelter_found_returnsUpdated() throws Exception {
+        Shelter updated = Shelter.builder()
+                .id(1L)
+                .name("Hope House Updated")
+                .address("123 Main St")
+                .city("Springfield")
+                .state("IL")
+                .zipCode("62701")
+                .phoneNumber("555-9999")
+                .email("updated@example.com")
+                .totalBeds(60)
+                .availableBeds(5)
+                .description("Updated description.")
+                .build();
 
-        mockMvc.perform(get("/api/shelters/missing"))
-                .andExpect(status().isNotFound())
-                .andExpect(jsonPath("$.title").value("Shelter not found"));
+        when(shelterService.updateShelter(eq(1L), any(Shelter.class))).thenReturn(updated);
+
+        mockMvc.perform(put("/api/shelters/1")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(updated)))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.name").value("Hope House Updated"))
+                .andExpect(jsonPath("$.availableBeds").value(5));
+    }
+
+    @Test
+    void updateShelter_notFound_returns404() throws Exception {
+        when(shelterService.updateShelter(eq(99L), any(Shelter.class)))
+                .thenThrow(new EntityNotFoundException("Shelter not found with id: 99"));
+
+        mockMvc.perform(put("/api/shelters/99")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(shelter)))
+                .andExpect(status().isNotFound());
+    }
+
+    @Test
+    void deleteShelter_found_returnsNoContent() throws Exception {
+        doNothing().when(shelterService).deleteShelter(1L);
+
+        mockMvc.perform(delete("/api/shelters/1"))
+                .andExpect(status().isNoContent());
+
+        verify(shelterService, times(1)).deleteShelter(1L);
+    }
+
+    @Test
+    void deleteShelter_notFound_returns404() throws Exception {
+        doThrow(new EntityNotFoundException("Shelter not found with id: 99"))
+                .when(shelterService).deleteShelter(99L);
+
+        mockMvc.perform(delete("/api/shelters/99"))
+                .andExpect(status().isNotFound());
     }
 }

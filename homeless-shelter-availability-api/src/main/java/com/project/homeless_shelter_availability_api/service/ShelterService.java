@@ -1,13 +1,18 @@
 package com.project.homeless_shelter_availability_api.service;
 
-import com.project.homeless_shelter_availability_api.dto.ShelterQuery;
-import com.project.homeless_shelter_availability_api.dto.ShelterResponse;
+import com.project.homeless_shelter_availability_api.model.Shelter;
 
 import java.util.List;
 
 public interface ShelterService {
 
-    List<ShelterResponse> searchShelters(ShelterQuery query);
+    List<Shelter> getAllShelters();
 
-    ShelterResponse getShelterBySlug(String slug, Double lat, Double lng);
+    Shelter getShelterById(Long id);
+
+    Shelter createShelter(Shelter shelter);
+
+    Shelter updateShelter(Long id, Shelter shelter);
+
+    void deleteShelter(Long id);
 }
