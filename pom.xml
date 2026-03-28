@@ -30,4 +30,17 @@
         <frontend-maven-plugin.version>1.15.1</frontend-maven-plugin.version>
     </properties>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.4.1</version>
+                <configuration>
+                    <retryOnError>true</retryOnError>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>

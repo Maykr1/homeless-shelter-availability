@@ -2,19 +2,26 @@ package com.project.homeless_shelter_availability_api.support;
 
 import org.springframework.test.context.DynamicPropertyRegistry;
 import org.springframework.test.context.DynamicPropertySource;
-import org.testcontainers.containers.PostgreSQLContainer;
+import org.testcontainers.containers.JdbcDatabaseContainer;
+import org.testcontainers.postgresql.PostgreSQLContainer;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
+import org.testcontainers.utility.DockerImageName;
 
 @Testcontainers
 public abstract class PostgresContainerSupport {
 
     @Container
     @SuppressWarnings("resource")
-    private static final PostgreSQLContainer<?> POSTGRES = new PostgreSQLContainer<>("postgres:15")
-            .withDatabaseName("HSADB")
-            .withUsername("postgres")
-            .withPassword("postgres");
+    private static final JdbcDatabaseContainer<?> POSTGRES = postgresContainer();
+
+    @SuppressWarnings("deprecation")
+    private static JdbcDatabaseContainer<?> postgresContainer() {
+        return new PostgreSQLContainer(DockerImageName.parse("postgres:15"))
+                .withDatabaseName("HSADB")
+                .withUsername("postgres")
+                .withPassword("postgres");
+    }
 
     @DynamicPropertySource
     static void postgresProperties(DynamicPropertyRegistry registry) {

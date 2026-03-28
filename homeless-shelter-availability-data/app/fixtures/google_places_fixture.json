@@ -14,6 +14,111 @@
         "formattedAddress": "111 Veteran Way, Columbus, OH 43065, USA",
         "location": { "latitude": 40.0992, "longitude": -83.1141 },
         "types": ["shelter"]
+      },
+      {
+        "id": "fixture-google-3",
+        "displayName": { "text": "Queen City Shelter Cincinnati" },
+        "formattedAddress": "201 Elm Street, Cincinnati, OH 45202, USA",
+        "location": { "latitude": 39.1031, "longitude": -84.5120 },
+        "types": ["shelter"]
+      },
+      {
+        "id": "fixture-google-4",
+        "displayName": { "text": "Northern Kentucky Harbor House" },
+        "formattedAddress": "15 Pike Street, Covington, KY 41011, USA",
+        "location": { "latitude": 39.0837, "longitude": -84.5086 },
+        "types": ["shelter"]
+      },
+      {
+        "id": "fixture-google-5",
+        "displayName": { "text": "Dayton Family Shelter" },
+        "formattedAddress": "44 Main Street, Dayton, OH 45402, USA",
+        "location": { "latitude": 39.7589, "longitude": -84.1916 },
+        "types": ["shelter"]
+      },
+      {
+        "id": "fixture-google-6",
+        "displayName": { "text": "Veteran Resource House Dayton" },
+        "formattedAddress": "310 Warren Street, Dayton, OH 45402, USA",
+        "location": { "latitude": 39.76, "longitude": -84.195 },
+        "types": ["shelter"]
+      },
+      {
+        "id": "fixture-google-7",
+        "displayName": { "text": "River City Safe Stay" },
+        "formattedAddress": "812 Market Street, Louisville, KY 40202, USA",
+        "location": { "latitude": 38.2527, "longitude": -85.7585 },
+        "types": ["shelter"]
+      },
+      {
+        "id": "fixture-google-8",
+        "displayName": { "text": "Bluegrass Family Shelter" },
+        "formattedAddress": "220 Limestone Street, Lexington, KY 40507, USA",
+        "location": { "latitude": 38.0406, "longitude": -84.5037 },
+        "types": ["shelter"]
+      },
+      {
+        "id": "fixture-google-9",
+        "displayName": { "text": "Middletown Hope Center" },
+        "formattedAddress": "10 Central Avenue, Middletown, OH 45044, USA",
+        "location": { "latitude": 39.5151, "longitude": -84.3983 },
+        "types": ["shelter"]
+      },
+      {
+        "id": "fixture-google-10",
+        "displayName": { "text": "Hamilton Veteran Home" },
+        "formattedAddress": "72 High Street, Hamilton, OH 45011, USA",
+        "location": { "latitude": 39.3995, "longitude": -84.5613 },
+        "types": ["shelter"]
+      },
+      {
+        "id": "fixture-google-11",
+        "displayName": { "text": "Clermont Shelter Batavia" },
+        "formattedAddress": "60 Main Street, Batavia, OH 45103, USA",
+        "location": { "latitude": 39.077, "longitude": -84.1766 },
+        "types": ["shelter"]
+      },
+      {
+        "id": "fixture-google-12",
+        "displayName": { "text": "Oxford Night Shelter" },
+        "formattedAddress": "18 College Corner Pike, Oxford, OH 45056, USA",
+        "location": { "latitude": 39.507, "longitude": -84.7452 },
+        "types": ["shelter"]
+      },
+      {
+        "id": "fixture-google-13",
+        "displayName": { "text": "Florence Community Shelter" },
+        "formattedAddress": "7250 Turfway Road, Florence, KY 41042, USA",
+        "location": { "latitude": 38.9989, "longitude": -84.6266 },
+        "types": ["shelter"]
+      },
+      {
+        "id": "fixture-google-14",
+        "displayName": { "text": "Newport Recovery Shelter" },
+        "formattedAddress": "901 Monmouth Street, Newport, KY 41071, USA",
+        "location": { "latitude": 39.0906, "longitude": -84.4958 },
+        "types": ["shelter"]
+      },
+      {
+        "id": "fixture-google-15",
+        "displayName": { "text": "Springfield Hope House" },
+        "formattedAddress": "20 Fountain Avenue, Springfield, OH 45502, USA",
+        "location": { "latitude": 39.9242, "longitude": -83.8088 },
+        "types": ["shelter"]
+      },
+      {
+        "id": "fixture-google-16",
+        "displayName": { "text": "Richmond Safe Harbor" },
+        "formattedAddress": "50 North 8th Street, Richmond, IN 47374, USA",
+        "location": { "latitude": 39.8289, "longitude": -84.8902 },
+        "types": ["shelter"]
+      },
+      {
+        "id": "fixture-google-17",
+        "displayName": { "text": "Shelbyville Family Haven" },
+        "formattedAddress": "124 Main Street, Shelbyville, KY 40065, USA",
+        "location": { "latitude": 38.212, "longitude": -85.223 },
+        "types": ["shelter"]
       }
     ]
   },
@@ -41,7 +146,202 @@
       "websiteUri": "https://valor.example.org",
       "regularOpeningHours": {
         "weekdayDescriptions": [
-          "Monday: 7:00 AM – 10:00 PM"
+          "Monday: 7:00 AM - 10:00 PM"
+        ]
+      }
+    },
+    "fixture-google-3": {
+      "id": "fixture-google-3",
+      "displayName": { "text": "Queen City Shelter Cincinnati" },
+      "formattedAddress": "201 Elm Street, Cincinnati, OH 45202, USA",
+      "location": { "latitude": 39.1031, "longitude": -84.512 },
+      "nationalPhoneNumber": "(513) 555-0103",
+      "websiteUri": "https://queencity.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours"
+        ]
+      }
+    },
+    "fixture-google-4": {
+      "id": "fixture-google-4",
+      "displayName": { "text": "Northern Kentucky Harbor House" },
+      "formattedAddress": "15 Pike Street, Covington, KY 41011, USA",
+      "location": { "latitude": 39.0837, "longitude": -84.5086 },
+      "nationalPhoneNumber": "(859) 555-0104",
+      "websiteUri": "https://nkyharbor.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours"
+        ]
+      }
+    },
+    "fixture-google-5": {
+      "id": "fixture-google-5",
+      "displayName": { "text": "Dayton Family Shelter" },
+      "formattedAddress": "44 Main Street, Dayton, OH 45402, USA",
+      "location": { "latitude": 39.7589, "longitude": -84.1916 },
+      "nationalPhoneNumber": "(937) 555-0105",
+      "websiteUri": "https://daytonfamily.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 11:00 PM"
+        ]
+      }
+    },
+    "fixture-google-6": {
+      "id": "fixture-google-6",
+      "displayName": { "text": "Veteran Resource House Dayton" },
+      "formattedAddress": "310 Warren Street, Dayton, OH 45402, USA",
+      "location": { "latitude": 39.76, "longitude": -84.195 },
+      "nationalPhoneNumber": "(937) 555-0106",
+      "websiteUri": "https://daytonveterans.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 8:00 AM - 9:00 PM"
+        ]
+      }
+    },
+    "fixture-google-7": {
+      "id": "fixture-google-7",
+      "displayName": { "text": "River City Safe Stay" },
+      "formattedAddress": "812 Market Street, Louisville, KY 40202, USA",
+      "location": { "latitude": 38.2527, "longitude": -85.7585 },
+      "nationalPhoneNumber": "(502) 555-0107",
+      "websiteUri": "https://rivercity.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours"
+        ]
+      }
+    },
+    "fixture-google-8": {
+      "id": "fixture-google-8",
+      "displayName": { "text": "Bluegrass Family Shelter" },
+      "formattedAddress": "220 Limestone Street, Lexington, KY 40507, USA",
+      "location": { "latitude": 38.0406, "longitude": -84.5037 },
+      "nationalPhoneNumber": "(859) 555-0108",
+      "websiteUri": "https://bluegrassfamily.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM - 11:00 PM"
+        ]
+      }
+    },
+    "fixture-google-9": {
+      "id": "fixture-google-9",
+      "displayName": { "text": "Middletown Hope Center" },
+      "formattedAddress": "10 Central Avenue, Middletown, OH 45044, USA",
+      "location": { "latitude": 39.5151, "longitude": -84.3983 },
+      "nationalPhoneNumber": "(513) 555-0109",
+      "websiteUri": "https://middletownhope.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM - 10:00 PM"
+        ]
+      }
+    },
+    "fixture-google-10": {
+      "id": "fixture-google-10",
+      "displayName": { "text": "Hamilton Veteran Home" },
+      "formattedAddress": "72 High Street, Hamilton, OH 45011, USA",
+      "location": { "latitude": 39.3995, "longitude": -84.5613 },
+      "nationalPhoneNumber": "(513) 555-0110",
+      "websiteUri": "https://hamiltonveterans.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours"
+        ]
+      }
+    },
+    "fixture-google-11": {
+      "id": "fixture-google-11",
+      "displayName": { "text": "Clermont Shelter Batavia" },
+      "formattedAddress": "60 Main Street, Batavia, OH 45103, USA",
+      "location": { "latitude": 39.077, "longitude": -84.1766 },
+      "nationalPhoneNumber": "(513) 555-0111",
+      "websiteUri": "https://clermont.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:30 AM - 9:30 PM"
+        ]
+      }
+    },
+    "fixture-google-12": {
+      "id": "fixture-google-12",
+      "displayName": { "text": "Oxford Night Shelter" },
+      "formattedAddress": "18 College Corner Pike, Oxford, OH 45056, USA",
+      "location": { "latitude": 39.507, "longitude": -84.7452 },
+      "nationalPhoneNumber": "(513) 555-0112",
+      "websiteUri": "https://oxfordnight.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 5:00 PM - 8:00 AM"
+        ]
+      }
+    },
+    "fixture-google-13": {
+      "id": "fixture-google-13",
+      "displayName": { "text": "Florence Community Shelter" },
+      "formattedAddress": "7250 Turfway Road, Florence, KY 41042, USA",
+      "location": { "latitude": 38.9989, "longitude": -84.6266 },
+      "nationalPhoneNumber": "(859) 555-0113",
+      "websiteUri": "https://florencecommunity.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM - 9:00 PM"
+        ]
+      }
+    },
+    "fixture-google-14": {
+      "id": "fixture-google-14",
+      "displayName": { "text": "Newport Recovery Shelter" },
+      "formattedAddress": "901 Monmouth Street, Newport, KY 41071, USA",
+      "location": { "latitude": 39.0906, "longitude": -84.4958 },
+      "nationalPhoneNumber": "(859) 555-0114",
+      "websiteUri": "https://newportrecovery.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours"
+        ]
+      }
+    },
+    "fixture-google-15": {
+      "id": "fixture-google-15",
+      "displayName": { "text": "Springfield Hope House" },
+      "formattedAddress": "20 Fountain Avenue, Springfield, OH 45502, USA",
+      "location": { "latitude": 39.9242, "longitude": -83.8088 },
+      "nationalPhoneNumber": "(937) 555-0115",
+      "websiteUri": "https://springfieldhope.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM - 10:00 PM"
+        ]
+      }
+    },
+    "fixture-google-16": {
+      "id": "fixture-google-16",
+      "displayName": { "text": "Richmond Safe Harbor" },
+      "formattedAddress": "50 North 8th Street, Richmond, IN 47374, USA",
+      "location": { "latitude": 39.8289, "longitude": -84.8902 },
+      "nationalPhoneNumber": "(765) 555-0116",
+      "websiteUri": "https://richmondsafeharbor.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours"
+        ]
+      }
+    },
+    "fixture-google-17": {
+      "id": "fixture-google-17",
+      "displayName": { "text": "Shelbyville Family Haven" },
+      "formattedAddress": "124 Main Street, Shelbyville, KY 40065, USA",
+      "location": { "latitude": 38.212, "longitude": -85.223 },
+      "nationalPhoneNumber": "(502) 555-0117",
+      "websiteUri": "https://shelbyvillehaven.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM - 9:00 PM"
         ]
       }
     }

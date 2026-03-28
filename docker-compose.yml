@@ -14,8 +14,8 @@ services:
 
   api:
     build:
-      context: ./homeless-shelter-availability-api
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: homeless-shelter-availability-api/Dockerfile
     container_name: homeless-shelter-availability-api
     ports:
       - "8081:8080"
@@ -32,16 +32,16 @@ services:
         condition: service_healthy
 
   data:
+    profiles:
+      - import
     build:
       context: ./homeless-shelter-availability-data
       dockerfile: Dockerfile
-    container_name: homeless-shelter-availability-data
-    ports:
-      - "8000:8000"
     environment:
       DATABASE_URL: postgresql://${DB_USER:-postgres}:${DB_PASSWORD:-ZkY6tG5lp}@db:5432/${DB_NAME:-HSADB}
+      GOOGLE_MAPS_API_KEY: ${GOOGLE_MAPS_API_KEY:-}
       GOOGLE_PLACES_API_KEY: ${GOOGLE_PLACES_API_KEY:-}
-      IMPORT_FIXTURE_MODE: ${IMPORT_FIXTURE_MODE:-false}
+      IMPORT_FIXTURE_MODE: ${IMPORT_FIXTURE_MODE:-true}
     depends_on:
       db:
         condition: service_healthy

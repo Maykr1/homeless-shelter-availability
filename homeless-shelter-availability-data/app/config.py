@@ -25,7 +25,7 @@ class Settings:
         "DATABASE_URL",
         "postgresql://postgres:ZkY6tG5lp@db:5432/HSADB",
     )
-    google_places_api_key: str = os.getenv("GOOGLE_PLACES_API_KEY", "")
+    google_places_api_key: str = os.getenv("GOOGLE_PLACES_API_KEY") or os.getenv("GOOGLE_MAPS_API_KEY", "")
     import_fixture_mode: bool = _env_bool("IMPORT_FIXTURE_MODE", False)
     google_full_country_max_seeds: int | None = _env_int("GOOGLE_FULL_COUNTRY_MAX_SEEDS", 250)
     google_location_radius_meters: int = _env_int("GOOGLE_LOCATION_RADIUS_METERS", 20_000) or 20_000

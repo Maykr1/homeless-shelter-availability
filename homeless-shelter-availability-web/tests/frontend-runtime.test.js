@@ -34,14 +34,22 @@ test("config template exposes the expected runtime variables", () => {
   assert.match(template, /API_BASE_URL: "\$\{API_BASE_URL\}"/);
 });
 
-test("docker entrypoint generates config.js from env vars", () => {
+test("docker entrypoint generates config.js from env vars and preserves existing values", () => {
   const entrypoint = read("docker-entrypoint.d/40-generate-config.sh");
 
   assert.match(entrypoint, /envsubst/);
   assert.match(entrypoint, /GOOGLE_MAPS_API_KEY/);
   assert.match(entrypoint, /API_BASE_URL/);
+  assert.match(entrypoint, /read_existing_value/);
+  assert.match(entrypoint, /sed -n/);
   assert.match(entrypoint, /config\.template\.js/);
   assert.match(entrypoint, /config\.js/);
+});
+
+test("docker build keeps dist/config.js available as the runtime fallback source", () => {
+  const dockerignore = read(".dockerignore");
+
+  assert.match(dockerignore, /!dist\/config\.js/);
 });
 
 test("bundle still reads runtime app config instead of only hardcoded values", () => {
@@ -52,5 +60,7 @@ test("bundle still reads runtime app config instead of only hardcoded values", (
   assert.match(bundle, /API_BASE_URL/);
   assert.match(bundle, /\/api\/shelters/);
   assert.match(bundle, /e==null\|\|e===``/);
+  assert.match(bundle, /Update time unavailable/);
+  assert.match(bundle, /Number\.isNaN\(t\.getTime\(\)\)/);
   assert.doesNotMatch(bundle, /http:\/\/localhost:8080/);
 });

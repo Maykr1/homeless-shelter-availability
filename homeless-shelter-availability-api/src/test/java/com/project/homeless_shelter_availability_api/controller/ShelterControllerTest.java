@@ -1,6 +1,5 @@
 package com.project.homeless_shelter_availability_api.controller;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.project.homeless_shelter_availability_api.dto.CoordinatesResponse;
 import com.project.homeless_shelter_availability_api.dto.ShelterResponse;
 import com.project.homeless_shelter_availability_api.service.ShelterService;
@@ -28,9 +27,6 @@ class ShelterControllerTest {
 
     @MockitoBean
     private ShelterService shelterService;
-
-    @Autowired
-    private ObjectMapper objectMapper;
 
     @Test
     void getShelters_returnsFilteredResults() throws Exception {
