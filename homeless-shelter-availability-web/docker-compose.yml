@@ -1,7 +1,7 @@
 services:
   frontend:
     build: .
-    container_name: homeless-shelter-availability-frontend
+    container_name: homeless-shelter-availability-web
     ports:
       - "3000:80"
     restart: unless-stopped
