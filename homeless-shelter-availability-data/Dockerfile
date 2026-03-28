@@ -1,9 +1,21 @@
-FROM postgres:latest
+FROM python:3.12-slim
 
-ENV POSTGRES_USER=postgres
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 
-ENV POSTGRES_PASSWORD=ZkY6tG5lp!
+WORKDIR /app
 
-ENV POSTGRES_DB=HSADB
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends curl \
+    && rm -rf /var/lib/apt/lists/*
 
-EXPOSE 5432
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt \
+    && python -m playwright install chromium
+
+COPY app ./app
+COPY scripts ./scripts
+
+EXPOSE 8000
+
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]

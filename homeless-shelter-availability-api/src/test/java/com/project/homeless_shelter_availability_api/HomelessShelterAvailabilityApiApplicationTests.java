@@ -1,7 +1,6 @@
 package com.project.homeless_shelter_availability_api;
 
-import java.nio.file.Path;
-
+import com.project.homeless_shelter_availability_api.support.PostgresContainerSupport;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.DynamicPropertyRegistry;
@@ -37,4 +36,7 @@ class HomelessShelterAvailabilityApiApplicationTests {
 	void contextLoads() {
 	}
 
+    @Test
+    void contextLoads() {
+    }
 }
