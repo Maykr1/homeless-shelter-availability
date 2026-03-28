@@ -36,8 +36,8 @@ services:
     restart: always
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: app_db
+      POSTGRES_PASSWORD: ZkY6tG5lp
+      POSTGRES_DB: HSADB
     ports:
       - "5432:5432"
     volumes:
