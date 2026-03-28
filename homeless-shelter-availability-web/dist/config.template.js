@@ -1,0 +1,4 @@
+window.__APP_CONFIG__ = {
+  GOOGLE_MAPS_API_KEY: "${GOOGLE_MAPS_API_KEY}",
+  API_BASE_URL: "${API_BASE_URL}",
+};
