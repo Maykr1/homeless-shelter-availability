@@ -1,16 +1,3 @@
 spring:
   application:
     name: homeless-shelter-availability-api
-
-  profiles:
-      active: ${ACTIVE_PROFILE:local}
-
-  datasource:
-    url: jdbc:postgresql://host.docker.internal:5432/HSADB # ${DB_CONNECT_URL}
-    username: postgres # ${DB_USERNAME}
-    password: ZkY6tG5lp! # ${DB_PASSWORD}
-    driver-class-name: org.postgresql.Driver
-
-  jpa:
-      hibernate:
-          ddl-auto: update
