@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Homeless Shelter Availability</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #f4f7f2;
+        color: #17221a;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background:
+          radial-gradient(circle at top, rgba(104, 145, 117, 0.18), transparent 45%),
+          linear-gradient(180deg, #fbfdf9 0%, #eef4ed 100%);
+      }
+
+      main {
+        width: min(680px, calc(100% - 32px));
+        padding: 40px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.88);
+        box-shadow: 0 18px 48px rgba(35, 51, 39, 0.12);
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(2rem, 5vw, 3.25rem);
+        line-height: 1.05;
+      }
+
+      p {
+        margin: 0 0 16px;
+        font-size: 1.05rem;
+        line-height: 1.6;
+      }
+
+      .status {
+        display: inline-block;
+        margin-top: 8px;
+        padding: 10px 14px;
+        border-radius: 999px;
+        background: #dff1e1;
+        color: #1f5c2b;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Homeless Shelter Availability</h1>
+      <p>
+        This is a basic frontend placeholder running from Docker Desktop. Replace the contents
+        of <code>dist/</code> with your production frontend build when it is ready.
+      </p>
+      <p>
+        The container is configured to serve static files through Nginx and route requests back
+        to <code>index.html</code>.
+      </p>
+      <span class="status">Frontend container is running</span>
+    </main>
+  </body>
+</html>
