@@ -18,6 +18,7 @@ class HomelessShelterAvailabilityApiApplicationTests {
 	static final ImageFromDockerfile postgresImage = new ImageFromDockerfile("hsa-postgres-test:latest", false)
 		.withDockerfile(Path.of("..", "homeless-shelter-availability-data", "Dockerfile"));
 
+	@SuppressWarnings("resource")
 	@Container
 	static GenericContainer<?> postgres_container = new GenericContainer<>(postgresImage)
 		.withExposedPorts(5432)
