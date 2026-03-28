@@ -14,21 +14,19 @@ services:
 
   backend:
     image: deez
-    build: 
+    build:
       context: ./homeless-shelter-availability-api
       dockerfile: Dockerfile
-      args:
-        - JAR_FILE=target/homeless-shelter-availability-api-0.0.1-SNAPSHOT.jar
     container_name: backend
     ports:
       - "8081:8080"
     depends_on:
-      - db
+      db:
+        condition: service_healthy
     environment:
-      - DB_HOST=db
-      - DB_USER=postgres
-      - DB_PASSWORD=ZkY6tG5lp!
-      - DB_NAME=HSADB
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/HSADB
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=ZkY6tG5lp
 
   db:
     image: postgres:15
@@ -42,6 +40,11 @@ services:
       - "5432:5432"
     volumes:
       - db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d HSADB"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
 
 volumes:
   db_data:
