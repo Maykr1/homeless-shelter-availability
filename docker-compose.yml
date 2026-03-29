@@ -1,48 +1,37 @@
 services:
-  frontend:
-    build: 
-      context: .
-      dockerfile: ./homeless-shelter-availability-web/Dockerfile
-    container_name: frontend
-    ports:
-      - "3000:80"
+  db:
+    image: postgres:15-alpine
     environment:
-      GOOGLE_MAPS_API_KEY: ${GOOGLE_MAPS_API_KEY:-}
-    depends_on:
-      - backend
+      POSTGRES_USER: ${DB_USER:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-postgres}
+      POSTGRES_DB: ${DB_NAME:-homeless_shelter_db}
+    ports:
+      - "${DB_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
 
-  backend:
+  api:
     build:
       context: .
-      dockerfile: ./homeless-shelter-availability-api/Dockerfile
-    container_name: backend
+      dockerfile: homeless-shelter-availability-api/Dockerfile
     ports:
-      - "8084:8080"
+      - "${API_PORT:-8080}:8080"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/${DB_NAME:-homeless_shelter_db}
+      - SPRING_DATASOURCE_USERNAME=${DB_USER:-postgres}
+      - SPRING_DATASOURCE_PASSWORD=${DB_PASSWORD:-postgres}
+      - SPRING_PROFILES_ACTIVE=${SPRING_PROFILES_ACTIVE:-docker}
     depends_on:
-      db:
-        condition: service_healthy
-    environment:
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/HSADB
-      - SPRING_DATASOURCE_USERNAME=postgres
-      - SPRING_DATASOURCE_PASSWORD=ZkY6tG5lp
+      - db
 
-  db:
-    image: postgres:15
-    container_name: database
-    restart: always
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: ZkY6tG5lp
-      POSTGRES_DB: HSADB
+  web:
+    build:
+      context: .
+      dockerfile: homeless-shelter-availability-web/Dockerfile
     ports:
-      - "5432:5432"
-    volumes:
-      - db_data:/var/lib/postgresql/data
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres -d HSADB"]
-      interval: 5s
-      timeout: 5s
-      retries: 5
+      - "${WEB_PORT:-3000}:80"
+    depends_on:
+      - api
 
 volumes:
-  db_data:
+  pgdata:

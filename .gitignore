@@ -4,3 +4,4 @@ homeless-shelter-availability-api/target/
 .scannerwork/
 .env
 .env.*
+*.log
