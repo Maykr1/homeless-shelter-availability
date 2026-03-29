@@ -1,10 +1,12 @@
 from __future__ import annotations
 
+import asyncio
 from pathlib import Path
 
 import psycopg
 from testcontainers.postgres import PostgresContainer
 
+from app.adapters.google_places import GooglePlacesAdapter
 from app.config import Settings
 from app.models import SourceShelterRecord
 from app.repository import ShelterRepository
@@ -84,6 +86,46 @@ def test_repository_merges_source_records_and_tracks_import_runs() -> None:
         assert total_beds == 60
         assert source_system == "ri"
         assert repository.get_import_run(run_id)["status"] == "completed"
+
+
+def test_repository_imports_google_fixture_batch_with_unknown_beds() -> None:
+    migration_path = (
+        Path(__file__).resolve().parents[2]
+        / "homeless-shelter-availability-api"
+        / "src"
+        / "main"
+        / "resources"
+        / "db"
+        / "migration"
+        / "V1__hybrid_shelter_schema.sql"
+    )
+
+    with PostgresContainer("postgres:15") as postgres:
+        settings = Settings(
+            database_url=_psycopg_database_url(postgres.get_connection_url()),
+            import_fixture_mode=True,
+        )
+        _apply_migration(settings.database_url, migration_path.read_text(encoding="utf-8"))
+
+        repository = ShelterRepository(settings)
+        records = asyncio.run(GooglePlacesAdapter(settings).collect_records())
+        summary = repository.merge_records(records)
+
+        with psycopg.connect(settings.database_url) as connection, connection.cursor() as cursor:
+            cursor.execute("SELECT COUNT(*) FROM shelters")
+            shelter_count = cursor.fetchone()[0]
+            cursor.execute("SELECT COUNT(*) FROM shelter_sources WHERE source_system = 'google'")
+            google_source_count = cursor.fetchone()[0]
+            cursor.execute(
+                "SELECT COUNT(*) FROM shelters WHERE source_system = 'google' AND available_beds IS NULL AND total_beds IS NULL"
+            )
+            unknown_google_count = cursor.fetchone()[0]
+
+        assert len(records) >= settings.google_minimum_record_count
+        assert summary.created_count == len(records)
+        assert shelter_count == len(records)
+        assert google_source_count == len(records)
+        assert unknown_google_count == len(records)
 
 
 def _apply_migration(database_url: str, sql: str) -> None:

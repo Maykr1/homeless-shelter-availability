@@ -3,36 +3,62 @@ from __future__ import annotations
 import asyncio
 import json
 import re
+from typing import Any
 
 import httpx
 
-from app.census import SearchSeed, load_census_place_seeds
 from app.config import Settings
+from app.google_seeds import SearchSeed, load_google_metro_seeds
 from app.models import SourceShelterRecord
 
-ANIMAL_EXCLUSION_PATTERN = re.compile(r"\b(animal|humane|pet|dog|cat|rescue)\b", re.IGNORECASE)
+NON_SHELTER_EXCLUSION_PATTERN = re.compile(
+    r"\b(animal|humane|pet|dog|cat|veterinary|vet clinic|food pantry|food bank|pantry|library)\b",
+    re.IGNORECASE,
+)
+
+
+class GooglePlacesImportError(RuntimeError):
+    def __init__(self, message: str, metadata: dict[str, Any]) -> None:
+        super().__init__(message)
+        self.metadata = metadata
 
 
 class GooglePlacesAdapter:
     def __init__(self, settings: Settings) -> None:
         self.settings = settings
+        self.last_collection_metadata: dict[str, Any] = {}
 
     async def collect_records(self) -> list[SourceShelterRecord]:
         if self.settings.import_fixture_mode:
-            return self._fixture_records()
+            records = self._fixture_records()
+            metadata = self._build_fixture_metadata(records)
+            self._ensure_minimum_record_count(records, metadata)
+            return records
 
         if not self.settings.google_places_api_key:
             raise RuntimeError("GOOGLE_PLACES_API_KEY is required for live Google directory imports.")
 
-        seeds = await load_census_place_seeds(self.settings)
+        seeds = load_google_metro_seeds(self.settings)
         seen_place_ids: set[str] = set()
         records: list[SourceShelterRecord] = []
+        query_stats = {
+            query: {
+                "pages": 0,
+                "placesSeen": 0,
+                "accepted": 0,
+                "duplicatesSkipped": 0,
+                "excluded": 0,
+                "invalid": 0,
+            }
+            for query in self.settings.google_queries
+        }
 
         async with httpx.AsyncClient(timeout=30.0) as client:
             for seed in seeds:
                 for query in self.settings.google_queries:
                     next_page_token: str | None = None
                     while True:
+                        query_stats[query]["pages"] += 1
                         search_payload = {
                             "textQuery": query,
                             "locationBias": {
@@ -52,34 +78,64 @@ class GooglePlacesAdapter:
                         )
                         search_response.raise_for_status()
                         search_data = search_response.json()
+                        places = search_data.get("places", [])
+                        query_stats[query]["placesSeen"] += len(places)
 
-                        for place in search_data.get("places", []):
+                        for place in places:
                             place_id = place.get("id")
-                            if not place_id or place_id in seen_place_ids or self._is_excluded(place):
+                            if not place_id:
+                                query_stats[query]["invalid"] += 1
+                                continue
+                            if place_id in seen_place_ids:
+                                query_stats[query]["duplicatesSkipped"] += 1
+                                continue
+                            if self._is_excluded(query, place):
+                                query_stats[query]["excluded"] += 1
                                 continue
 
                             details = await self._place_details(client, place_id)
+                            if self._is_excluded(query, place, details):
+                                query_stats[query]["excluded"] += 1
+                                continue
                             record = self._to_record(seed, query, place, details)
                             if record:
                                 records.append(record)
                                 seen_place_ids.add(place_id)
+                                query_stats[query]["accepted"] += 1
+                            else:
+                                query_stats[query]["invalid"] += 1
 
                         next_page_token = search_data.get("nextPageToken")
                         if not next_page_token:
                             break
                         await asyncio.sleep(2)
 
+        metadata = {
+            "minimumRecordCount": self.settings.google_minimum_record_count,
+            "recordCount": len(records),
+            "uniquePlaceCount": len(seen_place_ids),
+            "seedsScanned": len(seeds),
+            "seedSource": str(self.settings.google_seed_file),
+            "queryStats": query_stats,
+        }
+        self._ensure_minimum_record_count(records, metadata)
         return records
 
     def _fixture_records(self) -> list[SourceShelterRecord]:
         fixture = json.loads((self.settings.fixture_dir / "google_places_fixture.json").read_text(encoding="utf-8"))
         detail_lookup = fixture["detail_responses"]
         records: list[SourceShelterRecord] = []
-        seed = SearchSeed(label="Fixture seed", state="IN", lat=39.7684, lng=-86.1581)
 
         for place in fixture["search_responses"]["places"]:
             details = detail_lookup[place["id"]]
-            record = self._to_record(seed, "homeless shelters", place, details)
+            seed = SearchSeed(
+                label=place.get("fixtureSeed", "Fixture seed"),
+                state=place.get("fixtureState", "IN"),
+                lat=float(place.get("location", {}).get("latitude", 39.7684)),
+                lng=float(place.get("location", {}).get("longitude", -86.1581)),
+            )
+            query = place.get("fixtureQuery", "homeless shelter")
+            record = self._to_record(seed, query, place, details)
             if record:
                 records.append(record)
 
@@ -127,9 +183,14 @@ class GooglePlacesAdapter:
             ),
         }
 
-    def _is_excluded(self, place: dict) -> bool:
-        name = place.get("displayName", {}).get("text", "")
-        return bool(ANIMAL_EXCLUSION_PATTERN.search(name))
+    def _is_excluded(self, query: str, place: dict, details: dict[str, Any] | None = None) -> bool:
+        if query not in self.settings.google_queries:
+            return True
+
+        display_name = (details or {}).get("displayName", {}).get("text") or place.get("displayName", {}).get("text", "")
+        formatted_address = (details or {}).get("formattedAddress") or place.get("formattedAddress", "")
+        searchable = f"{display_name} {formatted_address}".strip()
+        return bool(NON_SHELTER_EXCLUSION_PATTERN.search(searchable))
 
     def _to_record(
         self,
@@ -192,3 +253,34 @@ class GooglePlacesAdapter:
         if not match:
             return street, city, None, None
         return street, city, match.group(1), match.group(2)
+
+    def _build_fixture_metadata(self, records: list[SourceShelterRecord]) -> dict[str, Any]:
+        return {
+            "minimumRecordCount": self.settings.google_minimum_record_count,
+            "recordCount": len(records),
+            "uniquePlaceCount": len(records),
+            "seedsScanned": len(load_google_metro_seeds(self.settings)),
+            "seedSource": str(self.settings.google_seed_file),
+            "queryStats": {
+                "fixture": {
+                    "pages": 1,
+                    "placesSeen": len(records),
+                    "accepted": len(records),
+                    "duplicatesSkipped": 0,
+                    "excluded": 0,
+                    "invalid": 0,
+                }
+            },
+        }
+
+    def _ensure_minimum_record_count(self, records: list[SourceShelterRecord], metadata: dict[str, Any]) -> None:
+        metadata = {**metadata, "shortfall": max(self.settings.google_minimum_record_count - len(records), 0)}
+        self.last_collection_metadata = metadata
+        if len(records) < self.settings.google_minimum_record_count:
+            raise GooglePlacesImportError(
+                (
+                    "Google import collected "
+                    f"{len(records)} unique records, below the minimum of {self.settings.google_minimum_record_count}."
+                ),
+                metadata,
+            )

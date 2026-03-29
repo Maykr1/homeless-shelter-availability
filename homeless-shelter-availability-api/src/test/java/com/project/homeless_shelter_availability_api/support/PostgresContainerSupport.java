@@ -12,15 +12,14 @@ import org.testcontainers.utility.DockerImageName;
 public abstract class PostgresContainerSupport {
 
     @Container
-    @SuppressWarnings("resource")
     private static final JdbcDatabaseContainer<?> POSTGRES = postgresContainer();
 
-    @SuppressWarnings("deprecation")
     private static JdbcDatabaseContainer<?> postgresContainer() {
-        return new PostgreSQLContainer(DockerImageName.parse("postgres:15"))
-                .withDatabaseName("HSADB")
-                .withUsername("postgres")
-                .withPassword("postgres");
+        JdbcDatabaseContainer<?> postgres = new PostgreSQLContainer(DockerImageName.parse("postgres:15"));
+        postgres.withDatabaseName("HSADB");
+        postgres.withUsername("postgres");
+        postgres.withPassword("postgres");
+        return postgres;
     }
 
     @DynamicPropertySource

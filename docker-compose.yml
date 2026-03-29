@@ -42,6 +42,9 @@ services:
       GOOGLE_MAPS_API_KEY: ${GOOGLE_MAPS_API_KEY:-}
       GOOGLE_PLACES_API_KEY: ${GOOGLE_PLACES_API_KEY:-}
       IMPORT_FIXTURE_MODE: ${IMPORT_FIXTURE_MODE:-true}
+      GOOGLE_MINIMUM_RECORD_COUNT: ${GOOGLE_MINIMUM_RECORD_COUNT:-122}
+      GOOGLE_QUERIES: ${GOOGLE_QUERIES:-homeless shelter,family shelter,emergency shelter,veterans shelter,warming center,drop-in center}
+      GOOGLE_SEED_FILE: ${GOOGLE_SEED_FILE:-/app/app/fixtures/google_metro_seeds.json}
     depends_on:
       db:
         condition: service_healthy

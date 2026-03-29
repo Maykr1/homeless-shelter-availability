@@ -18,8 +18,8 @@
     <description>Parent POM for the Homeless Shelter Availability project</description>
 
     <modules>
-        <module>homeless-shelter-availability-web</module>
         <module>homeless-shelter-availability-api</module>
+        <module>homeless-shelter-availability-web</module>
     </modules>
 
     <properties>

@@ -14,6 +14,7 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import java.time.Instant;
 import java.util.List;
+import java.util.Objects;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
@@ -33,7 +34,7 @@ class ShelterQueryIntegrationTest extends PostgresContainerSupport {
     void setUp() {
         shelterRepository.deleteAll();
 
-        shelterRepository.saveAll(List.of(
+        shelterRepository.saveAll(Objects.requireNonNull(List.of(
                 Shelter.builder()
                         .slug("harbor-house-indianapolis")
                         .name("Harbor House Indianapolis")
@@ -98,7 +99,7 @@ class ShelterQueryIntegrationTest extends PostgresContainerSupport {
                         .normalizedName(TextNormalizer.normalize("Valor House Columbus"))
                         .normalizedAddress(TextNormalizer.normalize("111 Veteran Way"))
                         .build()
-        ));
+        )));
     }
 
     @Test

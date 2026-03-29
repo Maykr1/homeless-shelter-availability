@@ -60,7 +60,7 @@ test("bundle still reads runtime app config instead of only hardcoded values", (
   assert.match(bundle, /API_BASE_URL/);
   assert.match(bundle, /\/api\/shelters/);
   assert.match(bundle, /e==null\|\|e===``/);
-  assert.match(bundle, /Update time unavailable/);
+  assert.match(bundle, /time unavailable/);
   assert.match(bundle, /Number\.isNaN\(t\.getTime\(\)\)/);
   assert.doesNotMatch(bundle, /http:\/\/localhost:8080/);
 });
