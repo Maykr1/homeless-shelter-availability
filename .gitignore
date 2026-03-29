@@ -1,3 +1,4 @@
 homeless-shelter-availability-web/dist/config.js
 .env
 .env.*
+*.log
