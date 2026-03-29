@@ -16,3 +16,9 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
+
+app:
+  openrouter:
+    api-key: ${OPENROUTER_API_KEY:}
+    model: ${OPENROUTER_MODEL:stepfun/step-3.5-flash:free}
+    base-url: ${OPENROUTER_BASE_URL:https://openrouter.ai/api/v1/chat/completions}

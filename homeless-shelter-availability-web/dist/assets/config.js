@@ -1,0 +1,3 @@
+window.APP_CONFIG = {
+  GOOGLE_MAPS_API_KEY: "AIzaSyCTarsbE4x-Fx_9rf0amfYsbyHJwmeESdY",
+};

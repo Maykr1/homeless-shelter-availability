@@ -1,8 +1,8 @@
 services:
   frontend:
     build: 
-      context: .
-      dockerfile: ./homeless-shelter-availability-web/Dockerfile
+      context: ./homeless-shelter-availability-web
+      dockerfile: ./Dockerfile
     container_name: frontend
     ports:
       - "3000:80"
@@ -25,6 +25,8 @@ services:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/HSADB
       - SPRING_DATASOURCE_USERNAME=postgres
       - SPRING_DATASOURCE_PASSWORD=ZkY6tG5lp
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY:-}
+      - OPENROUTER_MODEL=${OPENROUTER_MODEL:-stepfun/step-3.5-flash:free}
 
   db:
     image: postgres:15
