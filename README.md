@@ -4,15 +4,15 @@ A full-stack application designed to help users find nearby homeless shelters an
 ## Overview
 Access to accurate and timely shelter information is a major challenge. Many existing systems:
 
-    Lack real-time availability data
-    Are fragmented across different platforms
-    Are difficult to search or filter
+    - Lack real-time availability data
+    - Are fragmented across different platforms
+    - Are difficult to search or filter
 
 This project addresses those issues by providing:
 
-    A centralized shelter dataset
-    Availability tracking (beds/rooms)
-    A simple chatbot interface for querying data
+    - A centralized shelter dataset
+    - Availability tracking (beds/rooms)
+    - A simple chatbot interface for querying data
 
 ## How it Works
     1. User enters a natural language query
@@ -21,40 +21,40 @@ This project addresses those issues by providing:
     4. Results returned as structured JSON
 
 ## Limitations
-    No real-time external API integration
-    Availability is simulated
-    Location search is city based (no geolocation as this point)
+    - No real-time external API integration
+    - Availability is simulated
+    - Location search is city based (no geolocation as this point)
 
 ## Features
 
 ### Shelter Search
-    Search shelters by city
-    Filter by availability
-    View total vs available beds
+    - Search shelters by city
+    - Filter by availability
+    - View total vs available beds
 
 ### Data Management
-    Large dataset of roughly 14,000 entries
-    Structured for fast query speed
-    Designed to simulate real-world data ingestion
+    - Large dataset of roughly 14,000 entries
+    - Structured for fast query speed
+    - Designed to simulate real-world data ingestion
 
 ### Backend API
-    Built with Spring Boot
-    RESTful endpoints
-    JPS/Hibernate for database interaction
+    - Built with Spring Boot
+    - RESTful endpoints
+    - JPS/Hibernate for database interaction
 
 ## Tech Stack
 
 ### Backend
-    Java (Spring Boot)
-    Spring Data JPA
-    PostgreSQL
+    - Java (Spring Boot)
+    - Spring Data JPA
+    - PostgreSQL
 
 ### Frontend
-    Lightweight HTML/JS
+    - Lightweight HTML/JS
 
 ### DevOps
-    Docker/Docker Compose
-    Maven
+    - Docker/Docker Compose
+    - Maven
 
 ## Project Structure
     root/
@@ -95,14 +95,14 @@ This project addresses those issues by providing:
 
 ## Dataset
     The dataset includes:
-        14,000 shelter entries
-        Availability metrics (beds)
-        Contact + location info
+        - 14,000 shelter entries
+        - Availability metrics (beds)
+        - Contact + location info
 
     Note:
     Due to limited public data, the dataset is a hybrid of real and simulated data designed to: 
-        Mimic real-world inconsistencies
-        Support testing and demos
+        - Mimic real-world inconsistencies
+        - Support testing and demos
 
 # Getting Started
 
@@ -124,16 +124,15 @@ This project addresses those issues by providing:
     CSV HEADER;
 
 ## 4. Run Frontend
-    Open the HTML file or start the frontend
-        open index.html
+    open index.html
 
 # Other Notes
 
 ## Why This Matters
     This system demonstrates how technology can:
-        Improve access to critical resources
-        Simplify complex data systems
-        Provide intuitive interfaces
+        - Improve access to critical resources
+        - Simplify complex data systems
+        - Provide intuitive interfaces
     Even as a prototype it highlight how a centralized search system could improve real-world outcomes
 
 ## Contributors
