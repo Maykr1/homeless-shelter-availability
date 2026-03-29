@@ -44,7 +44,19 @@ class ShelterServiceTest {
 
     @Test
     void getSheltersByState_returnsFilteredList() {
-        Shelter shelter = shelterFixture().toBuilder().state("IN").city("Indianapolis").build();
+        Shelter shelter = Shelter.builder()
+                .id(2L)
+                .name("Harbor House")
+                .address("245 Meridian Street")
+                .city("Indianapolis")
+                .state("IN")
+                .zipCode("46204")
+                .phoneNumber("555-5678")
+                .email("harbor@example.com")
+                .totalBeds(60)
+                .availableBeds(12)
+                .description("Shelter in Indiana.")
+                .build();
         when(shelterRepository.findAllByStateIgnoreCaseOrderByCityAscNameAsc("IN"))
                 .thenReturn(List.of(nonNullShelter(shelter)));
 
