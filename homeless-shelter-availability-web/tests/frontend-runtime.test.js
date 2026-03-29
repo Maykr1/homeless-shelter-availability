@@ -57,4 +57,8 @@ test("bundle still reads runtime app config instead of only hardcoded values", (
 
   assert.match(bundle, /__APP_CONFIG__/);
   assert.match(bundle, /GOOGLE_MAPS_API_KEY/);
+  assert.match(bundle, /API_BASE_URL/);
+  assert.match(bundle, /\/api\/shelters/);
+  assert.match(bundle, /Shelters currently in the API/);
+  assert.doesNotMatch(bundle, /Mock listings ready for the frontend/);
 });
