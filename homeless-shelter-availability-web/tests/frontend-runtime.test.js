@@ -24,12 +24,15 @@ test("index.html loads runtime config before the frontend bundle", () => {
   );
 });
 
-test("bootstrap requests current location on the find-help route before loading the bundle", () => {
+test("bootstrap requests current location for find-help navigation before loading the bundle", () => {
   const bootstrap = read("dist/bootstrap.js");
 
   assert.match(bootstrap, /navigator\.geolocation/);
   assert.match(bootstrap, /currentUrl\.pathname === "\/find-help"/);
+  assert.match(bootstrap, /addEventListener\(\s*"submit"/);
   assert.match(bootstrap, /addEventListener\(\s*"click"/);
+  assert.match(bootstrap, /classList\.contains\("hero-search"\)/);
+  assert.match(bootstrap, /new URL\("\/find-help", window\.location\.href\)/);
   assert.match(bootstrap, /window\.location\.assign/);
   assert.match(bootstrap, /searchParams\.set\("lat"/);
   assert.match(bootstrap, /searchParams\.set\("lng"/);

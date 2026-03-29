@@ -23,6 +23,35 @@ function shouldUseCurrentLocationForLink(targetUrl) {
   return targetUrl.origin === window.location.origin && shouldSeedCurrentLocation(targetUrl);
 }
 
+function shouldUseCurrentLocationForHomeSubmit(form, currentUrl) {
+  return (
+    currentUrl.pathname === "/" &&
+    form instanceof HTMLFormElement &&
+    form.classList.contains("hero-search")
+  );
+}
+
+function getHomeSearchValue(form) {
+  const searchInput =
+    form.querySelector("#home-search") ||
+    form.querySelector('input[type="search"]') ||
+    form.querySelector('input[type="text"]');
+
+  return typeof searchInput?.value === "string" ? searchInput.value.trim() : "";
+}
+
+function buildFindHelpUrl(currentLocation) {
+  const targetUrl = new URL("/find-help", window.location.href);
+  targetUrl.searchParams.set("radius", defaultRadiusMiles);
+
+  if (currentLocation) {
+    targetUrl.searchParams.set("lat", String(currentLocation.latitude));
+    targetUrl.searchParams.set("lng", String(currentLocation.longitude));
+  }
+
+  return targetUrl;
+}
+
 function getCurrentLocation() {
   return new Promise((resolve) => {
     if (typeof navigator === "undefined" || !navigator.geolocation) {
@@ -49,6 +78,26 @@ function getCurrentLocation() {
 
 async function bootstrap() {
   const currentUrl = new URL(window.location.href);
+
+  document.addEventListener(
+    "submit",
+    async (event) => {
+      const target = event.target;
+      if (!shouldUseCurrentLocationForHomeSubmit(target, currentUrl)) {
+        return;
+      }
+
+      if (getHomeSearchValue(target)) {
+        return;
+      }
+
+      event.preventDefault();
+      const currentLocation = await getCurrentLocation();
+      const targetUrl = buildFindHelpUrl(currentLocation);
+      window.location.assign(targetUrl.toString());
+    },
+    true,
+  );
 
   document.addEventListener(
     "click",
