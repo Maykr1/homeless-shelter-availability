@@ -146,4 +146,44 @@
 		</plugins>
 	</build>
 
+	<profiles>
+		<profile>
+			<id>windows-native-preclean</id>
+			<activation>
+				<os>
+					<family>Windows</family>
+				</os>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>exec-maven-plugin</artifactId>
+						<version>3.5.0</version>
+						<executions>
+							<execution>
+								<id>delete-target-with-powershell</id>
+								<phase>pre-clean</phase>
+								<goals>
+									<goal>exec</goal>
+								</goals>
+								<configuration>
+									<executable>powershell.exe</executable>
+									<arguments>
+										<argument>-NoProfile</argument>
+										<argument>-NonInteractive</argument>
+										<argument>-ExecutionPolicy</argument>
+										<argument>Bypass</argument>
+										<argument>-Command</argument>
+										<argument>$target = '${project.build.directory}'; if (Test-Path -LiteralPath $target) { for ($i = 0; $i -lt 10; $i++) { try { Remove-Item -LiteralPath $target -Recurse -Force -ErrorAction Stop; break } catch { if ($i -eq 9) { throw } Start-Sleep -Milliseconds 500 } } }</argument>
+									</arguments>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
 </project>
