@@ -17,7 +17,7 @@ services:
       dockerfile: ./homeless-shelter-availability-api/Dockerfile
     container_name: backend
     ports:
-      - "8081:8080"
+      - "8084:8080"
     depends_on:
       db:
         condition: service_healthy
