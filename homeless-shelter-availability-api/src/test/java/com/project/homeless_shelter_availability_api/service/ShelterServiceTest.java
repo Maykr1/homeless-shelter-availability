@@ -5,14 +5,15 @@ import com.project.homeless_shelter_availability_api.repository.ShelterRepositor
 import com.project.homeless_shelter_availability_api.service.impl.ShelterServiceImpl;
 
 import jakarta.persistence.EntityNotFoundException;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.lang.NonNull;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -28,27 +29,9 @@ class ShelterServiceTest {
     @InjectMocks
     private ShelterServiceImpl shelterServiceImpl;
 
-    private Shelter shelter;
-
-    @BeforeEach
-    void setUp() {
-        shelter = Shelter.builder()
-            .id(1L)
-            .name("Hope House")
-            .address("123 Main St")
-            .city("Springfield")
-            .state("IL")
-            .zipCode("62701")
-            .phoneNumber("555-1234")
-            .email("hope@example.com")
-            .totalBeds(50)
-            .availableBeds(10)
-            .description("A welcoming shelter for all.")
-            .build();
-    }
-
     @Test
     void getAllShelters_returnsList() {
+        Shelter shelter = shelterFixture();
         when(shelterRepository.findAll()).thenReturn(List.of(shelter));
 
         List<Shelter> result = shelterServiceImpl.getAllShelters();
@@ -61,6 +44,7 @@ class ShelterServiceTest {
 
     @Test
     void getShelterById_found_returnsShelter() {
+        Shelter shelter = shelterFixture();
         when(shelterRepository.findById(1L)).thenReturn(Optional.of(shelter));
 
         Shelter result = shelterServiceImpl.getShelterById(1L);
@@ -81,6 +65,7 @@ class ShelterServiceTest {
 
     @Test
     void createShelter_returnsCreated() {
+        Shelter shelter = shelterFixture();
         when(shelterRepository.save(any(Shelter.class))).thenReturn(shelter);
 
         Shelter result = shelterServiceImpl.createShelter(shelter);
@@ -92,14 +77,12 @@ class ShelterServiceTest {
 
     @Test
     void updateShelter_found_returnsUpdated() {
-        Shelter updatedInfo = Shelter.builder()
-                .name("Hope House Updated")
-                .availableBeds(5)
-                .build();
+        Shelter shelter = shelterFixture();
+        Shelter updatedInfo = updatedShelterFixture();
 
         when(shelterRepository.findById(1L)).thenReturn(Optional.of(shelter));
         // Returns the same object passed into save()
-        when(shelterRepository.save(any(Shelter.class))).thenAnswer(i -> i.getArgument(0));
+        when(shelterRepository.save(any(Shelter.class))).thenAnswer(i -> nonNullShelter(i.getArgument(0, Shelter.class)));
 
         Shelter result = shelterServiceImpl.updateShelter(1L, updatedInfo);
 
@@ -113,6 +96,7 @@ class ShelterServiceTest {
 
     @Test
     void updateShelter_notFound_throwsException() {
+        Shelter shelter = shelterFixture();
         when(shelterRepository.findById(99L)).thenReturn(Optional.empty());
 
         assertThrows(EntityNotFoundException.class, () -> shelterServiceImpl.updateShelter(99L, shelter));
@@ -140,5 +124,32 @@ class ShelterServiceTest {
         
         verify(shelterRepository, times(1)).existsById(99L);
         verify(shelterRepository, never()).deleteById(anyLong());
+    }
+
+    private static @NonNull Shelter shelterFixture() {
+        return Objects.requireNonNull(Shelter.builder()
+                .id(1L)
+                .name("Hope House")
+                .address("123 Main St")
+                .city("Springfield")
+                .state("IL")
+                .zipCode("62701")
+                .phoneNumber("555-1234")
+                .email("hope@example.com")
+                .totalBeds(50)
+                .availableBeds(10)
+                .description("A welcoming shelter for all.")
+                .build(), "test fixture must not be null");
+    }
+
+    private static @NonNull Shelter updatedShelterFixture() {
+        return Objects.requireNonNull(Shelter.builder()
+                .name("Hope House Updated")
+                .availableBeds(5)
+                .build(), "updated test fixture must not be null");
+    }
+
+    private static @NonNull Shelter nonNullShelter(Shelter shelter) {
+        return Objects.requireNonNull(shelter, "expected non-null shelter");
     }
 }
