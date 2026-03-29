@@ -15,13 +15,26 @@ test("index.html loads runtime config before the frontend bundle", () => {
   assert.match(html, /<script src="\/config\.js"><\/script>/);
   assert.match(
     html,
-    /<script type="module" crossorigin src="\/assets\/index-J7a6VFdS\.js"><\/script>/,
+    /<script type="module" crossorigin src="\/bootstrap\.js"><\/script>/,
   );
   assert.match(html, /<div id="root"><\/div>/);
   assert.ok(
-    html.indexOf("/config.js") < html.indexOf("/assets/index-J7a6VFdS.js"),
-    "config.js should load before the bundle so runtime config is available",
+    html.indexOf("/config.js") < html.indexOf("/bootstrap.js"),
+    "config.js should load before the bootstrap so runtime config is available",
   );
+});
+
+test("bootstrap requests current location on the find-help route before loading the bundle", () => {
+  const bootstrap = read("dist/bootstrap.js");
+
+  assert.match(bootstrap, /navigator\.geolocation/);
+  assert.match(bootstrap, /currentUrl\.pathname === "\/find-help"/);
+  assert.match(bootstrap, /addEventListener\(\s*"click"/);
+  assert.match(bootstrap, /window\.location\.assign/);
+  assert.match(bootstrap, /searchParams\.set\("lat"/);
+  assert.match(bootstrap, /searchParams\.set\("lng"/);
+  assert.match(bootstrap, /searchParams\.set\("radius", defaultRadiusMiles\)/);
+  assert.match(bootstrap, /import\(bundlePath\)/);
 });
 
 test("config template exposes the expected runtime variables", () => {

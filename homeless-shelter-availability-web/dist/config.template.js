@@ -5,7 +5,7 @@ window.__APP_CONFIG__ = {
 
 try {
   const shelterDatasetVersionKey = "shelter-dataset-version";
-  const shelterDatasetVersion = "va-service-areas-fy26-v1";
+  const shelterDatasetVersion = "shelters-14000-v2";
 
   if (window.localStorage.getItem(shelterDatasetVersionKey) !== shelterDatasetVersion) {
     window.localStorage.removeItem("shelter-list-cache-v1");
