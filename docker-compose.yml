@@ -14,7 +14,6 @@ services:
       - backend
 
   backend:
-    image: deez
     build:
       context: ./homeless-shelter-availability-api
       dockerfile: Dockerfile
