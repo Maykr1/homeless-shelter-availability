@@ -1,10 +1,8 @@
-version: "3.9"
-
 services:
   frontend:
     build: 
-      context: ./homeless-shelter-availability-web
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: ./homeless-shelter-availability-web/Dockerfile
     container_name: frontend
     ports:
       - "3000:80"
@@ -15,8 +13,8 @@ services:
 
   backend:
     build:
-      context: ./homeless-shelter-availability-api
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: ./homeless-shelter-availability-api/Dockerfile
     container_name: backend
     ports:
       - "8081:8080"
