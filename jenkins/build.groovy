@@ -52,7 +52,7 @@ pipeline {
                 }
 
                 setVersion('maven', env.SNAPSHOT_VERSION)
-                containerizeApp('maven', APP_NAME, SNAPSHOT_REPO, DOCKER_BASE, env.COMMIT_ID) // env.COMMIT_ID is set inside of getSnapshotVersion()
+                containerizeApp('maven', APP_NAME, SNAPSHOT_REPO, DOCKER_BASE, env.COMMIT_ID, ['homeless-shelter-availability-api', 'homeless-shelter-availability-web']) // env.COMMIT_ID is set inside of getSnapshotVersion()
             }
         }
     }

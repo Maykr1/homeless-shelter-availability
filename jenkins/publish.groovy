@@ -52,7 +52,7 @@ pipeline {
                 }
 
                 setVersion('maven', env.RELEASE_VERSION)
-                containerizeApp('maven', APP_NAME, RELEASE_REPO, DOCKER_BASE, env.RELEASE_VERSION)
+                containerizeApp('maven', APP_NAME, RELEASE_REPO, DOCKER_BASE, env.RELEASE_VERSION, ['homeless-shelter-availability-api', 'homeless-shelter-availability-web'])
             }
         }
     }
