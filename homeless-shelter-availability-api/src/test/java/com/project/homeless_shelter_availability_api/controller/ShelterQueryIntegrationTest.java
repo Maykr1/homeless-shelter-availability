@@ -14,6 +14,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import java.util.Objects;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.header;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -52,6 +53,7 @@ class ShelterQueryIntegrationTest extends PostgresContainerSupport {
         mockMvc.perform(get("/api/shelters")
                         .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
+                .andExpect(header().string("Cache-Control", "max-age=300, public"))
                 .andExpect(jsonPath("$.length()").value(1))
                 .andExpect(jsonPath("$[0].id").value(shelter.getId()))
                 .andExpect(jsonPath("$[0].name").value("Hope House"))
@@ -63,9 +65,36 @@ class ShelterQueryIntegrationTest extends PostgresContainerSupport {
         mockMvc.perform(get("/api/shelters/{id}", shelter.getId())
                         .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
+                .andExpect(header().string("Cache-Control", "max-age=300, public"))
                 .andExpect(jsonPath("$.id").value(shelter.getId()))
                 .andExpect(jsonPath("$.name").value("Hope House"))
                 .andExpect(jsonPath("$.availableBeds").value(10));
+    }
+
+    @Test
+    void getAllShelters_withState_readsOnlyMatchingState() throws Exception {
+        Shelter indianaShelter = Objects.requireNonNull(Shelter.builder()
+                .name("Harbor House")
+                .address("245 Meridian Street")
+                .city("Indianapolis")
+                .state("IN")
+                .zipCode("46204")
+                .phoneNumber("555-5678")
+                .email("harbor@example.com")
+                .totalBeds(60)
+                .availableBeds(12)
+                .description("Shelter in Indiana.")
+                .build());
+        shelterRepository.save(indianaShelter);
+
+        mockMvc.perform(get("/api/shelters")
+                        .param("state", "IN")
+                        .accept(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(header().string("Cache-Control", "max-age=300, public"))
+                .andExpect(jsonPath("$.length()").value(1))
+                .andExpect(jsonPath("$[0].state").value("IN"))
+                .andExpect(jsonPath("$[0].name").value("Harbor House"));
     }
 
     @Test

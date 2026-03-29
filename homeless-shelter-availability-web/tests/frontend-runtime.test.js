@@ -61,4 +61,7 @@ test("bundle still reads runtime app config instead of only hardcoded values", (
   assert.match(bundle, /\/api\/shelters/);
   assert.match(bundle, /Shelters currently in the API/);
   assert.doesNotMatch(bundle, /Mock listings ready for the frontend/);
+  assert.doesNotMatch(bundle, /Ã/);
+  assert.doesNotMatch(bundle, /â¢/);
+  assert.match(bundle, /drive \|/);
 });

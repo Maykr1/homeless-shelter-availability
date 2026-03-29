@@ -4,11 +4,13 @@ import com.project.homeless_shelter_availability_api.model.Shelter;
 import com.project.homeless_shelter_availability_api.service.ShelterService;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.CacheControl;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.lang.NonNull;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.Duration;
 import java.util.List;
 
 @RestController
@@ -19,14 +21,21 @@ public class ShelterController {
     private final ShelterService shelterService;
 
     @GetMapping
-    public ResponseEntity<List<Shelter>> getAllShelters() {
-        return ResponseEntity.ok(shelterService.getAllShelters());
+    public ResponseEntity<List<Shelter>> getAllShelters(@RequestParam(required = false) String state) {
+        List<Shelter> shelters = state == null || state.isBlank()
+                ? shelterService.getAllShelters()
+                : shelterService.getSheltersByState(state);
+        return ResponseEntity.ok()
+                .cacheControl(CacheControl.maxAge(Duration.ofMinutes(5)).cachePublic())
+                .body(shelters);
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<Shelter> getShelterById(@PathVariable @NonNull Long id) {
         try {
-            return ResponseEntity.ok(shelterService.getShelterById(id));
+            return ResponseEntity.ok()
+                    .cacheControl(CacheControl.maxAge(Duration.ofMinutes(5)).cachePublic())
+                    .body(shelterService.getShelterById(id));
         } catch (EntityNotFoundException e) {
             return ResponseEntity.notFound().build();
         }

@@ -69,6 +69,7 @@ class ShelterControllerTest {
 
         mockMvc.perform(get("/api/shelters"))
                 .andExpect(status().isOk())
+                .andExpect(header().string("Cache-Control", "max-age=300, public"))
                 .andExpect(jsonPath("$.length()").value(1))
                 .andExpect(jsonPath("$[0].name").value("Hope House"))
                 .andExpect(jsonPath("$[0].city").value("Springfield"));
@@ -84,11 +85,38 @@ class ShelterControllerTest {
     }
 
     @Test
+    void getAllShelters_withState_returnsFilteredList() throws Exception {
+        Shelter indianaShelter = Shelter.builder()
+                .id(2L)
+                .name("Harbor House")
+                .address("245 Meridian Street")
+                .city("Indianapolis")
+                .state("IN")
+                .zipCode("46204")
+                .phoneNumber("555-5678")
+                .email("harbor@example.com")
+                .totalBeds(60)
+                .availableBeds(12)
+                .description("Shelter in Indiana.")
+                .build();
+
+        when(shelterService.getSheltersByState(nonNull("IN"))).thenReturn(List.of(nonNull(indianaShelter)));
+
+        mockMvc.perform(get("/api/shelters").param("state", "IN"))
+                .andExpect(status().isOk())
+                .andExpect(header().string("Cache-Control", "max-age=300, public"))
+                .andExpect(jsonPath("$.length()").value(1))
+                .andExpect(jsonPath("$[0].state").value("IN"))
+                .andExpect(jsonPath("$[0].city").value("Indianapolis"));
+    }
+
+    @Test
     void getShelterById_found_returnsShelter() throws Exception {
         when(shelterService.getShelterById(nonNull(1L))).thenReturn(nonNull(shelter));
 
         mockMvc.perform(get("/api/shelters/1"))
                 .andExpect(status().isOk())
+                .andExpect(header().string("Cache-Control", "max-age=300, public"))
                 .andExpect(jsonPath("$.id").value(1))
                 .andExpect(jsonPath("$.name").value("Hope House"))
                 .andExpect(jsonPath("$.availableBeds").value(10));

@@ -9,6 +9,8 @@ public interface ShelterService {
 
     @NonNull List<Shelter> getAllShelters();
 
+    @NonNull List<Shelter> getSheltersByState(@NonNull String state);
+
     @NonNull Shelter getShelterById(@NonNull Long id);
 
     @NonNull Shelter createShelter(@NonNull Shelter shelter);

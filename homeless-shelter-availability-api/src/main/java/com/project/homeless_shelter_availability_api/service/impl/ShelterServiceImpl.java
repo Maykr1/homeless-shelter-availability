@@ -5,8 +5,11 @@ import com.project.homeless_shelter_availability_api.repository.ShelterRepositor
 import com.project.homeless_shelter_availability_api.service.ShelterService;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.lang.NonNull;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Objects;
@@ -18,11 +21,23 @@ public class ShelterServiceImpl implements ShelterService {
     private final ShelterRepository shelterRepository;
 
     @Override
+    @Transactional(readOnly = true)
+    @Cacheable(value = "shelterList", key = "'all'")
     public @NonNull List<Shelter> getAllShelters() {
         return shelterRepository.findAll();
     }
 
     @Override
+    @Transactional(readOnly = true)
+    @Cacheable(value = "shelterListByState", key = "#state.trim().toUpperCase()")
+    public @NonNull List<Shelter> getSheltersByState(@NonNull String state) {
+        String normalizedState = Objects.requireNonNull(state, "state must not be null").trim();
+        return shelterRepository.findAllByStateIgnoreCaseOrderByCityAscNameAsc(normalizedState);
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    @Cacheable(value = "shelterById", key = "#id")
     public @NonNull Shelter getShelterById(@NonNull Long id) {
         Long shelterId = Objects.requireNonNull(id, "id must not be null");
         Shelter shelter = shelterRepository.findById(shelterId)
@@ -31,12 +46,14 @@ public class ShelterServiceImpl implements ShelterService {
     }
 
     @Override
+    @CacheEvict(value = {"shelterList", "shelterListByState", "shelterById"}, allEntries = true)
     public @NonNull Shelter createShelter(@NonNull Shelter shelter) {
         Shelter nonNullShelter = Objects.requireNonNull(shelter, "shelter must not be null");
         return shelterRepository.save(nonNullShelter);
     }
 
     @Override
+    @CacheEvict(value = {"shelterList", "shelterListByState", "shelterById"}, allEntries = true)
     public @NonNull Shelter updateShelter(@NonNull Long id, @NonNull Shelter shelter) {
         Shelter nonNullShelter = Objects.requireNonNull(shelter, "shelter must not be null");
         Shelter existing = getShelterById(id);
@@ -54,6 +71,7 @@ public class ShelterServiceImpl implements ShelterService {
     }
 
     @Override
+    @CacheEvict(value = {"shelterList", "shelterListByState", "shelterById"}, allEntries = true)
     public void deleteShelter(@NonNull Long id) {
         Long shelterId = Objects.requireNonNull(id, "id must not be null");
         if (!shelterRepository.existsById(shelterId)) {

@@ -32,7 +32,7 @@ class ShelterServiceTest {
     @Test
     void getAllShelters_returnsList() {
         Shelter shelter = shelterFixture();
-        when(shelterRepository.findAll()).thenReturn(List.of(shelter));
+        when(shelterRepository.findAll()).thenReturn(List.of(nonNullShelter(shelter)));
 
         List<Shelter> result = shelterServiceImpl.getAllShelters();
 
@@ -43,9 +43,23 @@ class ShelterServiceTest {
     }
 
     @Test
+    void getSheltersByState_returnsFilteredList() {
+        Shelter shelter = shelterFixture().toBuilder().state("IN").city("Indianapolis").build();
+        when(shelterRepository.findAllByStateIgnoreCaseOrderByCityAscNameAsc("IN"))
+                .thenReturn(List.of(nonNullShelter(shelter)));
+
+        List<Shelter> result = shelterServiceImpl.getSheltersByState("IN");
+
+        assertNotNull(result);
+        assertEquals(1, result.size());
+        assertEquals("IN", result.get(0).getState());
+        verify(shelterRepository, times(1)).findAllByStateIgnoreCaseOrderByCityAscNameAsc("IN");
+    }
+
+    @Test
     void getShelterById_found_returnsShelter() {
         Shelter shelter = shelterFixture();
-        when(shelterRepository.findById(1L)).thenReturn(Optional.of(shelter));
+        when(shelterRepository.findById(1L)).thenReturn(Optional.of(nonNullShelter(shelter)));
 
         Shelter result = shelterServiceImpl.getShelterById(1L);
 
@@ -66,9 +80,9 @@ class ShelterServiceTest {
     @Test
     void createShelter_returnsCreated() {
         Shelter shelter = shelterFixture();
-        when(shelterRepository.save(any(Shelter.class))).thenReturn(shelter);
+        when(shelterRepository.save(anyShelter())).thenReturn(nonNullShelter(shelter));
 
-        Shelter result = shelterServiceImpl.createShelter(shelter);
+        Shelter result = shelterServiceImpl.createShelter(nonNullShelter(shelter));
 
         assertNotNull(result);
         assertEquals("Hope House", result.getName());
@@ -80,18 +94,18 @@ class ShelterServiceTest {
         Shelter shelter = shelterFixture();
         Shelter updatedInfo = updatedShelterFixture();
 
-        when(shelterRepository.findById(1L)).thenReturn(Optional.of(shelter));
+        when(shelterRepository.findById(1L)).thenReturn(Optional.of(nonNullShelter(shelter)));
         // Returns the same object passed into save()
-        when(shelterRepository.save(any(Shelter.class))).thenAnswer(i -> nonNullShelter(i.getArgument(0, Shelter.class)));
+        when(shelterRepository.save(anyShelter())).thenAnswer(i -> nonNullShelter(i.getArgument(0, Shelter.class)));
 
-        Shelter result = shelterServiceImpl.updateShelter(1L, updatedInfo);
+        Shelter result = shelterServiceImpl.updateShelter(1L, nonNullShelter(updatedInfo));
 
         assertNotNull(result);
         assertEquals("Hope House Updated", result.getName());
         assertEquals(5, result.getAvailableBeds());
         
         verify(shelterRepository, times(1)).findById(1L);
-        verify(shelterRepository, times(1)).save(any(Shelter.class));
+        verify(shelterRepository, times(1)).save(anyShelter());
     }
 
     @Test
@@ -99,10 +113,10 @@ class ShelterServiceTest {
         Shelter shelter = shelterFixture();
         when(shelterRepository.findById(99L)).thenReturn(Optional.empty());
 
-        assertThrows(EntityNotFoundException.class, () -> shelterServiceImpl.updateShelter(99L, shelter));
+        assertThrows(EntityNotFoundException.class, () -> shelterServiceImpl.updateShelter(99L, nonNullShelter(shelter)));
         
         verify(shelterRepository, times(1)).findById(99L);
-        verify(shelterRepository, never()).save(any(Shelter.class));
+        verify(shelterRepository, never()).save(anyShelter());
     }
 
     @Test
@@ -151,5 +165,10 @@ class ShelterServiceTest {
 
     private static @NonNull Shelter nonNullShelter(Shelter shelter) {
         return Objects.requireNonNull(shelter, "expected non-null shelter");
+    }
+
+    @SuppressWarnings("null")
+    private static @NonNull Shelter anyShelter() {
+        return any(Shelter.class);
     }
 }
