@@ -5,7 +5,7 @@ window.__APP_CONFIG__ = {
 
 try {
   const shelterDatasetVersionKey = "shelter-dataset-version";
-  const shelterDatasetVersion = "shelters-14000-v2";
+  const shelterDatasetVersion = "shelters-14000-v4";
 
   if (window.localStorage.getItem(shelterDatasetVersionKey) !== shelterDatasetVersion) {
     window.localStorage.removeItem("shelter-list-cache-v1");
@@ -15,3 +15,6 @@ try {
 } catch (error) {
   // Ignore storage access failures in hardened/private browser contexts.
 }
+
+
+
