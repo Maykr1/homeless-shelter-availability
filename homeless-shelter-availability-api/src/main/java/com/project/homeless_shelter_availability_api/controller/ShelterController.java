@@ -6,6 +6,7 @@ import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.lang.NonNull;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -23,7 +24,7 @@ public class ShelterController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Shelter> getShelterById(@PathVariable Long id) {
+    public ResponseEntity<Shelter> getShelterById(@PathVariable @NonNull Long id) {
         try {
             return ResponseEntity.ok(shelterService.getShelterById(id));
         } catch (EntityNotFoundException e) {
@@ -32,12 +33,12 @@ public class ShelterController {
     }
 
     @PostMapping
-    public ResponseEntity<Shelter> createShelter(@RequestBody Shelter shelter) {
+    public ResponseEntity<Shelter> createShelter(@RequestBody @NonNull Shelter shelter) {
         return ResponseEntity.status(HttpStatus.CREATED).body(shelterService.createShelter(shelter));
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Shelter> updateShelter(@PathVariable Long id, @RequestBody Shelter shelter) {
+    public ResponseEntity<Shelter> updateShelter(@PathVariable @NonNull Long id, @RequestBody @NonNull Shelter shelter) {
         try {
             return ResponseEntity.ok(shelterService.updateShelter(id, shelter));
         } catch (EntityNotFoundException e) {
@@ -46,7 +47,7 @@ public class ShelterController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteShelter(@PathVariable Long id) {
+    public ResponseEntity<Void> deleteShelter(@PathVariable @NonNull Long id) {
         try {
             shelterService.deleteShelter(id);
             return ResponseEntity.noContent().build();

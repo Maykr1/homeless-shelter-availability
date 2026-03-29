@@ -6,8 +6,10 @@ import com.project.homeless_shelter_availability_api.service.ShelterService;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.lang.NonNull;
 
 import java.util.List;
+import java.util.Objects;
 
 @Service
 @RequiredArgsConstructor
@@ -16,42 +18,47 @@ public class ShelterServiceImpl implements ShelterService {
     private final ShelterRepository shelterRepository;
 
     @Override
-    public List<Shelter> getAllShelters() {
+    public @NonNull List<Shelter> getAllShelters() {
         return shelterRepository.findAll();
     }
 
     @Override
-    public Shelter getShelterById(Long id) {
-        return shelterRepository.findById(id)
-                .orElseThrow(() -> new EntityNotFoundException("Shelter not found with id: " + id));
+    public @NonNull Shelter getShelterById(@NonNull Long id) {
+        Long shelterId = Objects.requireNonNull(id, "id must not be null");
+        Shelter shelter = shelterRepository.findById(shelterId)
+                .orElseThrow(() -> new EntityNotFoundException("Shelter not found with id: " + shelterId));
+        return Objects.requireNonNull(shelter, "repository returned null shelter");
     }
 
     @Override
-    public Shelter createShelter(Shelter shelter) {
-        return shelterRepository.save(shelter);
+    public @NonNull Shelter createShelter(@NonNull Shelter shelter) {
+        Shelter nonNullShelter = Objects.requireNonNull(shelter, "shelter must not be null");
+        return shelterRepository.save(nonNullShelter);
     }
 
     @Override
-    public Shelter updateShelter(Long id, Shelter shelter) {
+    public @NonNull Shelter updateShelter(@NonNull Long id, @NonNull Shelter shelter) {
+        Shelter nonNullShelter = Objects.requireNonNull(shelter, "shelter must not be null");
         Shelter existing = getShelterById(id);
-        existing.setName(shelter.getName());
-        existing.setAddress(shelter.getAddress());
-        existing.setCity(shelter.getCity());
-        existing.setState(shelter.getState());
-        existing.setZipCode(shelter.getZipCode());
-        existing.setPhoneNumber(shelter.getPhoneNumber());
-        existing.setEmail(shelter.getEmail());
-        existing.setTotalBeds(shelter.getTotalBeds());
-        existing.setAvailableBeds(shelter.getAvailableBeds());
-        existing.setDescription(shelter.getDescription());
+        existing.setName(nonNullShelter.getName());
+        existing.setAddress(nonNullShelter.getAddress());
+        existing.setCity(nonNullShelter.getCity());
+        existing.setState(nonNullShelter.getState());
+        existing.setZipCode(nonNullShelter.getZipCode());
+        existing.setPhoneNumber(nonNullShelter.getPhoneNumber());
+        existing.setEmail(nonNullShelter.getEmail());
+        existing.setTotalBeds(nonNullShelter.getTotalBeds());
+        existing.setAvailableBeds(nonNullShelter.getAvailableBeds());
+        existing.setDescription(nonNullShelter.getDescription());
         return shelterRepository.save(existing);
     }
 
     @Override
-    public void deleteShelter(Long id) {
-        if (!shelterRepository.existsById(id)) {
-            throw new EntityNotFoundException("Shelter not found with id: " + id);
+    public void deleteShelter(@NonNull Long id) {
+        Long shelterId = Objects.requireNonNull(id, "id must not be null");
+        if (!shelterRepository.existsById(shelterId)) {
+            throw new EntityNotFoundException("Shelter not found with id: " + shelterId);
         }
-        shelterRepository.deleteById(id);
+        shelterRepository.deleteById(shelterId);
     }
 }
