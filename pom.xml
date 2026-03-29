@@ -18,8 +18,8 @@
     <description>Parent POM for the Homeless Shelter Availability project</description>
 
     <modules>
-        <module>homeless-shelter-availability-web</module>
         <module>homeless-shelter-availability-api</module>
+        <module>homeless-shelter-availability-web</module>
     </modules>
 
     <properties>
@@ -29,5 +29,18 @@
         <npm.version>10.9.2</npm.version>
         <frontend-maven-plugin.version>1.15.1</frontend-maven-plugin.version>
     </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.4.1</version>
+                <configuration>
+                    <retryOnError>true</retryOnError>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

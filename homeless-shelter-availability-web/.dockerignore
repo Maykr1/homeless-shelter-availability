@@ -2,6 +2,6 @@
 .gitignore
 node_modules
 npm-debug.log
-dist/config.js
+!dist/config.js
 .env
 .env.*

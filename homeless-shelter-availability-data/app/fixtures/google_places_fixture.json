@@ -1,0 +1,6326 @@
+{
+  "search_responses": {
+    "places": [
+      {
+        "id": "fixture-google-1",
+        "displayName": {
+          "text": "New York Homeless Shelter"
+        },
+        "formattedAddress": "100 Market Street, New York, NY 10000, USA",
+        "location": {
+          "latitude": 40.7128,
+          "longitude": -74.006
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "New York",
+        "fixtureState": "NY"
+      },
+      {
+        "id": "fixture-google-2",
+        "displayName": {
+          "text": "New York Family Shelter"
+        },
+        "formattedAddress": "101 Market Street, New York, NY 10001, USA",
+        "location": {
+          "latitude": 40.7148,
+          "longitude": -74.008
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "New York",
+        "fixtureState": "NY"
+      },
+      {
+        "id": "fixture-google-3",
+        "displayName": {
+          "text": "New York Veterans Shelter"
+        },
+        "formattedAddress": "102 Market Street, New York, NY 10002, USA",
+        "location": {
+          "latitude": 40.7168,
+          "longitude": -74.01
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "veterans shelter",
+        "fixtureSeed": "New York",
+        "fixtureState": "NY"
+      },
+      {
+        "id": "fixture-google-4",
+        "displayName": {
+          "text": "Los Angeles Homeless Shelter"
+        },
+        "formattedAddress": "110 Market Street, Los Angeles, CA 10003, USA",
+        "location": {
+          "latitude": 34.0522,
+          "longitude": -118.2437
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Los Angeles",
+        "fixtureState": "CA"
+      },
+      {
+        "id": "fixture-google-5",
+        "displayName": {
+          "text": "Los Angeles Family Shelter"
+        },
+        "formattedAddress": "111 Market Street, Los Angeles, CA 10004, USA",
+        "location": {
+          "latitude": 34.0542,
+          "longitude": -118.2457
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Los Angeles",
+        "fixtureState": "CA"
+      },
+      {
+        "id": "fixture-google-6",
+        "displayName": {
+          "text": "Los Angeles Warming Center"
+        },
+        "formattedAddress": "112 Market Street, Los Angeles, CA 10005, USA",
+        "location": {
+          "latitude": 34.0562,
+          "longitude": -118.2477
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "warming center",
+        "fixtureSeed": "Los Angeles",
+        "fixtureState": "CA"
+      },
+      {
+        "id": "fixture-google-7",
+        "displayName": {
+          "text": "Chicago Homeless Shelter"
+        },
+        "formattedAddress": "120 Market Street, Chicago, IL 10006, USA",
+        "location": {
+          "latitude": 41.8781,
+          "longitude": -87.6298
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Chicago",
+        "fixtureState": "IL"
+      },
+      {
+        "id": "fixture-google-8",
+        "displayName": {
+          "text": "Chicago Family Shelter"
+        },
+        "formattedAddress": "121 Market Street, Chicago, IL 10007, USA",
+        "location": {
+          "latitude": 41.8801,
+          "longitude": -87.6318
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Chicago",
+        "fixtureState": "IL"
+      },
+      {
+        "id": "fixture-google-9",
+        "displayName": {
+          "text": "Chicago Drop-In Center"
+        },
+        "formattedAddress": "122 Market Street, Chicago, IL 10008, USA",
+        "location": {
+          "latitude": 41.8821,
+          "longitude": -87.6338
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "drop-in center",
+        "fixtureSeed": "Chicago",
+        "fixtureState": "IL"
+      },
+      {
+        "id": "fixture-google-10",
+        "displayName": {
+          "text": "Houston Homeless Shelter"
+        },
+        "formattedAddress": "130 Market Street, Houston, TX 10009, USA",
+        "location": {
+          "latitude": 29.7604,
+          "longitude": -95.3698
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Houston",
+        "fixtureState": "TX"
+      },
+      {
+        "id": "fixture-google-11",
+        "displayName": {
+          "text": "Houston Family Shelter"
+        },
+        "formattedAddress": "131 Market Street, Houston, TX 10010, USA",
+        "location": {
+          "latitude": 29.7624,
+          "longitude": -95.3718
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Houston",
+        "fixtureState": "TX"
+      },
+      {
+        "id": "fixture-google-12",
+        "displayName": {
+          "text": "Houston Rescue Mission"
+        },
+        "formattedAddress": "132 Market Street, Houston, TX 10011, USA",
+        "location": {
+          "latitude": 29.7644,
+          "longitude": -95.3738
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Houston",
+        "fixtureState": "TX"
+      },
+      {
+        "id": "fixture-google-13",
+        "displayName": {
+          "text": "Phoenix Homeless Shelter"
+        },
+        "formattedAddress": "140 Market Street, Phoenix, AZ 10012, USA",
+        "location": {
+          "latitude": 33.4484,
+          "longitude": -112.074
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Phoenix",
+        "fixtureState": "AZ"
+      },
+      {
+        "id": "fixture-google-14",
+        "displayName": {
+          "text": "Phoenix Family Shelter"
+        },
+        "formattedAddress": "141 Market Street, Phoenix, AZ 10013, USA",
+        "location": {
+          "latitude": 33.4504,
+          "longitude": -112.076
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Phoenix",
+        "fixtureState": "AZ"
+      },
+      {
+        "id": "fixture-google-15",
+        "displayName": {
+          "text": "Phoenix Safe Haven"
+        },
+        "formattedAddress": "142 Market Street, Phoenix, AZ 10014, USA",
+        "location": {
+          "latitude": 33.4524,
+          "longitude": -112.078
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "emergency shelter",
+        "fixtureSeed": "Phoenix",
+        "fixtureState": "AZ"
+      },
+      {
+        "id": "fixture-google-16",
+        "displayName": {
+          "text": "Philadelphia Homeless Shelter"
+        },
+        "formattedAddress": "150 Market Street, Philadelphia, PA 10015, USA",
+        "location": {
+          "latitude": 39.9526,
+          "longitude": -75.1652
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Philadelphia",
+        "fixtureState": "PA"
+      },
+      {
+        "id": "fixture-google-17",
+        "displayName": {
+          "text": "Philadelphia Family Shelter"
+        },
+        "formattedAddress": "151 Market Street, Philadelphia, PA 10016, USA",
+        "location": {
+          "latitude": 39.9546,
+          "longitude": -75.1672
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Philadelphia",
+        "fixtureState": "PA"
+      },
+      {
+        "id": "fixture-google-18",
+        "displayName": {
+          "text": "Philadelphia Navigation Center"
+        },
+        "formattedAddress": "152 Market Street, Philadelphia, PA 10017, USA",
+        "location": {
+          "latitude": 39.9566,
+          "longitude": -75.1692
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "drop-in center",
+        "fixtureSeed": "Philadelphia",
+        "fixtureState": "PA"
+      },
+      {
+        "id": "fixture-google-19",
+        "displayName": {
+          "text": "San Antonio Homeless Shelter"
+        },
+        "formattedAddress": "160 Market Street, San Antonio, TX 10018, USA",
+        "location": {
+          "latitude": 29.4241,
+          "longitude": -98.4936
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "San Antonio",
+        "fixtureState": "TX"
+      },
+      {
+        "id": "fixture-google-20",
+        "displayName": {
+          "text": "San Antonio Family Shelter"
+        },
+        "formattedAddress": "161 Market Street, San Antonio, TX 10019, USA",
+        "location": {
+          "latitude": 29.4261,
+          "longitude": -98.4956
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "San Antonio",
+        "fixtureState": "TX"
+      },
+      {
+        "id": "fixture-google-21",
+        "displayName": {
+          "text": "San Antonio Veterans Shelter"
+        },
+        "formattedAddress": "162 Market Street, San Antonio, TX 10020, USA",
+        "location": {
+          "latitude": 29.4281,
+          "longitude": -98.4976
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "veterans shelter",
+        "fixtureSeed": "San Antonio",
+        "fixtureState": "TX"
+      },
+      {
+        "id": "fixture-google-22",
+        "displayName": {
+          "text": "San Diego Homeless Shelter"
+        },
+        "formattedAddress": "170 Market Street, San Diego, CA 10021, USA",
+        "location": {
+          "latitude": 32.7157,
+          "longitude": -117.1611
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "San Diego",
+        "fixtureState": "CA"
+      },
+      {
+        "id": "fixture-google-23",
+        "displayName": {
+          "text": "San Diego Family Shelter"
+        },
+        "formattedAddress": "171 Market Street, San Diego, CA 10022, USA",
+        "location": {
+          "latitude": 32.7177,
+          "longitude": -117.1631
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "San Diego",
+        "fixtureState": "CA"
+      },
+      {
+        "id": "fixture-google-24",
+        "displayName": {
+          "text": "San Diego Warming Center"
+        },
+        "formattedAddress": "172 Market Street, San Diego, CA 10023, USA",
+        "location": {
+          "latitude": 32.7197,
+          "longitude": -117.1651
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "warming center",
+        "fixtureSeed": "San Diego",
+        "fixtureState": "CA"
+      },
+      {
+        "id": "fixture-google-25",
+        "displayName": {
+          "text": "Dallas Homeless Shelter"
+        },
+        "formattedAddress": "180 Market Street, Dallas, TX 10024, USA",
+        "location": {
+          "latitude": 32.7767,
+          "longitude": -96.797
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Dallas",
+        "fixtureState": "TX"
+      },
+      {
+        "id": "fixture-google-26",
+        "displayName": {
+          "text": "Dallas Family Shelter"
+        },
+        "formattedAddress": "181 Market Street, Dallas, TX 10025, USA",
+        "location": {
+          "latitude": 32.7787,
+          "longitude": -96.799
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Dallas",
+        "fixtureState": "TX"
+      },
+      {
+        "id": "fixture-google-27",
+        "displayName": {
+          "text": "Dallas Drop-In Center"
+        },
+        "formattedAddress": "182 Market Street, Dallas, TX 10026, USA",
+        "location": {
+          "latitude": 32.7807,
+          "longitude": -96.801
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "drop-in center",
+        "fixtureSeed": "Dallas",
+        "fixtureState": "TX"
+      },
+      {
+        "id": "fixture-google-28",
+        "displayName": {
+          "text": "San Jose Homeless Shelter"
+        },
+        "formattedAddress": "190 Market Street, San Jose, CA 10027, USA",
+        "location": {
+          "latitude": 37.3382,
+          "longitude": -121.8863
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "San Jose",
+        "fixtureState": "CA"
+      },
+      {
+        "id": "fixture-google-29",
+        "displayName": {
+          "text": "San Jose Family Shelter"
+        },
+        "formattedAddress": "191 Market Street, San Jose, CA 10028, USA",
+        "location": {
+          "latitude": 37.3402,
+          "longitude": -121.8883
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "San Jose",
+        "fixtureState": "CA"
+      },
+      {
+        "id": "fixture-google-30",
+        "displayName": {
+          "text": "San Jose Rescue Mission"
+        },
+        "formattedAddress": "192 Market Street, San Jose, CA 10029, USA",
+        "location": {
+          "latitude": 37.3422,
+          "longitude": -121.8903
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "San Jose",
+        "fixtureState": "CA"
+      },
+      {
+        "id": "fixture-google-31",
+        "displayName": {
+          "text": "Austin Homeless Shelter"
+        },
+        "formattedAddress": "200 Market Street, Austin, TX 10030, USA",
+        "location": {
+          "latitude": 30.2672,
+          "longitude": -97.7431
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Austin",
+        "fixtureState": "TX"
+      },
+      {
+        "id": "fixture-google-32",
+        "displayName": {
+          "text": "Austin Family Shelter"
+        },
+        "formattedAddress": "201 Market Street, Austin, TX 10031, USA",
+        "location": {
+          "latitude": 30.2692,
+          "longitude": -97.7451
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Austin",
+        "fixtureState": "TX"
+      },
+      {
+        "id": "fixture-google-33",
+        "displayName": {
+          "text": "Austin Safe Haven"
+        },
+        "formattedAddress": "202 Market Street, Austin, TX 10032, USA",
+        "location": {
+          "latitude": 30.2712,
+          "longitude": -97.7471
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "emergency shelter",
+        "fixtureSeed": "Austin",
+        "fixtureState": "TX"
+      },
+      {
+        "id": "fixture-google-34",
+        "displayName": {
+          "text": "Jacksonville Homeless Shelter"
+        },
+        "formattedAddress": "210 Market Street, Jacksonville, FL 10033, USA",
+        "location": {
+          "latitude": 30.3322,
+          "longitude": -81.6557
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Jacksonville",
+        "fixtureState": "FL"
+      },
+      {
+        "id": "fixture-google-35",
+        "displayName": {
+          "text": "Jacksonville Family Shelter"
+        },
+        "formattedAddress": "211 Market Street, Jacksonville, FL 10034, USA",
+        "location": {
+          "latitude": 30.3342,
+          "longitude": -81.6577
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Jacksonville",
+        "fixtureState": "FL"
+      },
+      {
+        "id": "fixture-google-36",
+        "displayName": {
+          "text": "Jacksonville Navigation Center"
+        },
+        "formattedAddress": "212 Market Street, Jacksonville, FL 10035, USA",
+        "location": {
+          "latitude": 30.3362,
+          "longitude": -81.6597
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "drop-in center",
+        "fixtureSeed": "Jacksonville",
+        "fixtureState": "FL"
+      },
+      {
+        "id": "fixture-google-37",
+        "displayName": {
+          "text": "Fort Worth Homeless Shelter"
+        },
+        "formattedAddress": "220 Market Street, Fort Worth, TX 10036, USA",
+        "location": {
+          "latitude": 32.7555,
+          "longitude": -97.3308
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Fort Worth",
+        "fixtureState": "TX"
+      },
+      {
+        "id": "fixture-google-38",
+        "displayName": {
+          "text": "Fort Worth Family Shelter"
+        },
+        "formattedAddress": "221 Market Street, Fort Worth, TX 10037, USA",
+        "location": {
+          "latitude": 32.7575,
+          "longitude": -97.3328
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Fort Worth",
+        "fixtureState": "TX"
+      },
+      {
+        "id": "fixture-google-39",
+        "displayName": {
+          "text": "Fort Worth Veterans Shelter"
+        },
+        "formattedAddress": "222 Market Street, Fort Worth, TX 10038, USA",
+        "location": {
+          "latitude": 32.7595,
+          "longitude": -97.3348
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "veterans shelter",
+        "fixtureSeed": "Fort Worth",
+        "fixtureState": "TX"
+      },
+      {
+        "id": "fixture-google-40",
+        "displayName": {
+          "text": "Columbus Homeless Shelter"
+        },
+        "formattedAddress": "230 Market Street, Columbus, OH 10039, USA",
+        "location": {
+          "latitude": 39.9612,
+          "longitude": -82.9988
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Columbus",
+        "fixtureState": "OH"
+      },
+      {
+        "id": "fixture-google-41",
+        "displayName": {
+          "text": "Columbus Family Shelter"
+        },
+        "formattedAddress": "231 Market Street, Columbus, OH 10040, USA",
+        "location": {
+          "latitude": 39.9632,
+          "longitude": -83.0008
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Columbus",
+        "fixtureState": "OH"
+      },
+      {
+        "id": "fixture-google-42",
+        "displayName": {
+          "text": "Columbus Warming Center"
+        },
+        "formattedAddress": "232 Market Street, Columbus, OH 10041, USA",
+        "location": {
+          "latitude": 39.9652,
+          "longitude": -83.0028
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "warming center",
+        "fixtureSeed": "Columbus",
+        "fixtureState": "OH"
+      },
+      {
+        "id": "fixture-google-43",
+        "displayName": {
+          "text": "Charlotte Homeless Shelter"
+        },
+        "formattedAddress": "240 Market Street, Charlotte, NC 10042, USA",
+        "location": {
+          "latitude": 35.2271,
+          "longitude": -80.8431
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Charlotte",
+        "fixtureState": "NC"
+      },
+      {
+        "id": "fixture-google-44",
+        "displayName": {
+          "text": "Charlotte Family Shelter"
+        },
+        "formattedAddress": "241 Market Street, Charlotte, NC 10043, USA",
+        "location": {
+          "latitude": 35.2291,
+          "longitude": -80.8451
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Charlotte",
+        "fixtureState": "NC"
+      },
+      {
+        "id": "fixture-google-45",
+        "displayName": {
+          "text": "Charlotte Drop-In Center"
+        },
+        "formattedAddress": "242 Market Street, Charlotte, NC 10044, USA",
+        "location": {
+          "latitude": 35.2311,
+          "longitude": -80.8471
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "drop-in center",
+        "fixtureSeed": "Charlotte",
+        "fixtureState": "NC"
+      },
+      {
+        "id": "fixture-google-46",
+        "displayName": {
+          "text": "Indianapolis Homeless Shelter"
+        },
+        "formattedAddress": "250 Market Street, Indianapolis, IN 10045, USA",
+        "location": {
+          "latitude": 39.7684,
+          "longitude": -86.1581
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Indianapolis",
+        "fixtureState": "IN"
+      },
+      {
+        "id": "fixture-google-47",
+        "displayName": {
+          "text": "Indianapolis Family Shelter"
+        },
+        "formattedAddress": "251 Market Street, Indianapolis, IN 10046, USA",
+        "location": {
+          "latitude": 39.7704,
+          "longitude": -86.1601
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Indianapolis",
+        "fixtureState": "IN"
+      },
+      {
+        "id": "fixture-google-48",
+        "displayName": {
+          "text": "Indianapolis Rescue Mission"
+        },
+        "formattedAddress": "252 Market Street, Indianapolis, IN 10047, USA",
+        "location": {
+          "latitude": 39.7724,
+          "longitude": -86.1621
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Indianapolis",
+        "fixtureState": "IN"
+      },
+      {
+        "id": "fixture-google-49",
+        "displayName": {
+          "text": "San Francisco Homeless Shelter"
+        },
+        "formattedAddress": "260 Market Street, San Francisco, CA 10048, USA",
+        "location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "San Francisco",
+        "fixtureState": "CA"
+      },
+      {
+        "id": "fixture-google-50",
+        "displayName": {
+          "text": "San Francisco Family Shelter"
+        },
+        "formattedAddress": "261 Market Street, San Francisco, CA 10049, USA",
+        "location": {
+          "latitude": 37.7769,
+          "longitude": -122.4214
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "San Francisco",
+        "fixtureState": "CA"
+      },
+      {
+        "id": "fixture-google-51",
+        "displayName": {
+          "text": "San Francisco Safe Haven"
+        },
+        "formattedAddress": "262 Market Street, San Francisco, CA 10050, USA",
+        "location": {
+          "latitude": 37.7789,
+          "longitude": -122.4234
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "emergency shelter",
+        "fixtureSeed": "San Francisco",
+        "fixtureState": "CA"
+      },
+      {
+        "id": "fixture-google-52",
+        "displayName": {
+          "text": "Seattle Homeless Shelter"
+        },
+        "formattedAddress": "270 Market Street, Seattle, WA 10051, USA",
+        "location": {
+          "latitude": 47.6062,
+          "longitude": -122.3321
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Seattle",
+        "fixtureState": "WA"
+      },
+      {
+        "id": "fixture-google-53",
+        "displayName": {
+          "text": "Seattle Family Shelter"
+        },
+        "formattedAddress": "271 Market Street, Seattle, WA 10052, USA",
+        "location": {
+          "latitude": 47.6082,
+          "longitude": -122.3341
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Seattle",
+        "fixtureState": "WA"
+      },
+      {
+        "id": "fixture-google-54",
+        "displayName": {
+          "text": "Seattle Navigation Center"
+        },
+        "formattedAddress": "272 Market Street, Seattle, WA 10053, USA",
+        "location": {
+          "latitude": 47.6102,
+          "longitude": -122.3361
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "drop-in center",
+        "fixtureSeed": "Seattle",
+        "fixtureState": "WA"
+      },
+      {
+        "id": "fixture-google-55",
+        "displayName": {
+          "text": "Denver Homeless Shelter"
+        },
+        "formattedAddress": "280 Market Street, Denver, CO 10054, USA",
+        "location": {
+          "latitude": 39.7392,
+          "longitude": -104.9903
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Denver",
+        "fixtureState": "CO"
+      },
+      {
+        "id": "fixture-google-56",
+        "displayName": {
+          "text": "Denver Family Shelter"
+        },
+        "formattedAddress": "281 Market Street, Denver, CO 10055, USA",
+        "location": {
+          "latitude": 39.7412,
+          "longitude": -104.9923
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Denver",
+        "fixtureState": "CO"
+      },
+      {
+        "id": "fixture-google-57",
+        "displayName": {
+          "text": "Denver Veterans Shelter"
+        },
+        "formattedAddress": "282 Market Street, Denver, CO 10056, USA",
+        "location": {
+          "latitude": 39.7432,
+          "longitude": -104.9943
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "veterans shelter",
+        "fixtureSeed": "Denver",
+        "fixtureState": "CO"
+      },
+      {
+        "id": "fixture-google-58",
+        "displayName": {
+          "text": "Washington Homeless Shelter"
+        },
+        "formattedAddress": "290 Market Street, Washington, DC 10057, USA",
+        "location": {
+          "latitude": 38.9072,
+          "longitude": -77.0369
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Washington",
+        "fixtureState": "DC"
+      },
+      {
+        "id": "fixture-google-59",
+        "displayName": {
+          "text": "Washington Family Shelter"
+        },
+        "formattedAddress": "291 Market Street, Washington, DC 10058, USA",
+        "location": {
+          "latitude": 38.9092,
+          "longitude": -77.0389
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Washington",
+        "fixtureState": "DC"
+      },
+      {
+        "id": "fixture-google-60",
+        "displayName": {
+          "text": "Washington Warming Center"
+        },
+        "formattedAddress": "292 Market Street, Washington, DC 10059, USA",
+        "location": {
+          "latitude": 38.9112,
+          "longitude": -77.0409
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "warming center",
+        "fixtureSeed": "Washington",
+        "fixtureState": "DC"
+      },
+      {
+        "id": "fixture-google-61",
+        "displayName": {
+          "text": "Boston Homeless Shelter"
+        },
+        "formattedAddress": "300 Market Street, Boston, MA 10060, USA",
+        "location": {
+          "latitude": 42.3601,
+          "longitude": -71.0589
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Boston",
+        "fixtureState": "MA"
+      },
+      {
+        "id": "fixture-google-62",
+        "displayName": {
+          "text": "Boston Family Shelter"
+        },
+        "formattedAddress": "301 Market Street, Boston, MA 10061, USA",
+        "location": {
+          "latitude": 42.3621,
+          "longitude": -71.0609
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Boston",
+        "fixtureState": "MA"
+      },
+      {
+        "id": "fixture-google-63",
+        "displayName": {
+          "text": "Boston Drop-In Center"
+        },
+        "formattedAddress": "302 Market Street, Boston, MA 10062, USA",
+        "location": {
+          "latitude": 42.3641,
+          "longitude": -71.0629
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "drop-in center",
+        "fixtureSeed": "Boston",
+        "fixtureState": "MA"
+      },
+      {
+        "id": "fixture-google-64",
+        "displayName": {
+          "text": "Nashville Homeless Shelter"
+        },
+        "formattedAddress": "310 Market Street, Nashville, TN 10063, USA",
+        "location": {
+          "latitude": 36.1627,
+          "longitude": -86.7816
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Nashville",
+        "fixtureState": "TN"
+      },
+      {
+        "id": "fixture-google-65",
+        "displayName": {
+          "text": "Nashville Family Shelter"
+        },
+        "formattedAddress": "311 Market Street, Nashville, TN 10064, USA",
+        "location": {
+          "latitude": 36.1647,
+          "longitude": -86.7836
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Nashville",
+        "fixtureState": "TN"
+      },
+      {
+        "id": "fixture-google-66",
+        "displayName": {
+          "text": "Nashville Rescue Mission"
+        },
+        "formattedAddress": "312 Market Street, Nashville, TN 10065, USA",
+        "location": {
+          "latitude": 36.1667,
+          "longitude": -86.7856
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Nashville",
+        "fixtureState": "TN"
+      },
+      {
+        "id": "fixture-google-67",
+        "displayName": {
+          "text": "Detroit Homeless Shelter"
+        },
+        "formattedAddress": "320 Market Street, Detroit, MI 10066, USA",
+        "location": {
+          "latitude": 42.3314,
+          "longitude": -83.0458
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Detroit",
+        "fixtureState": "MI"
+      },
+      {
+        "id": "fixture-google-68",
+        "displayName": {
+          "text": "Detroit Family Shelter"
+        },
+        "formattedAddress": "321 Market Street, Detroit, MI 10067, USA",
+        "location": {
+          "latitude": 42.3334,
+          "longitude": -83.0478
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Detroit",
+        "fixtureState": "MI"
+      },
+      {
+        "id": "fixture-google-69",
+        "displayName": {
+          "text": "Detroit Safe Haven"
+        },
+        "formattedAddress": "322 Market Street, Detroit, MI 10068, USA",
+        "location": {
+          "latitude": 42.3354,
+          "longitude": -83.0498
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "emergency shelter",
+        "fixtureSeed": "Detroit",
+        "fixtureState": "MI"
+      },
+      {
+        "id": "fixture-google-70",
+        "displayName": {
+          "text": "Oklahoma City Homeless Shelter"
+        },
+        "formattedAddress": "330 Market Street, Oklahoma City, OK 10069, USA",
+        "location": {
+          "latitude": 35.4676,
+          "longitude": -97.5164
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Oklahoma City",
+        "fixtureState": "OK"
+      },
+      {
+        "id": "fixture-google-71",
+        "displayName": {
+          "text": "Oklahoma City Family Shelter"
+        },
+        "formattedAddress": "331 Market Street, Oklahoma City, OK 10070, USA",
+        "location": {
+          "latitude": 35.4696,
+          "longitude": -97.5184
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Oklahoma City",
+        "fixtureState": "OK"
+      },
+      {
+        "id": "fixture-google-72",
+        "displayName": {
+          "text": "Oklahoma City Navigation Center"
+        },
+        "formattedAddress": "332 Market Street, Oklahoma City, OK 10071, USA",
+        "location": {
+          "latitude": 35.4716,
+          "longitude": -97.5204
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "drop-in center",
+        "fixtureSeed": "Oklahoma City",
+        "fixtureState": "OK"
+      },
+      {
+        "id": "fixture-google-73",
+        "displayName": {
+          "text": "Portland Homeless Shelter"
+        },
+        "formattedAddress": "340 Market Street, Portland, OR 10072, USA",
+        "location": {
+          "latitude": 45.5152,
+          "longitude": -122.6784
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Portland",
+        "fixtureState": "OR"
+      },
+      {
+        "id": "fixture-google-74",
+        "displayName": {
+          "text": "Portland Family Shelter"
+        },
+        "formattedAddress": "341 Market Street, Portland, OR 10073, USA",
+        "location": {
+          "latitude": 45.5172,
+          "longitude": -122.6804
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Portland",
+        "fixtureState": "OR"
+      },
+      {
+        "id": "fixture-google-75",
+        "displayName": {
+          "text": "Portland Veterans Shelter"
+        },
+        "formattedAddress": "342 Market Street, Portland, OR 10074, USA",
+        "location": {
+          "latitude": 45.5192,
+          "longitude": -122.6824
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "veterans shelter",
+        "fixtureSeed": "Portland",
+        "fixtureState": "OR"
+      },
+      {
+        "id": "fixture-google-76",
+        "displayName": {
+          "text": "Las Vegas Homeless Shelter"
+        },
+        "formattedAddress": "350 Market Street, Las Vegas, NV 10075, USA",
+        "location": {
+          "latitude": 36.1699,
+          "longitude": -115.1398
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Las Vegas",
+        "fixtureState": "NV"
+      },
+      {
+        "id": "fixture-google-77",
+        "displayName": {
+          "text": "Las Vegas Family Shelter"
+        },
+        "formattedAddress": "351 Market Street, Las Vegas, NV 10076, USA",
+        "location": {
+          "latitude": 36.1719,
+          "longitude": -115.1418
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Las Vegas",
+        "fixtureState": "NV"
+      },
+      {
+        "id": "fixture-google-78",
+        "displayName": {
+          "text": "Las Vegas Warming Center"
+        },
+        "formattedAddress": "352 Market Street, Las Vegas, NV 10077, USA",
+        "location": {
+          "latitude": 36.1739,
+          "longitude": -115.1438
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "warming center",
+        "fixtureSeed": "Las Vegas",
+        "fixtureState": "NV"
+      },
+      {
+        "id": "fixture-google-79",
+        "displayName": {
+          "text": "Memphis Homeless Shelter"
+        },
+        "formattedAddress": "360 Market Street, Memphis, TN 10078, USA",
+        "location": {
+          "latitude": 35.1495,
+          "longitude": -90.049
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Memphis",
+        "fixtureState": "TN"
+      },
+      {
+        "id": "fixture-google-80",
+        "displayName": {
+          "text": "Memphis Family Shelter"
+        },
+        "formattedAddress": "361 Market Street, Memphis, TN 10079, USA",
+        "location": {
+          "latitude": 35.1515,
+          "longitude": -90.051
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Memphis",
+        "fixtureState": "TN"
+      },
+      {
+        "id": "fixture-google-81",
+        "displayName": {
+          "text": "Memphis Drop-In Center"
+        },
+        "formattedAddress": "362 Market Street, Memphis, TN 10080, USA",
+        "location": {
+          "latitude": 35.1535,
+          "longitude": -90.053
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "drop-in center",
+        "fixtureSeed": "Memphis",
+        "fixtureState": "TN"
+      },
+      {
+        "id": "fixture-google-82",
+        "displayName": {
+          "text": "Louisville Homeless Shelter"
+        },
+        "formattedAddress": "370 Market Street, Louisville, KY 10081, USA",
+        "location": {
+          "latitude": 38.2527,
+          "longitude": -85.7585
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Louisville",
+        "fixtureState": "KY"
+      },
+      {
+        "id": "fixture-google-83",
+        "displayName": {
+          "text": "Louisville Family Shelter"
+        },
+        "formattedAddress": "371 Market Street, Louisville, KY 10082, USA",
+        "location": {
+          "latitude": 38.2547,
+          "longitude": -85.7605
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Louisville",
+        "fixtureState": "KY"
+      },
+      {
+        "id": "fixture-google-84",
+        "displayName": {
+          "text": "Louisville Rescue Mission"
+        },
+        "formattedAddress": "372 Market Street, Louisville, KY 10083, USA",
+        "location": {
+          "latitude": 38.2567,
+          "longitude": -85.7625
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Louisville",
+        "fixtureState": "KY"
+      },
+      {
+        "id": "fixture-google-85",
+        "displayName": {
+          "text": "Baltimore Homeless Shelter"
+        },
+        "formattedAddress": "380 Market Street, Baltimore, MD 10084, USA",
+        "location": {
+          "latitude": 39.2904,
+          "longitude": -76.6122
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Baltimore",
+        "fixtureState": "MD"
+      },
+      {
+        "id": "fixture-google-86",
+        "displayName": {
+          "text": "Baltimore Family Shelter"
+        },
+        "formattedAddress": "381 Market Street, Baltimore, MD 10085, USA",
+        "location": {
+          "latitude": 39.2924,
+          "longitude": -76.6142
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Baltimore",
+        "fixtureState": "MD"
+      },
+      {
+        "id": "fixture-google-87",
+        "displayName": {
+          "text": "Baltimore Safe Haven"
+        },
+        "formattedAddress": "382 Market Street, Baltimore, MD 10086, USA",
+        "location": {
+          "latitude": 39.2944,
+          "longitude": -76.6162
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "emergency shelter",
+        "fixtureSeed": "Baltimore",
+        "fixtureState": "MD"
+      },
+      {
+        "id": "fixture-google-88",
+        "displayName": {
+          "text": "Milwaukee Homeless Shelter"
+        },
+        "formattedAddress": "390 Market Street, Milwaukee, WI 10087, USA",
+        "location": {
+          "latitude": 43.0389,
+          "longitude": -87.9065
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Milwaukee",
+        "fixtureState": "WI"
+      },
+      {
+        "id": "fixture-google-89",
+        "displayName": {
+          "text": "Milwaukee Family Shelter"
+        },
+        "formattedAddress": "391 Market Street, Milwaukee, WI 10088, USA",
+        "location": {
+          "latitude": 43.0409,
+          "longitude": -87.9085
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Milwaukee",
+        "fixtureState": "WI"
+      },
+      {
+        "id": "fixture-google-90",
+        "displayName": {
+          "text": "Milwaukee Navigation Center"
+        },
+        "formattedAddress": "392 Market Street, Milwaukee, WI 10089, USA",
+        "location": {
+          "latitude": 43.0429,
+          "longitude": -87.9105
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "drop-in center",
+        "fixtureSeed": "Milwaukee",
+        "fixtureState": "WI"
+      },
+      {
+        "id": "fixture-google-91",
+        "displayName": {
+          "text": "Albuquerque Homeless Shelter"
+        },
+        "formattedAddress": "400 Market Street, Albuquerque, NM 10090, USA",
+        "location": {
+          "latitude": 35.0844,
+          "longitude": -106.6504
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Albuquerque",
+        "fixtureState": "NM"
+      },
+      {
+        "id": "fixture-google-92",
+        "displayName": {
+          "text": "Albuquerque Family Shelter"
+        },
+        "formattedAddress": "401 Market Street, Albuquerque, NM 10091, USA",
+        "location": {
+          "latitude": 35.0864,
+          "longitude": -106.6524
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Albuquerque",
+        "fixtureState": "NM"
+      },
+      {
+        "id": "fixture-google-93",
+        "displayName": {
+          "text": "Albuquerque Veterans Shelter"
+        },
+        "formattedAddress": "402 Market Street, Albuquerque, NM 10092, USA",
+        "location": {
+          "latitude": 35.0884,
+          "longitude": -106.6544
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "veterans shelter",
+        "fixtureSeed": "Albuquerque",
+        "fixtureState": "NM"
+      },
+      {
+        "id": "fixture-google-94",
+        "displayName": {
+          "text": "Tucson Homeless Shelter"
+        },
+        "formattedAddress": "410 Market Street, Tucson, AZ 10093, USA",
+        "location": {
+          "latitude": 32.2226,
+          "longitude": -110.9747
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Tucson",
+        "fixtureState": "AZ"
+      },
+      {
+        "id": "fixture-google-95",
+        "displayName": {
+          "text": "Tucson Family Shelter"
+        },
+        "formattedAddress": "411 Market Street, Tucson, AZ 10094, USA",
+        "location": {
+          "latitude": 32.2246,
+          "longitude": -110.9767
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Tucson",
+        "fixtureState": "AZ"
+      },
+      {
+        "id": "fixture-google-96",
+        "displayName": {
+          "text": "Tucson Warming Center"
+        },
+        "formattedAddress": "412 Market Street, Tucson, AZ 10095, USA",
+        "location": {
+          "latitude": 32.2266,
+          "longitude": -110.9787
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "warming center",
+        "fixtureSeed": "Tucson",
+        "fixtureState": "AZ"
+      },
+      {
+        "id": "fixture-google-97",
+        "displayName": {
+          "text": "Fresno Homeless Shelter"
+        },
+        "formattedAddress": "420 Market Street, Fresno, CA 10096, USA",
+        "location": {
+          "latitude": 36.7378,
+          "longitude": -119.7871
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Fresno",
+        "fixtureState": "CA"
+      },
+      {
+        "id": "fixture-google-98",
+        "displayName": {
+          "text": "Fresno Family Shelter"
+        },
+        "formattedAddress": "421 Market Street, Fresno, CA 10097, USA",
+        "location": {
+          "latitude": 36.7398,
+          "longitude": -119.7891
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Fresno",
+        "fixtureState": "CA"
+      },
+      {
+        "id": "fixture-google-99",
+        "displayName": {
+          "text": "Fresno Drop-In Center"
+        },
+        "formattedAddress": "422 Market Street, Fresno, CA 10098, USA",
+        "location": {
+          "latitude": 36.7418,
+          "longitude": -119.7911
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "drop-in center",
+        "fixtureSeed": "Fresno",
+        "fixtureState": "CA"
+      },
+      {
+        "id": "fixture-google-100",
+        "displayName": {
+          "text": "Sacramento Homeless Shelter"
+        },
+        "formattedAddress": "430 Market Street, Sacramento, CA 10099, USA",
+        "location": {
+          "latitude": 38.5816,
+          "longitude": -121.4944
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Sacramento",
+        "fixtureState": "CA"
+      },
+      {
+        "id": "fixture-google-101",
+        "displayName": {
+          "text": "Sacramento Family Shelter"
+        },
+        "formattedAddress": "431 Market Street, Sacramento, CA 10100, USA",
+        "location": {
+          "latitude": 38.5836,
+          "longitude": -121.4964
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Sacramento",
+        "fixtureState": "CA"
+      },
+      {
+        "id": "fixture-google-102",
+        "displayName": {
+          "text": "Sacramento Rescue Mission"
+        },
+        "formattedAddress": "432 Market Street, Sacramento, CA 10101, USA",
+        "location": {
+          "latitude": 38.5856,
+          "longitude": -121.4984
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Sacramento",
+        "fixtureState": "CA"
+      },
+      {
+        "id": "fixture-google-103",
+        "displayName": {
+          "text": "Kansas City Homeless Shelter"
+        },
+        "formattedAddress": "440 Market Street, Kansas City, MO 10102, USA",
+        "location": {
+          "latitude": 39.0997,
+          "longitude": -94.5786
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Kansas City",
+        "fixtureState": "MO"
+      },
+      {
+        "id": "fixture-google-104",
+        "displayName": {
+          "text": "Kansas City Family Shelter"
+        },
+        "formattedAddress": "441 Market Street, Kansas City, MO 10103, USA",
+        "location": {
+          "latitude": 39.1017,
+          "longitude": -94.5806
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Kansas City",
+        "fixtureState": "MO"
+      },
+      {
+        "id": "fixture-google-105",
+        "displayName": {
+          "text": "Kansas City Safe Haven"
+        },
+        "formattedAddress": "442 Market Street, Kansas City, MO 10104, USA",
+        "location": {
+          "latitude": 39.1037,
+          "longitude": -94.5826
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "emergency shelter",
+        "fixtureSeed": "Kansas City",
+        "fixtureState": "MO"
+      },
+      {
+        "id": "fixture-google-106",
+        "displayName": {
+          "text": "Atlanta Homeless Shelter"
+        },
+        "formattedAddress": "450 Market Street, Atlanta, GA 10105, USA",
+        "location": {
+          "latitude": 33.749,
+          "longitude": -84.388
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Atlanta",
+        "fixtureState": "GA"
+      },
+      {
+        "id": "fixture-google-107",
+        "displayName": {
+          "text": "Atlanta Family Shelter"
+        },
+        "formattedAddress": "451 Market Street, Atlanta, GA 10106, USA",
+        "location": {
+          "latitude": 33.751,
+          "longitude": -84.39
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Atlanta",
+        "fixtureState": "GA"
+      },
+      {
+        "id": "fixture-google-108",
+        "displayName": {
+          "text": "Atlanta Navigation Center"
+        },
+        "formattedAddress": "452 Market Street, Atlanta, GA 10107, USA",
+        "location": {
+          "latitude": 33.753,
+          "longitude": -84.392
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "drop-in center",
+        "fixtureSeed": "Atlanta",
+        "fixtureState": "GA"
+      },
+      {
+        "id": "fixture-google-109",
+        "displayName": {
+          "text": "Omaha Homeless Shelter"
+        },
+        "formattedAddress": "460 Market Street, Omaha, NE 10108, USA",
+        "location": {
+          "latitude": 41.2565,
+          "longitude": -95.9345
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Omaha",
+        "fixtureState": "NE"
+      },
+      {
+        "id": "fixture-google-110",
+        "displayName": {
+          "text": "Omaha Family Shelter"
+        },
+        "formattedAddress": "461 Market Street, Omaha, NE 10109, USA",
+        "location": {
+          "latitude": 41.2585,
+          "longitude": -95.9365
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Omaha",
+        "fixtureState": "NE"
+      },
+      {
+        "id": "fixture-google-111",
+        "displayName": {
+          "text": "Omaha Veterans Shelter"
+        },
+        "formattedAddress": "462 Market Street, Omaha, NE 10110, USA",
+        "location": {
+          "latitude": 41.2605,
+          "longitude": -95.9385
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "veterans shelter",
+        "fixtureSeed": "Omaha",
+        "fixtureState": "NE"
+      },
+      {
+        "id": "fixture-google-112",
+        "displayName": {
+          "text": "Raleigh Homeless Shelter"
+        },
+        "formattedAddress": "470 Market Street, Raleigh, NC 10111, USA",
+        "location": {
+          "latitude": 35.7796,
+          "longitude": -78.6382
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Raleigh",
+        "fixtureState": "NC"
+      },
+      {
+        "id": "fixture-google-113",
+        "displayName": {
+          "text": "Raleigh Family Shelter"
+        },
+        "formattedAddress": "471 Market Street, Raleigh, NC 10112, USA",
+        "location": {
+          "latitude": 35.7816,
+          "longitude": -78.6402
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Raleigh",
+        "fixtureState": "NC"
+      },
+      {
+        "id": "fixture-google-114",
+        "displayName": {
+          "text": "Raleigh Warming Center"
+        },
+        "formattedAddress": "472 Market Street, Raleigh, NC 10113, USA",
+        "location": {
+          "latitude": 35.7836,
+          "longitude": -78.6422
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "warming center",
+        "fixtureSeed": "Raleigh",
+        "fixtureState": "NC"
+      },
+      {
+        "id": "fixture-google-115",
+        "displayName": {
+          "text": "Cleveland Homeless Shelter"
+        },
+        "formattedAddress": "480 Market Street, Cleveland, OH 10114, USA",
+        "location": {
+          "latitude": 41.4993,
+          "longitude": -81.6944
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Cleveland",
+        "fixtureState": "OH"
+      },
+      {
+        "id": "fixture-google-116",
+        "displayName": {
+          "text": "Cleveland Family Shelter"
+        },
+        "formattedAddress": "481 Market Street, Cleveland, OH 10115, USA",
+        "location": {
+          "latitude": 41.5013,
+          "longitude": -81.6964
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Cleveland",
+        "fixtureState": "OH"
+      },
+      {
+        "id": "fixture-google-117",
+        "displayName": {
+          "text": "Cleveland Drop-In Center"
+        },
+        "formattedAddress": "482 Market Street, Cleveland, OH 10116, USA",
+        "location": {
+          "latitude": 41.5033,
+          "longitude": -81.6984
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "drop-in center",
+        "fixtureSeed": "Cleveland",
+        "fixtureState": "OH"
+      },
+      {
+        "id": "fixture-google-118",
+        "displayName": {
+          "text": "Virginia Beach Homeless Shelter"
+        },
+        "formattedAddress": "490 Market Street, Virginia Beach, VA 10117, USA",
+        "location": {
+          "latitude": 36.8529,
+          "longitude": -75.978
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Virginia Beach",
+        "fixtureState": "VA"
+      },
+      {
+        "id": "fixture-google-119",
+        "displayName": {
+          "text": "Virginia Beach Family Shelter"
+        },
+        "formattedAddress": "491 Market Street, Virginia Beach, VA 10118, USA",
+        "location": {
+          "latitude": 36.8549,
+          "longitude": -75.98
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Virginia Beach",
+        "fixtureState": "VA"
+      },
+      {
+        "id": "fixture-google-120",
+        "displayName": {
+          "text": "Virginia Beach Rescue Mission"
+        },
+        "formattedAddress": "492 Market Street, Virginia Beach, VA 10119, USA",
+        "location": {
+          "latitude": 36.8569,
+          "longitude": -75.982
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Virginia Beach",
+        "fixtureState": "VA"
+      },
+      {
+        "id": "fixture-google-121",
+        "displayName": {
+          "text": "Minneapolis Homeless Shelter"
+        },
+        "formattedAddress": "500 Market Street, Minneapolis, MN 10120, USA",
+        "location": {
+          "latitude": 44.9778,
+          "longitude": -93.265
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Minneapolis",
+        "fixtureState": "MN"
+      },
+      {
+        "id": "fixture-google-122",
+        "displayName": {
+          "text": "Minneapolis Family Shelter"
+        },
+        "formattedAddress": "501 Market Street, Minneapolis, MN 10121, USA",
+        "location": {
+          "latitude": 44.9798,
+          "longitude": -93.267
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Minneapolis",
+        "fixtureState": "MN"
+      },
+      {
+        "id": "fixture-google-123",
+        "displayName": {
+          "text": "Minneapolis Safe Haven"
+        },
+        "formattedAddress": "502 Market Street, Minneapolis, MN 10122, USA",
+        "location": {
+          "latitude": 44.9818,
+          "longitude": -93.269
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "emergency shelter",
+        "fixtureSeed": "Minneapolis",
+        "fixtureState": "MN"
+      },
+      {
+        "id": "fixture-google-124",
+        "displayName": {
+          "text": "New Orleans Homeless Shelter"
+        },
+        "formattedAddress": "510 Market Street, New Orleans, LA 10123, USA",
+        "location": {
+          "latitude": 29.9511,
+          "longitude": -90.0715
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "New Orleans",
+        "fixtureState": "LA"
+      },
+      {
+        "id": "fixture-google-125",
+        "displayName": {
+          "text": "New Orleans Family Shelter"
+        },
+        "formattedAddress": "511 Market Street, New Orleans, LA 10124, USA",
+        "location": {
+          "latitude": 29.9531,
+          "longitude": -90.0735
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "New Orleans",
+        "fixtureState": "LA"
+      },
+      {
+        "id": "fixture-google-126",
+        "displayName": {
+          "text": "New Orleans Navigation Center"
+        },
+        "formattedAddress": "512 Market Street, New Orleans, LA 10125, USA",
+        "location": {
+          "latitude": 29.9551,
+          "longitude": -90.0755
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "drop-in center",
+        "fixtureSeed": "New Orleans",
+        "fixtureState": "LA"
+      },
+      {
+        "id": "fixture-google-127",
+        "displayName": {
+          "text": "Cincinnati Homeless Shelter"
+        },
+        "formattedAddress": "520 Market Street, Cincinnati, OH 10126, USA",
+        "location": {
+          "latitude": 39.1031,
+          "longitude": -84.512
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Cincinnati",
+        "fixtureState": "OH"
+      },
+      {
+        "id": "fixture-google-128",
+        "displayName": {
+          "text": "Cincinnati Family Shelter"
+        },
+        "formattedAddress": "521 Market Street, Cincinnati, OH 10127, USA",
+        "location": {
+          "latitude": 39.1051,
+          "longitude": -84.514
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Cincinnati",
+        "fixtureState": "OH"
+      },
+      {
+        "id": "fixture-google-129",
+        "displayName": {
+          "text": "Cincinnati Veterans Shelter"
+        },
+        "formattedAddress": "522 Market Street, Cincinnati, OH 10128, USA",
+        "location": {
+          "latitude": 39.1071,
+          "longitude": -84.516
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "veterans shelter",
+        "fixtureSeed": "Cincinnati",
+        "fixtureState": "OH"
+      },
+      {
+        "id": "fixture-google-130",
+        "displayName": {
+          "text": "Pittsburgh Homeless Shelter"
+        },
+        "formattedAddress": "530 Market Street, Pittsburgh, PA 10129, USA",
+        "location": {
+          "latitude": 40.4406,
+          "longitude": -79.9959
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Pittsburgh",
+        "fixtureState": "PA"
+      },
+      {
+        "id": "fixture-google-131",
+        "displayName": {
+          "text": "Pittsburgh Family Shelter"
+        },
+        "formattedAddress": "531 Market Street, Pittsburgh, PA 10130, USA",
+        "location": {
+          "latitude": 40.4426,
+          "longitude": -79.9979
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Pittsburgh",
+        "fixtureState": "PA"
+      },
+      {
+        "id": "fixture-google-132",
+        "displayName": {
+          "text": "Pittsburgh Warming Center"
+        },
+        "formattedAddress": "532 Market Street, Pittsburgh, PA 10131, USA",
+        "location": {
+          "latitude": 40.4446,
+          "longitude": -79.9999
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "warming center",
+        "fixtureSeed": "Pittsburgh",
+        "fixtureState": "PA"
+      },
+      {
+        "id": "fixture-google-133",
+        "displayName": {
+          "text": "Buffalo Homeless Shelter"
+        },
+        "formattedAddress": "540 Market Street, Buffalo, NY 10132, USA",
+        "location": {
+          "latitude": 42.8864,
+          "longitude": -78.8784
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Buffalo",
+        "fixtureState": "NY"
+      },
+      {
+        "id": "fixture-google-134",
+        "displayName": {
+          "text": "Buffalo Family Shelter"
+        },
+        "formattedAddress": "541 Market Street, Buffalo, NY 10133, USA",
+        "location": {
+          "latitude": 42.8884,
+          "longitude": -78.8804
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Buffalo",
+        "fixtureState": "NY"
+      },
+      {
+        "id": "fixture-google-135",
+        "displayName": {
+          "text": "Buffalo Drop-In Center"
+        },
+        "formattedAddress": "542 Market Street, Buffalo, NY 10134, USA",
+        "location": {
+          "latitude": 42.8904,
+          "longitude": -78.8824
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "drop-in center",
+        "fixtureSeed": "Buffalo",
+        "fixtureState": "NY"
+      },
+      {
+        "id": "fixture-google-136",
+        "displayName": {
+          "text": "St. Louis Homeless Shelter"
+        },
+        "formattedAddress": "550 Market Street, St. Louis, MO 10135, USA",
+        "location": {
+          "latitude": 38.627,
+          "longitude": -90.1994
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "St. Louis",
+        "fixtureState": "MO"
+      },
+      {
+        "id": "fixture-google-137",
+        "displayName": {
+          "text": "St. Louis Family Shelter"
+        },
+        "formattedAddress": "551 Market Street, St. Louis, MO 10136, USA",
+        "location": {
+          "latitude": 38.629,
+          "longitude": -90.2014
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "St. Louis",
+        "fixtureState": "MO"
+      },
+      {
+        "id": "fixture-google-138",
+        "displayName": {
+          "text": "St. Louis Rescue Mission"
+        },
+        "formattedAddress": "552 Market Street, St. Louis, MO 10137, USA",
+        "location": {
+          "latitude": 38.631,
+          "longitude": -90.2034
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "St. Louis",
+        "fixtureState": "MO"
+      },
+      {
+        "id": "fixture-google-139",
+        "displayName": {
+          "text": "Salt Lake City Homeless Shelter"
+        },
+        "formattedAddress": "560 Market Street, Salt Lake City, UT 10138, USA",
+        "location": {
+          "latitude": 40.7608,
+          "longitude": -111.891
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Salt Lake City",
+        "fixtureState": "UT"
+      },
+      {
+        "id": "fixture-google-140",
+        "displayName": {
+          "text": "Salt Lake City Family Shelter"
+        },
+        "formattedAddress": "561 Market Street, Salt Lake City, UT 10139, USA",
+        "location": {
+          "latitude": 40.7628,
+          "longitude": -111.893
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Salt Lake City",
+        "fixtureState": "UT"
+      },
+      {
+        "id": "fixture-google-141",
+        "displayName": {
+          "text": "Salt Lake City Safe Haven"
+        },
+        "formattedAddress": "562 Market Street, Salt Lake City, UT 10140, USA",
+        "location": {
+          "latitude": 40.7648,
+          "longitude": -111.895
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "emergency shelter",
+        "fixtureSeed": "Salt Lake City",
+        "fixtureState": "UT"
+      },
+      {
+        "id": "fixture-google-142",
+        "displayName": {
+          "text": "Boise Homeless Shelter"
+        },
+        "formattedAddress": "570 Market Street, Boise, ID 10141, USA",
+        "location": {
+          "latitude": 43.615,
+          "longitude": -116.2023
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Boise",
+        "fixtureState": "ID"
+      },
+      {
+        "id": "fixture-google-143",
+        "displayName": {
+          "text": "Boise Family Shelter"
+        },
+        "formattedAddress": "571 Market Street, Boise, ID 10142, USA",
+        "location": {
+          "latitude": 43.617,
+          "longitude": -116.2043
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Boise",
+        "fixtureState": "ID"
+      },
+      {
+        "id": "fixture-google-144",
+        "displayName": {
+          "text": "Boise Navigation Center"
+        },
+        "formattedAddress": "572 Market Street, Boise, ID 10143, USA",
+        "location": {
+          "latitude": 43.619,
+          "longitude": -116.2063
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "drop-in center",
+        "fixtureSeed": "Boise",
+        "fixtureState": "ID"
+      },
+      {
+        "id": "fixture-google-145",
+        "displayName": {
+          "text": "Providence Homeless Shelter"
+        },
+        "formattedAddress": "580 Market Street, Providence, RI 10144, USA",
+        "location": {
+          "latitude": 41.824,
+          "longitude": -71.4128
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Providence",
+        "fixtureState": "RI"
+      },
+      {
+        "id": "fixture-google-146",
+        "displayName": {
+          "text": "Providence Family Shelter"
+        },
+        "formattedAddress": "581 Market Street, Providence, RI 10145, USA",
+        "location": {
+          "latitude": 41.826,
+          "longitude": -71.4148
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Providence",
+        "fixtureState": "RI"
+      },
+      {
+        "id": "fixture-google-147",
+        "displayName": {
+          "text": "Providence Veterans Shelter"
+        },
+        "formattedAddress": "582 Market Street, Providence, RI 10146, USA",
+        "location": {
+          "latitude": 41.828,
+          "longitude": -71.4168
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "veterans shelter",
+        "fixtureSeed": "Providence",
+        "fixtureState": "RI"
+      },
+      {
+        "id": "fixture-google-148",
+        "displayName": {
+          "text": "Miami Homeless Shelter"
+        },
+        "formattedAddress": "590 Market Street, Miami, FL 10147, USA",
+        "location": {
+          "latitude": 25.7617,
+          "longitude": -80.1918
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Miami",
+        "fixtureState": "FL"
+      },
+      {
+        "id": "fixture-google-149",
+        "displayName": {
+          "text": "Miami Family Shelter"
+        },
+        "formattedAddress": "591 Market Street, Miami, FL 10148, USA",
+        "location": {
+          "latitude": 25.7637,
+          "longitude": -80.1938
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Miami",
+        "fixtureState": "FL"
+      },
+      {
+        "id": "fixture-google-150",
+        "displayName": {
+          "text": "Miami Warming Center"
+        },
+        "formattedAddress": "592 Market Street, Miami, FL 10149, USA",
+        "location": {
+          "latitude": 25.7657,
+          "longitude": -80.1958
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "warming center",
+        "fixtureSeed": "Miami",
+        "fixtureState": "FL"
+      },
+      {
+        "id": "fixture-google-151",
+        "displayName": {
+          "text": "Tampa Homeless Shelter"
+        },
+        "formattedAddress": "600 Market Street, Tampa, FL 10150, USA",
+        "location": {
+          "latitude": 27.9506,
+          "longitude": -82.4572
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Tampa",
+        "fixtureState": "FL"
+      },
+      {
+        "id": "fixture-google-152",
+        "displayName": {
+          "text": "Tampa Family Shelter"
+        },
+        "formattedAddress": "601 Market Street, Tampa, FL 10151, USA",
+        "location": {
+          "latitude": 27.9526,
+          "longitude": -82.4592
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Tampa",
+        "fixtureState": "FL"
+      },
+      {
+        "id": "fixture-google-153",
+        "displayName": {
+          "text": "Tampa Drop-In Center"
+        },
+        "formattedAddress": "602 Market Street, Tampa, FL 10152, USA",
+        "location": {
+          "latitude": 27.9546,
+          "longitude": -82.4612
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "drop-in center",
+        "fixtureSeed": "Tampa",
+        "fixtureState": "FL"
+      },
+      {
+        "id": "fixture-google-154",
+        "displayName": {
+          "text": "Orlando Homeless Shelter"
+        },
+        "formattedAddress": "610 Market Street, Orlando, FL 10153, USA",
+        "location": {
+          "latitude": 28.5383,
+          "longitude": -81.3792
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Orlando",
+        "fixtureState": "FL"
+      },
+      {
+        "id": "fixture-google-155",
+        "displayName": {
+          "text": "Orlando Family Shelter"
+        },
+        "formattedAddress": "611 Market Street, Orlando, FL 10154, USA",
+        "location": {
+          "latitude": 28.5403,
+          "longitude": -81.3812
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Orlando",
+        "fixtureState": "FL"
+      },
+      {
+        "id": "fixture-google-156",
+        "displayName": {
+          "text": "Orlando Rescue Mission"
+        },
+        "formattedAddress": "612 Market Street, Orlando, FL 10155, USA",
+        "location": {
+          "latitude": 28.5423,
+          "longitude": -81.3832
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Orlando",
+        "fixtureState": "FL"
+      },
+      {
+        "id": "fixture-google-157",
+        "displayName": {
+          "text": "Birmingham Homeless Shelter"
+        },
+        "formattedAddress": "620 Market Street, Birmingham, AL 10156, USA",
+        "location": {
+          "latitude": 33.5186,
+          "longitude": -86.8104
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Birmingham",
+        "fixtureState": "AL"
+      },
+      {
+        "id": "fixture-google-158",
+        "displayName": {
+          "text": "Birmingham Family Shelter"
+        },
+        "formattedAddress": "621 Market Street, Birmingham, AL 10157, USA",
+        "location": {
+          "latitude": 33.5206,
+          "longitude": -86.8124
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Birmingham",
+        "fixtureState": "AL"
+      },
+      {
+        "id": "fixture-google-159",
+        "displayName": {
+          "text": "Birmingham Safe Haven"
+        },
+        "formattedAddress": "622 Market Street, Birmingham, AL 10158, USA",
+        "location": {
+          "latitude": 33.5226,
+          "longitude": -86.8144
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "emergency shelter",
+        "fixtureSeed": "Birmingham",
+        "fixtureState": "AL"
+      },
+      {
+        "id": "fixture-google-160",
+        "displayName": {
+          "text": "Richmond Homeless Shelter"
+        },
+        "formattedAddress": "630 Market Street, Richmond, VA 10159, USA",
+        "location": {
+          "latitude": 37.5407,
+          "longitude": -77.436
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "homeless shelter",
+        "fixtureSeed": "Richmond",
+        "fixtureState": "VA"
+      },
+      {
+        "id": "fixture-google-161",
+        "displayName": {
+          "text": "Richmond Family Shelter"
+        },
+        "formattedAddress": "631 Market Street, Richmond, VA 10160, USA",
+        "location": {
+          "latitude": 37.5427,
+          "longitude": -77.438
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "family shelter",
+        "fixtureSeed": "Richmond",
+        "fixtureState": "VA"
+      },
+      {
+        "id": "fixture-google-162",
+        "displayName": {
+          "text": "Richmond Navigation Center"
+        },
+        "formattedAddress": "632 Market Street, Richmond, VA 10161, USA",
+        "location": {
+          "latitude": 37.5447,
+          "longitude": -77.44
+        },
+        "types": [
+          "shelter"
+        ],
+        "fixtureQuery": "drop-in center",
+        "fixtureSeed": "Richmond",
+        "fixtureState": "VA"
+      }
+    ]
+  },
+  "detail_responses": {
+    "fixture-google-1": {
+      "id": "fixture-google-1",
+      "displayName": {
+        "text": "New York Homeless Shelter"
+      },
+      "formattedAddress": "100 Market Street, New York, NY 10000, USA",
+      "location": {
+        "latitude": 40.7128,
+        "longitude": -74.006
+      },
+      "nationalPhoneNumber": "(201) 555-1001",
+      "websiteUri": "https://new-york-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-2": {
+      "id": "fixture-google-2",
+      "displayName": {
+        "text": "New York Family Shelter"
+      },
+      "formattedAddress": "101 Market Street, New York, NY 10001, USA",
+      "location": {
+        "latitude": 40.7148,
+        "longitude": -74.008
+      },
+      "nationalPhoneNumber": "(202) 555-1002",
+      "websiteUri": "https://new-york-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-3": {
+      "id": "fixture-google-3",
+      "displayName": {
+        "text": "New York Veterans Shelter"
+      },
+      "formattedAddress": "102 Market Street, New York, NY 10002, USA",
+      "location": {
+        "latitude": 40.7168,
+        "longitude": -74.01
+      },
+      "nationalPhoneNumber": "(203) 555-1003",
+      "websiteUri": "https://new-york-veterans-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM - 9:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-4": {
+      "id": "fixture-google-4",
+      "displayName": {
+        "text": "Los Angeles Homeless Shelter"
+      },
+      "formattedAddress": "110 Market Street, Los Angeles, CA 10003, USA",
+      "location": {
+        "latitude": 34.0522,
+        "longitude": -118.2437
+      },
+      "nationalPhoneNumber": "(204) 555-1004",
+      "websiteUri": "https://los-angeles-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-5": {
+      "id": "fixture-google-5",
+      "displayName": {
+        "text": "Los Angeles Family Shelter"
+      },
+      "formattedAddress": "111 Market Street, Los Angeles, CA 10004, USA",
+      "location": {
+        "latitude": 34.0542,
+        "longitude": -118.2457
+      },
+      "nationalPhoneNumber": "(205) 555-1005",
+      "websiteUri": "https://los-angeles-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-6": {
+      "id": "fixture-google-6",
+      "displayName": {
+        "text": "Los Angeles Warming Center"
+      },
+      "formattedAddress": "112 Market Street, Los Angeles, CA 10005, USA",
+      "location": {
+        "latitude": 34.0562,
+        "longitude": -118.2477
+      },
+      "nationalPhoneNumber": "(206) 555-1006",
+      "websiteUri": "https://los-angeles-warming-center.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 PM - 8:00 AM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-7": {
+      "id": "fixture-google-7",
+      "displayName": {
+        "text": "Chicago Homeless Shelter"
+      },
+      "formattedAddress": "120 Market Street, Chicago, IL 10006, USA",
+      "location": {
+        "latitude": 41.8781,
+        "longitude": -87.6298
+      },
+      "nationalPhoneNumber": "(207) 555-1007",
+      "websiteUri": "https://chicago-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-8": {
+      "id": "fixture-google-8",
+      "displayName": {
+        "text": "Chicago Family Shelter"
+      },
+      "formattedAddress": "121 Market Street, Chicago, IL 10007, USA",
+      "location": {
+        "latitude": 41.8801,
+        "longitude": -87.6318
+      },
+      "nationalPhoneNumber": "(208) 555-1008",
+      "websiteUri": "https://chicago-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-9": {
+      "id": "fixture-google-9",
+      "displayName": {
+        "text": "Chicago Drop-In Center"
+      },
+      "formattedAddress": "122 Market Street, Chicago, IL 10008, USA",
+      "location": {
+        "latitude": 41.8821,
+        "longitude": -87.6338
+      },
+      "nationalPhoneNumber": "(209) 555-1009",
+      "websiteUri": "https://chicago-drop-in-center.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 8:00 AM - 6:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-10": {
+      "id": "fixture-google-10",
+      "displayName": {
+        "text": "Houston Homeless Shelter"
+      },
+      "formattedAddress": "130 Market Street, Houston, TX 10009, USA",
+      "location": {
+        "latitude": 29.7604,
+        "longitude": -95.3698
+      },
+      "nationalPhoneNumber": "(210) 555-1010",
+      "websiteUri": "https://houston-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-11": {
+      "id": "fixture-google-11",
+      "displayName": {
+        "text": "Houston Family Shelter"
+      },
+      "formattedAddress": "131 Market Street, Houston, TX 10010, USA",
+      "location": {
+        "latitude": 29.7624,
+        "longitude": -95.3718
+      },
+      "nationalPhoneNumber": "(211) 555-1011",
+      "websiteUri": "https://houston-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-12": {
+      "id": "fixture-google-12",
+      "displayName": {
+        "text": "Houston Rescue Mission"
+      },
+      "formattedAddress": "132 Market Street, Houston, TX 10011, USA",
+      "location": {
+        "latitude": 29.7644,
+        "longitude": -95.3738
+      },
+      "nationalPhoneNumber": "(212) 555-1012",
+      "websiteUri": "https://houston-rescue-mission.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-13": {
+      "id": "fixture-google-13",
+      "displayName": {
+        "text": "Phoenix Homeless Shelter"
+      },
+      "formattedAddress": "140 Market Street, Phoenix, AZ 10012, USA",
+      "location": {
+        "latitude": 33.4484,
+        "longitude": -112.074
+      },
+      "nationalPhoneNumber": "(213) 555-1013",
+      "websiteUri": "https://phoenix-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-14": {
+      "id": "fixture-google-14",
+      "displayName": {
+        "text": "Phoenix Family Shelter"
+      },
+      "formattedAddress": "141 Market Street, Phoenix, AZ 10013, USA",
+      "location": {
+        "latitude": 33.4504,
+        "longitude": -112.076
+      },
+      "nationalPhoneNumber": "(214) 555-1014",
+      "websiteUri": "https://phoenix-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-15": {
+      "id": "fixture-google-15",
+      "displayName": {
+        "text": "Phoenix Safe Haven"
+      },
+      "formattedAddress": "142 Market Street, Phoenix, AZ 10014, USA",
+      "location": {
+        "latitude": 33.4524,
+        "longitude": -112.078
+      },
+      "nationalPhoneNumber": "(215) 555-1015",
+      "websiteUri": "https://phoenix-safe-haven.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-16": {
+      "id": "fixture-google-16",
+      "displayName": {
+        "text": "Philadelphia Homeless Shelter"
+      },
+      "formattedAddress": "150 Market Street, Philadelphia, PA 10015, USA",
+      "location": {
+        "latitude": 39.9526,
+        "longitude": -75.1652
+      },
+      "nationalPhoneNumber": "(216) 555-1016",
+      "websiteUri": "https://philadelphia-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-17": {
+      "id": "fixture-google-17",
+      "displayName": {
+        "text": "Philadelphia Family Shelter"
+      },
+      "formattedAddress": "151 Market Street, Philadelphia, PA 10016, USA",
+      "location": {
+        "latitude": 39.9546,
+        "longitude": -75.1672
+      },
+      "nationalPhoneNumber": "(217) 555-1017",
+      "websiteUri": "https://philadelphia-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-18": {
+      "id": "fixture-google-18",
+      "displayName": {
+        "text": "Philadelphia Navigation Center"
+      },
+      "formattedAddress": "152 Market Street, Philadelphia, PA 10017, USA",
+      "location": {
+        "latitude": 39.9566,
+        "longitude": -75.1692
+      },
+      "nationalPhoneNumber": "(218) 555-1018",
+      "websiteUri": "https://philadelphia-navigation-center.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM - 7:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-19": {
+      "id": "fixture-google-19",
+      "displayName": {
+        "text": "San Antonio Homeless Shelter"
+      },
+      "formattedAddress": "160 Market Street, San Antonio, TX 10018, USA",
+      "location": {
+        "latitude": 29.4241,
+        "longitude": -98.4936
+      },
+      "nationalPhoneNumber": "(219) 555-1019",
+      "websiteUri": "https://san-antonio-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-20": {
+      "id": "fixture-google-20",
+      "displayName": {
+        "text": "San Antonio Family Shelter"
+      },
+      "formattedAddress": "161 Market Street, San Antonio, TX 10019, USA",
+      "location": {
+        "latitude": 29.4261,
+        "longitude": -98.4956
+      },
+      "nationalPhoneNumber": "(220) 555-1020",
+      "websiteUri": "https://san-antonio-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-21": {
+      "id": "fixture-google-21",
+      "displayName": {
+        "text": "San Antonio Veterans Shelter"
+      },
+      "formattedAddress": "162 Market Street, San Antonio, TX 10020, USA",
+      "location": {
+        "latitude": 29.4281,
+        "longitude": -98.4976
+      },
+      "nationalPhoneNumber": "(221) 555-1021",
+      "websiteUri": "https://san-antonio-veterans-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM - 9:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-22": {
+      "id": "fixture-google-22",
+      "displayName": {
+        "text": "San Diego Homeless Shelter"
+      },
+      "formattedAddress": "170 Market Street, San Diego, CA 10021, USA",
+      "location": {
+        "latitude": 32.7157,
+        "longitude": -117.1611
+      },
+      "nationalPhoneNumber": "(222) 555-1022",
+      "websiteUri": "https://san-diego-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-23": {
+      "id": "fixture-google-23",
+      "displayName": {
+        "text": "San Diego Family Shelter"
+      },
+      "formattedAddress": "171 Market Street, San Diego, CA 10022, USA",
+      "location": {
+        "latitude": 32.7177,
+        "longitude": -117.1631
+      },
+      "nationalPhoneNumber": "(223) 555-1023",
+      "websiteUri": "https://san-diego-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-24": {
+      "id": "fixture-google-24",
+      "displayName": {
+        "text": "San Diego Warming Center"
+      },
+      "formattedAddress": "172 Market Street, San Diego, CA 10023, USA",
+      "location": {
+        "latitude": 32.7197,
+        "longitude": -117.1651
+      },
+      "nationalPhoneNumber": "(224) 555-1024",
+      "websiteUri": "https://san-diego-warming-center.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 PM - 8:00 AM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-25": {
+      "id": "fixture-google-25",
+      "displayName": {
+        "text": "Dallas Homeless Shelter"
+      },
+      "formattedAddress": "180 Market Street, Dallas, TX 10024, USA",
+      "location": {
+        "latitude": 32.7767,
+        "longitude": -96.797
+      },
+      "nationalPhoneNumber": "(225) 555-1025",
+      "websiteUri": "https://dallas-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-26": {
+      "id": "fixture-google-26",
+      "displayName": {
+        "text": "Dallas Family Shelter"
+      },
+      "formattedAddress": "181 Market Street, Dallas, TX 10025, USA",
+      "location": {
+        "latitude": 32.7787,
+        "longitude": -96.799
+      },
+      "nationalPhoneNumber": "(226) 555-1026",
+      "websiteUri": "https://dallas-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-27": {
+      "id": "fixture-google-27",
+      "displayName": {
+        "text": "Dallas Drop-In Center"
+      },
+      "formattedAddress": "182 Market Street, Dallas, TX 10026, USA",
+      "location": {
+        "latitude": 32.7807,
+        "longitude": -96.801
+      },
+      "nationalPhoneNumber": "(227) 555-1027",
+      "websiteUri": "https://dallas-drop-in-center.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 8:00 AM - 6:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-28": {
+      "id": "fixture-google-28",
+      "displayName": {
+        "text": "San Jose Homeless Shelter"
+      },
+      "formattedAddress": "190 Market Street, San Jose, CA 10027, USA",
+      "location": {
+        "latitude": 37.3382,
+        "longitude": -121.8863
+      },
+      "nationalPhoneNumber": "(228) 555-1028",
+      "websiteUri": "https://san-jose-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-29": {
+      "id": "fixture-google-29",
+      "displayName": {
+        "text": "San Jose Family Shelter"
+      },
+      "formattedAddress": "191 Market Street, San Jose, CA 10028, USA",
+      "location": {
+        "latitude": 37.3402,
+        "longitude": -121.8883
+      },
+      "nationalPhoneNumber": "(229) 555-1029",
+      "websiteUri": "https://san-jose-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-30": {
+      "id": "fixture-google-30",
+      "displayName": {
+        "text": "San Jose Rescue Mission"
+      },
+      "formattedAddress": "192 Market Street, San Jose, CA 10029, USA",
+      "location": {
+        "latitude": 37.3422,
+        "longitude": -121.8903
+      },
+      "nationalPhoneNumber": "(230) 555-1030",
+      "websiteUri": "https://san-jose-rescue-mission.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-31": {
+      "id": "fixture-google-31",
+      "displayName": {
+        "text": "Austin Homeless Shelter"
+      },
+      "formattedAddress": "200 Market Street, Austin, TX 10030, USA",
+      "location": {
+        "latitude": 30.2672,
+        "longitude": -97.7431
+      },
+      "nationalPhoneNumber": "(231) 555-1031",
+      "websiteUri": "https://austin-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-32": {
+      "id": "fixture-google-32",
+      "displayName": {
+        "text": "Austin Family Shelter"
+      },
+      "formattedAddress": "201 Market Street, Austin, TX 10031, USA",
+      "location": {
+        "latitude": 30.2692,
+        "longitude": -97.7451
+      },
+      "nationalPhoneNumber": "(232) 555-1032",
+      "websiteUri": "https://austin-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-33": {
+      "id": "fixture-google-33",
+      "displayName": {
+        "text": "Austin Safe Haven"
+      },
+      "formattedAddress": "202 Market Street, Austin, TX 10032, USA",
+      "location": {
+        "latitude": 30.2712,
+        "longitude": -97.7471
+      },
+      "nationalPhoneNumber": "(233) 555-1033",
+      "websiteUri": "https://austin-safe-haven.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-34": {
+      "id": "fixture-google-34",
+      "displayName": {
+        "text": "Jacksonville Homeless Shelter"
+      },
+      "formattedAddress": "210 Market Street, Jacksonville, FL 10033, USA",
+      "location": {
+        "latitude": 30.3322,
+        "longitude": -81.6557
+      },
+      "nationalPhoneNumber": "(234) 555-1034",
+      "websiteUri": "https://jacksonville-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-35": {
+      "id": "fixture-google-35",
+      "displayName": {
+        "text": "Jacksonville Family Shelter"
+      },
+      "formattedAddress": "211 Market Street, Jacksonville, FL 10034, USA",
+      "location": {
+        "latitude": 30.3342,
+        "longitude": -81.6577
+      },
+      "nationalPhoneNumber": "(235) 555-1035",
+      "websiteUri": "https://jacksonville-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-36": {
+      "id": "fixture-google-36",
+      "displayName": {
+        "text": "Jacksonville Navigation Center"
+      },
+      "formattedAddress": "212 Market Street, Jacksonville, FL 10035, USA",
+      "location": {
+        "latitude": 30.3362,
+        "longitude": -81.6597
+      },
+      "nationalPhoneNumber": "(236) 555-1036",
+      "websiteUri": "https://jacksonville-navigation-center.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM - 7:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-37": {
+      "id": "fixture-google-37",
+      "displayName": {
+        "text": "Fort Worth Homeless Shelter"
+      },
+      "formattedAddress": "220 Market Street, Fort Worth, TX 10036, USA",
+      "location": {
+        "latitude": 32.7555,
+        "longitude": -97.3308
+      },
+      "nationalPhoneNumber": "(237) 555-1037",
+      "websiteUri": "https://fort-worth-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-38": {
+      "id": "fixture-google-38",
+      "displayName": {
+        "text": "Fort Worth Family Shelter"
+      },
+      "formattedAddress": "221 Market Street, Fort Worth, TX 10037, USA",
+      "location": {
+        "latitude": 32.7575,
+        "longitude": -97.3328
+      },
+      "nationalPhoneNumber": "(238) 555-1038",
+      "websiteUri": "https://fort-worth-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-39": {
+      "id": "fixture-google-39",
+      "displayName": {
+        "text": "Fort Worth Veterans Shelter"
+      },
+      "formattedAddress": "222 Market Street, Fort Worth, TX 10038, USA",
+      "location": {
+        "latitude": 32.7595,
+        "longitude": -97.3348
+      },
+      "nationalPhoneNumber": "(239) 555-1039",
+      "websiteUri": "https://fort-worth-veterans-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM - 9:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-40": {
+      "id": "fixture-google-40",
+      "displayName": {
+        "text": "Columbus Homeless Shelter"
+      },
+      "formattedAddress": "230 Market Street, Columbus, OH 10039, USA",
+      "location": {
+        "latitude": 39.9612,
+        "longitude": -82.9988
+      },
+      "nationalPhoneNumber": "(240) 555-1040",
+      "websiteUri": "https://columbus-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-41": {
+      "id": "fixture-google-41",
+      "displayName": {
+        "text": "Columbus Family Shelter"
+      },
+      "formattedAddress": "231 Market Street, Columbus, OH 10040, USA",
+      "location": {
+        "latitude": 39.9632,
+        "longitude": -83.0008
+      },
+      "nationalPhoneNumber": "(241) 555-1041",
+      "websiteUri": "https://columbus-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-42": {
+      "id": "fixture-google-42",
+      "displayName": {
+        "text": "Columbus Warming Center"
+      },
+      "formattedAddress": "232 Market Street, Columbus, OH 10041, USA",
+      "location": {
+        "latitude": 39.9652,
+        "longitude": -83.0028
+      },
+      "nationalPhoneNumber": "(242) 555-1042",
+      "websiteUri": "https://columbus-warming-center.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 PM - 8:00 AM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-43": {
+      "id": "fixture-google-43",
+      "displayName": {
+        "text": "Charlotte Homeless Shelter"
+      },
+      "formattedAddress": "240 Market Street, Charlotte, NC 10042, USA",
+      "location": {
+        "latitude": 35.2271,
+        "longitude": -80.8431
+      },
+      "nationalPhoneNumber": "(243) 555-1043",
+      "websiteUri": "https://charlotte-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-44": {
+      "id": "fixture-google-44",
+      "displayName": {
+        "text": "Charlotte Family Shelter"
+      },
+      "formattedAddress": "241 Market Street, Charlotte, NC 10043, USA",
+      "location": {
+        "latitude": 35.2291,
+        "longitude": -80.8451
+      },
+      "nationalPhoneNumber": "(244) 555-1044",
+      "websiteUri": "https://charlotte-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-45": {
+      "id": "fixture-google-45",
+      "displayName": {
+        "text": "Charlotte Drop-In Center"
+      },
+      "formattedAddress": "242 Market Street, Charlotte, NC 10044, USA",
+      "location": {
+        "latitude": 35.2311,
+        "longitude": -80.8471
+      },
+      "nationalPhoneNumber": "(245) 555-1045",
+      "websiteUri": "https://charlotte-drop-in-center.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 8:00 AM - 6:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-46": {
+      "id": "fixture-google-46",
+      "displayName": {
+        "text": "Indianapolis Homeless Shelter"
+      },
+      "formattedAddress": "250 Market Street, Indianapolis, IN 10045, USA",
+      "location": {
+        "latitude": 39.7684,
+        "longitude": -86.1581
+      },
+      "nationalPhoneNumber": "(246) 555-1046",
+      "websiteUri": "https://indianapolis-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-47": {
+      "id": "fixture-google-47",
+      "displayName": {
+        "text": "Indianapolis Family Shelter"
+      },
+      "formattedAddress": "251 Market Street, Indianapolis, IN 10046, USA",
+      "location": {
+        "latitude": 39.7704,
+        "longitude": -86.1601
+      },
+      "nationalPhoneNumber": "(247) 555-1047",
+      "websiteUri": "https://indianapolis-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-48": {
+      "id": "fixture-google-48",
+      "displayName": {
+        "text": "Indianapolis Rescue Mission"
+      },
+      "formattedAddress": "252 Market Street, Indianapolis, IN 10047, USA",
+      "location": {
+        "latitude": 39.7724,
+        "longitude": -86.1621
+      },
+      "nationalPhoneNumber": "(248) 555-1048",
+      "websiteUri": "https://indianapolis-rescue-mission.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-49": {
+      "id": "fixture-google-49",
+      "displayName": {
+        "text": "San Francisco Homeless Shelter"
+      },
+      "formattedAddress": "260 Market Street, San Francisco, CA 10048, USA",
+      "location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "nationalPhoneNumber": "(249) 555-1049",
+      "websiteUri": "https://san-francisco-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-50": {
+      "id": "fixture-google-50",
+      "displayName": {
+        "text": "San Francisco Family Shelter"
+      },
+      "formattedAddress": "261 Market Street, San Francisco, CA 10049, USA",
+      "location": {
+        "latitude": 37.7769,
+        "longitude": -122.4214
+      },
+      "nationalPhoneNumber": "(250) 555-1050",
+      "websiteUri": "https://san-francisco-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-51": {
+      "id": "fixture-google-51",
+      "displayName": {
+        "text": "San Francisco Safe Haven"
+      },
+      "formattedAddress": "262 Market Street, San Francisco, CA 10050, USA",
+      "location": {
+        "latitude": 37.7789,
+        "longitude": -122.4234
+      },
+      "nationalPhoneNumber": "(251) 555-1051",
+      "websiteUri": "https://san-francisco-safe-haven.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-52": {
+      "id": "fixture-google-52",
+      "displayName": {
+        "text": "Seattle Homeless Shelter"
+      },
+      "formattedAddress": "270 Market Street, Seattle, WA 10051, USA",
+      "location": {
+        "latitude": 47.6062,
+        "longitude": -122.3321
+      },
+      "nationalPhoneNumber": "(252) 555-1052",
+      "websiteUri": "https://seattle-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-53": {
+      "id": "fixture-google-53",
+      "displayName": {
+        "text": "Seattle Family Shelter"
+      },
+      "formattedAddress": "271 Market Street, Seattle, WA 10052, USA",
+      "location": {
+        "latitude": 47.6082,
+        "longitude": -122.3341
+      },
+      "nationalPhoneNumber": "(253) 555-1053",
+      "websiteUri": "https://seattle-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-54": {
+      "id": "fixture-google-54",
+      "displayName": {
+        "text": "Seattle Navigation Center"
+      },
+      "formattedAddress": "272 Market Street, Seattle, WA 10053, USA",
+      "location": {
+        "latitude": 47.6102,
+        "longitude": -122.3361
+      },
+      "nationalPhoneNumber": "(254) 555-1054",
+      "websiteUri": "https://seattle-navigation-center.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM - 7:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-55": {
+      "id": "fixture-google-55",
+      "displayName": {
+        "text": "Denver Homeless Shelter"
+      },
+      "formattedAddress": "280 Market Street, Denver, CO 10054, USA",
+      "location": {
+        "latitude": 39.7392,
+        "longitude": -104.9903
+      },
+      "nationalPhoneNumber": "(255) 555-1055",
+      "websiteUri": "https://denver-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-56": {
+      "id": "fixture-google-56",
+      "displayName": {
+        "text": "Denver Family Shelter"
+      },
+      "formattedAddress": "281 Market Street, Denver, CO 10055, USA",
+      "location": {
+        "latitude": 39.7412,
+        "longitude": -104.9923
+      },
+      "nationalPhoneNumber": "(256) 555-1056",
+      "websiteUri": "https://denver-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-57": {
+      "id": "fixture-google-57",
+      "displayName": {
+        "text": "Denver Veterans Shelter"
+      },
+      "formattedAddress": "282 Market Street, Denver, CO 10056, USA",
+      "location": {
+        "latitude": 39.7432,
+        "longitude": -104.9943
+      },
+      "nationalPhoneNumber": "(257) 555-1057",
+      "websiteUri": "https://denver-veterans-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM - 9:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-58": {
+      "id": "fixture-google-58",
+      "displayName": {
+        "text": "Washington Homeless Shelter"
+      },
+      "formattedAddress": "290 Market Street, Washington, DC 10057, USA",
+      "location": {
+        "latitude": 38.9072,
+        "longitude": -77.0369
+      },
+      "nationalPhoneNumber": "(258) 555-1058",
+      "websiteUri": "https://washington-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-59": {
+      "id": "fixture-google-59",
+      "displayName": {
+        "text": "Washington Family Shelter"
+      },
+      "formattedAddress": "291 Market Street, Washington, DC 10058, USA",
+      "location": {
+        "latitude": 38.9092,
+        "longitude": -77.0389
+      },
+      "nationalPhoneNumber": "(259) 555-1059",
+      "websiteUri": "https://washington-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-60": {
+      "id": "fixture-google-60",
+      "displayName": {
+        "text": "Washington Warming Center"
+      },
+      "formattedAddress": "292 Market Street, Washington, DC 10059, USA",
+      "location": {
+        "latitude": 38.9112,
+        "longitude": -77.0409
+      },
+      "nationalPhoneNumber": "(260) 555-1060",
+      "websiteUri": "https://washington-warming-center.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 PM - 8:00 AM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-61": {
+      "id": "fixture-google-61",
+      "displayName": {
+        "text": "Boston Homeless Shelter"
+      },
+      "formattedAddress": "300 Market Street, Boston, MA 10060, USA",
+      "location": {
+        "latitude": 42.3601,
+        "longitude": -71.0589
+      },
+      "nationalPhoneNumber": "(261) 555-1061",
+      "websiteUri": "https://boston-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-62": {
+      "id": "fixture-google-62",
+      "displayName": {
+        "text": "Boston Family Shelter"
+      },
+      "formattedAddress": "301 Market Street, Boston, MA 10061, USA",
+      "location": {
+        "latitude": 42.3621,
+        "longitude": -71.0609
+      },
+      "nationalPhoneNumber": "(262) 555-1062",
+      "websiteUri": "https://boston-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-63": {
+      "id": "fixture-google-63",
+      "displayName": {
+        "text": "Boston Drop-In Center"
+      },
+      "formattedAddress": "302 Market Street, Boston, MA 10062, USA",
+      "location": {
+        "latitude": 42.3641,
+        "longitude": -71.0629
+      },
+      "nationalPhoneNumber": "(263) 555-1063",
+      "websiteUri": "https://boston-drop-in-center.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 8:00 AM - 6:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-64": {
+      "id": "fixture-google-64",
+      "displayName": {
+        "text": "Nashville Homeless Shelter"
+      },
+      "formattedAddress": "310 Market Street, Nashville, TN 10063, USA",
+      "location": {
+        "latitude": 36.1627,
+        "longitude": -86.7816
+      },
+      "nationalPhoneNumber": "(264) 555-1064",
+      "websiteUri": "https://nashville-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-65": {
+      "id": "fixture-google-65",
+      "displayName": {
+        "text": "Nashville Family Shelter"
+      },
+      "formattedAddress": "311 Market Street, Nashville, TN 10064, USA",
+      "location": {
+        "latitude": 36.1647,
+        "longitude": -86.7836
+      },
+      "nationalPhoneNumber": "(265) 555-1065",
+      "websiteUri": "https://nashville-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-66": {
+      "id": "fixture-google-66",
+      "displayName": {
+        "text": "Nashville Rescue Mission"
+      },
+      "formattedAddress": "312 Market Street, Nashville, TN 10065, USA",
+      "location": {
+        "latitude": 36.1667,
+        "longitude": -86.7856
+      },
+      "nationalPhoneNumber": "(266) 555-1066",
+      "websiteUri": "https://nashville-rescue-mission.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-67": {
+      "id": "fixture-google-67",
+      "displayName": {
+        "text": "Detroit Homeless Shelter"
+      },
+      "formattedAddress": "320 Market Street, Detroit, MI 10066, USA",
+      "location": {
+        "latitude": 42.3314,
+        "longitude": -83.0458
+      },
+      "nationalPhoneNumber": "(267) 555-1067",
+      "websiteUri": "https://detroit-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-68": {
+      "id": "fixture-google-68",
+      "displayName": {
+        "text": "Detroit Family Shelter"
+      },
+      "formattedAddress": "321 Market Street, Detroit, MI 10067, USA",
+      "location": {
+        "latitude": 42.3334,
+        "longitude": -83.0478
+      },
+      "nationalPhoneNumber": "(268) 555-1068",
+      "websiteUri": "https://detroit-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-69": {
+      "id": "fixture-google-69",
+      "displayName": {
+        "text": "Detroit Safe Haven"
+      },
+      "formattedAddress": "322 Market Street, Detroit, MI 10068, USA",
+      "location": {
+        "latitude": 42.3354,
+        "longitude": -83.0498
+      },
+      "nationalPhoneNumber": "(269) 555-1069",
+      "websiteUri": "https://detroit-safe-haven.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-70": {
+      "id": "fixture-google-70",
+      "displayName": {
+        "text": "Oklahoma City Homeless Shelter"
+      },
+      "formattedAddress": "330 Market Street, Oklahoma City, OK 10069, USA",
+      "location": {
+        "latitude": 35.4676,
+        "longitude": -97.5164
+      },
+      "nationalPhoneNumber": "(270) 555-1070",
+      "websiteUri": "https://oklahoma-city-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-71": {
+      "id": "fixture-google-71",
+      "displayName": {
+        "text": "Oklahoma City Family Shelter"
+      },
+      "formattedAddress": "331 Market Street, Oklahoma City, OK 10070, USA",
+      "location": {
+        "latitude": 35.4696,
+        "longitude": -97.5184
+      },
+      "nationalPhoneNumber": "(271) 555-1071",
+      "websiteUri": "https://oklahoma-city-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-72": {
+      "id": "fixture-google-72",
+      "displayName": {
+        "text": "Oklahoma City Navigation Center"
+      },
+      "formattedAddress": "332 Market Street, Oklahoma City, OK 10071, USA",
+      "location": {
+        "latitude": 35.4716,
+        "longitude": -97.5204
+      },
+      "nationalPhoneNumber": "(272) 555-1072",
+      "websiteUri": "https://oklahoma-city-navigation-center.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM - 7:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-73": {
+      "id": "fixture-google-73",
+      "displayName": {
+        "text": "Portland Homeless Shelter"
+      },
+      "formattedAddress": "340 Market Street, Portland, OR 10072, USA",
+      "location": {
+        "latitude": 45.5152,
+        "longitude": -122.6784
+      },
+      "nationalPhoneNumber": "(273) 555-1073",
+      "websiteUri": "https://portland-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-74": {
+      "id": "fixture-google-74",
+      "displayName": {
+        "text": "Portland Family Shelter"
+      },
+      "formattedAddress": "341 Market Street, Portland, OR 10073, USA",
+      "location": {
+        "latitude": 45.5172,
+        "longitude": -122.6804
+      },
+      "nationalPhoneNumber": "(274) 555-1074",
+      "websiteUri": "https://portland-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-75": {
+      "id": "fixture-google-75",
+      "displayName": {
+        "text": "Portland Veterans Shelter"
+      },
+      "formattedAddress": "342 Market Street, Portland, OR 10074, USA",
+      "location": {
+        "latitude": 45.5192,
+        "longitude": -122.6824
+      },
+      "nationalPhoneNumber": "(275) 555-1075",
+      "websiteUri": "https://portland-veterans-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM - 9:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-76": {
+      "id": "fixture-google-76",
+      "displayName": {
+        "text": "Las Vegas Homeless Shelter"
+      },
+      "formattedAddress": "350 Market Street, Las Vegas, NV 10075, USA",
+      "location": {
+        "latitude": 36.1699,
+        "longitude": -115.1398
+      },
+      "nationalPhoneNumber": "(276) 555-1076",
+      "websiteUri": "https://las-vegas-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-77": {
+      "id": "fixture-google-77",
+      "displayName": {
+        "text": "Las Vegas Family Shelter"
+      },
+      "formattedAddress": "351 Market Street, Las Vegas, NV 10076, USA",
+      "location": {
+        "latitude": 36.1719,
+        "longitude": -115.1418
+      },
+      "nationalPhoneNumber": "(277) 555-1077",
+      "websiteUri": "https://las-vegas-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-78": {
+      "id": "fixture-google-78",
+      "displayName": {
+        "text": "Las Vegas Warming Center"
+      },
+      "formattedAddress": "352 Market Street, Las Vegas, NV 10077, USA",
+      "location": {
+        "latitude": 36.1739,
+        "longitude": -115.1438
+      },
+      "nationalPhoneNumber": "(278) 555-1078",
+      "websiteUri": "https://las-vegas-warming-center.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 PM - 8:00 AM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-79": {
+      "id": "fixture-google-79",
+      "displayName": {
+        "text": "Memphis Homeless Shelter"
+      },
+      "formattedAddress": "360 Market Street, Memphis, TN 10078, USA",
+      "location": {
+        "latitude": 35.1495,
+        "longitude": -90.049
+      },
+      "nationalPhoneNumber": "(279) 555-1079",
+      "websiteUri": "https://memphis-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-80": {
+      "id": "fixture-google-80",
+      "displayName": {
+        "text": "Memphis Family Shelter"
+      },
+      "formattedAddress": "361 Market Street, Memphis, TN 10079, USA",
+      "location": {
+        "latitude": 35.1515,
+        "longitude": -90.051
+      },
+      "nationalPhoneNumber": "(280) 555-1080",
+      "websiteUri": "https://memphis-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-81": {
+      "id": "fixture-google-81",
+      "displayName": {
+        "text": "Memphis Drop-In Center"
+      },
+      "formattedAddress": "362 Market Street, Memphis, TN 10080, USA",
+      "location": {
+        "latitude": 35.1535,
+        "longitude": -90.053
+      },
+      "nationalPhoneNumber": "(281) 555-1081",
+      "websiteUri": "https://memphis-drop-in-center.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 8:00 AM - 6:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-82": {
+      "id": "fixture-google-82",
+      "displayName": {
+        "text": "Louisville Homeless Shelter"
+      },
+      "formattedAddress": "370 Market Street, Louisville, KY 10081, USA",
+      "location": {
+        "latitude": 38.2527,
+        "longitude": -85.7585
+      },
+      "nationalPhoneNumber": "(282) 555-1082",
+      "websiteUri": "https://louisville-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-83": {
+      "id": "fixture-google-83",
+      "displayName": {
+        "text": "Louisville Family Shelter"
+      },
+      "formattedAddress": "371 Market Street, Louisville, KY 10082, USA",
+      "location": {
+        "latitude": 38.2547,
+        "longitude": -85.7605
+      },
+      "nationalPhoneNumber": "(283) 555-1083",
+      "websiteUri": "https://louisville-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-84": {
+      "id": "fixture-google-84",
+      "displayName": {
+        "text": "Louisville Rescue Mission"
+      },
+      "formattedAddress": "372 Market Street, Louisville, KY 10083, USA",
+      "location": {
+        "latitude": 38.2567,
+        "longitude": -85.7625
+      },
+      "nationalPhoneNumber": "(284) 555-1084",
+      "websiteUri": "https://louisville-rescue-mission.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-85": {
+      "id": "fixture-google-85",
+      "displayName": {
+        "text": "Baltimore Homeless Shelter"
+      },
+      "formattedAddress": "380 Market Street, Baltimore, MD 10084, USA",
+      "location": {
+        "latitude": 39.2904,
+        "longitude": -76.6122
+      },
+      "nationalPhoneNumber": "(285) 555-1085",
+      "websiteUri": "https://baltimore-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-86": {
+      "id": "fixture-google-86",
+      "displayName": {
+        "text": "Baltimore Family Shelter"
+      },
+      "formattedAddress": "381 Market Street, Baltimore, MD 10085, USA",
+      "location": {
+        "latitude": 39.2924,
+        "longitude": -76.6142
+      },
+      "nationalPhoneNumber": "(286) 555-1086",
+      "websiteUri": "https://baltimore-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-87": {
+      "id": "fixture-google-87",
+      "displayName": {
+        "text": "Baltimore Safe Haven"
+      },
+      "formattedAddress": "382 Market Street, Baltimore, MD 10086, USA",
+      "location": {
+        "latitude": 39.2944,
+        "longitude": -76.6162
+      },
+      "nationalPhoneNumber": "(287) 555-1087",
+      "websiteUri": "https://baltimore-safe-haven.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-88": {
+      "id": "fixture-google-88",
+      "displayName": {
+        "text": "Milwaukee Homeless Shelter"
+      },
+      "formattedAddress": "390 Market Street, Milwaukee, WI 10087, USA",
+      "location": {
+        "latitude": 43.0389,
+        "longitude": -87.9065
+      },
+      "nationalPhoneNumber": "(288) 555-1088",
+      "websiteUri": "https://milwaukee-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-89": {
+      "id": "fixture-google-89",
+      "displayName": {
+        "text": "Milwaukee Family Shelter"
+      },
+      "formattedAddress": "391 Market Street, Milwaukee, WI 10088, USA",
+      "location": {
+        "latitude": 43.0409,
+        "longitude": -87.9085
+      },
+      "nationalPhoneNumber": "(289) 555-1089",
+      "websiteUri": "https://milwaukee-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-90": {
+      "id": "fixture-google-90",
+      "displayName": {
+        "text": "Milwaukee Navigation Center"
+      },
+      "formattedAddress": "392 Market Street, Milwaukee, WI 10089, USA",
+      "location": {
+        "latitude": 43.0429,
+        "longitude": -87.9105
+      },
+      "nationalPhoneNumber": "(290) 555-1090",
+      "websiteUri": "https://milwaukee-navigation-center.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM - 7:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-91": {
+      "id": "fixture-google-91",
+      "displayName": {
+        "text": "Albuquerque Homeless Shelter"
+      },
+      "formattedAddress": "400 Market Street, Albuquerque, NM 10090, USA",
+      "location": {
+        "latitude": 35.0844,
+        "longitude": -106.6504
+      },
+      "nationalPhoneNumber": "(291) 555-1091",
+      "websiteUri": "https://albuquerque-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-92": {
+      "id": "fixture-google-92",
+      "displayName": {
+        "text": "Albuquerque Family Shelter"
+      },
+      "formattedAddress": "401 Market Street, Albuquerque, NM 10091, USA",
+      "location": {
+        "latitude": 35.0864,
+        "longitude": -106.6524
+      },
+      "nationalPhoneNumber": "(292) 555-1092",
+      "websiteUri": "https://albuquerque-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-93": {
+      "id": "fixture-google-93",
+      "displayName": {
+        "text": "Albuquerque Veterans Shelter"
+      },
+      "formattedAddress": "402 Market Street, Albuquerque, NM 10092, USA",
+      "location": {
+        "latitude": 35.0884,
+        "longitude": -106.6544
+      },
+      "nationalPhoneNumber": "(293) 555-1093",
+      "websiteUri": "https://albuquerque-veterans-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM - 9:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-94": {
+      "id": "fixture-google-94",
+      "displayName": {
+        "text": "Tucson Homeless Shelter"
+      },
+      "formattedAddress": "410 Market Street, Tucson, AZ 10093, USA",
+      "location": {
+        "latitude": 32.2226,
+        "longitude": -110.9747
+      },
+      "nationalPhoneNumber": "(294) 555-1094",
+      "websiteUri": "https://tucson-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-95": {
+      "id": "fixture-google-95",
+      "displayName": {
+        "text": "Tucson Family Shelter"
+      },
+      "formattedAddress": "411 Market Street, Tucson, AZ 10094, USA",
+      "location": {
+        "latitude": 32.2246,
+        "longitude": -110.9767
+      },
+      "nationalPhoneNumber": "(295) 555-1095",
+      "websiteUri": "https://tucson-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-96": {
+      "id": "fixture-google-96",
+      "displayName": {
+        "text": "Tucson Warming Center"
+      },
+      "formattedAddress": "412 Market Street, Tucson, AZ 10095, USA",
+      "location": {
+        "latitude": 32.2266,
+        "longitude": -110.9787
+      },
+      "nationalPhoneNumber": "(296) 555-1096",
+      "websiteUri": "https://tucson-warming-center.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 PM - 8:00 AM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-97": {
+      "id": "fixture-google-97",
+      "displayName": {
+        "text": "Fresno Homeless Shelter"
+      },
+      "formattedAddress": "420 Market Street, Fresno, CA 10096, USA",
+      "location": {
+        "latitude": 36.7378,
+        "longitude": -119.7871
+      },
+      "nationalPhoneNumber": "(297) 555-1097",
+      "websiteUri": "https://fresno-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-98": {
+      "id": "fixture-google-98",
+      "displayName": {
+        "text": "Fresno Family Shelter"
+      },
+      "formattedAddress": "421 Market Street, Fresno, CA 10097, USA",
+      "location": {
+        "latitude": 36.7398,
+        "longitude": -119.7891
+      },
+      "nationalPhoneNumber": "(298) 555-1098",
+      "websiteUri": "https://fresno-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-99": {
+      "id": "fixture-google-99",
+      "displayName": {
+        "text": "Fresno Drop-In Center"
+      },
+      "formattedAddress": "422 Market Street, Fresno, CA 10098, USA",
+      "location": {
+        "latitude": 36.7418,
+        "longitude": -119.7911
+      },
+      "nationalPhoneNumber": "(299) 555-1099",
+      "websiteUri": "https://fresno-drop-in-center.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 8:00 AM - 6:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-100": {
+      "id": "fixture-google-100",
+      "displayName": {
+        "text": "Sacramento Homeless Shelter"
+      },
+      "formattedAddress": "430 Market Street, Sacramento, CA 10099, USA",
+      "location": {
+        "latitude": 38.5816,
+        "longitude": -121.4944
+      },
+      "nationalPhoneNumber": "(300) 555-1100",
+      "websiteUri": "https://sacramento-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-101": {
+      "id": "fixture-google-101",
+      "displayName": {
+        "text": "Sacramento Family Shelter"
+      },
+      "formattedAddress": "431 Market Street, Sacramento, CA 10100, USA",
+      "location": {
+        "latitude": 38.5836,
+        "longitude": -121.4964
+      },
+      "nationalPhoneNumber": "(301) 555-1101",
+      "websiteUri": "https://sacramento-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-102": {
+      "id": "fixture-google-102",
+      "displayName": {
+        "text": "Sacramento Rescue Mission"
+      },
+      "formattedAddress": "432 Market Street, Sacramento, CA 10101, USA",
+      "location": {
+        "latitude": 38.5856,
+        "longitude": -121.4984
+      },
+      "nationalPhoneNumber": "(302) 555-1102",
+      "websiteUri": "https://sacramento-rescue-mission.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-103": {
+      "id": "fixture-google-103",
+      "displayName": {
+        "text": "Kansas City Homeless Shelter"
+      },
+      "formattedAddress": "440 Market Street, Kansas City, MO 10102, USA",
+      "location": {
+        "latitude": 39.0997,
+        "longitude": -94.5786
+      },
+      "nationalPhoneNumber": "(303) 555-1103",
+      "websiteUri": "https://kansas-city-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-104": {
+      "id": "fixture-google-104",
+      "displayName": {
+        "text": "Kansas City Family Shelter"
+      },
+      "formattedAddress": "441 Market Street, Kansas City, MO 10103, USA",
+      "location": {
+        "latitude": 39.1017,
+        "longitude": -94.5806
+      },
+      "nationalPhoneNumber": "(304) 555-1104",
+      "websiteUri": "https://kansas-city-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-105": {
+      "id": "fixture-google-105",
+      "displayName": {
+        "text": "Kansas City Safe Haven"
+      },
+      "formattedAddress": "442 Market Street, Kansas City, MO 10104, USA",
+      "location": {
+        "latitude": 39.1037,
+        "longitude": -94.5826
+      },
+      "nationalPhoneNumber": "(305) 555-1105",
+      "websiteUri": "https://kansas-city-safe-haven.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-106": {
+      "id": "fixture-google-106",
+      "displayName": {
+        "text": "Atlanta Homeless Shelter"
+      },
+      "formattedAddress": "450 Market Street, Atlanta, GA 10105, USA",
+      "location": {
+        "latitude": 33.749,
+        "longitude": -84.388
+      },
+      "nationalPhoneNumber": "(306) 555-1106",
+      "websiteUri": "https://atlanta-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-107": {
+      "id": "fixture-google-107",
+      "displayName": {
+        "text": "Atlanta Family Shelter"
+      },
+      "formattedAddress": "451 Market Street, Atlanta, GA 10106, USA",
+      "location": {
+        "latitude": 33.751,
+        "longitude": -84.39
+      },
+      "nationalPhoneNumber": "(307) 555-1107",
+      "websiteUri": "https://atlanta-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-108": {
+      "id": "fixture-google-108",
+      "displayName": {
+        "text": "Atlanta Navigation Center"
+      },
+      "formattedAddress": "452 Market Street, Atlanta, GA 10107, USA",
+      "location": {
+        "latitude": 33.753,
+        "longitude": -84.392
+      },
+      "nationalPhoneNumber": "(308) 555-1108",
+      "websiteUri": "https://atlanta-navigation-center.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM - 7:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-109": {
+      "id": "fixture-google-109",
+      "displayName": {
+        "text": "Omaha Homeless Shelter"
+      },
+      "formattedAddress": "460 Market Street, Omaha, NE 10108, USA",
+      "location": {
+        "latitude": 41.2565,
+        "longitude": -95.9345
+      },
+      "nationalPhoneNumber": "(309) 555-1109",
+      "websiteUri": "https://omaha-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-110": {
+      "id": "fixture-google-110",
+      "displayName": {
+        "text": "Omaha Family Shelter"
+      },
+      "formattedAddress": "461 Market Street, Omaha, NE 10109, USA",
+      "location": {
+        "latitude": 41.2585,
+        "longitude": -95.9365
+      },
+      "nationalPhoneNumber": "(310) 555-1110",
+      "websiteUri": "https://omaha-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-111": {
+      "id": "fixture-google-111",
+      "displayName": {
+        "text": "Omaha Veterans Shelter"
+      },
+      "formattedAddress": "462 Market Street, Omaha, NE 10110, USA",
+      "location": {
+        "latitude": 41.2605,
+        "longitude": -95.9385
+      },
+      "nationalPhoneNumber": "(311) 555-1111",
+      "websiteUri": "https://omaha-veterans-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM - 9:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-112": {
+      "id": "fixture-google-112",
+      "displayName": {
+        "text": "Raleigh Homeless Shelter"
+      },
+      "formattedAddress": "470 Market Street, Raleigh, NC 10111, USA",
+      "location": {
+        "latitude": 35.7796,
+        "longitude": -78.6382
+      },
+      "nationalPhoneNumber": "(312) 555-1112",
+      "websiteUri": "https://raleigh-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-113": {
+      "id": "fixture-google-113",
+      "displayName": {
+        "text": "Raleigh Family Shelter"
+      },
+      "formattedAddress": "471 Market Street, Raleigh, NC 10112, USA",
+      "location": {
+        "latitude": 35.7816,
+        "longitude": -78.6402
+      },
+      "nationalPhoneNumber": "(313) 555-1113",
+      "websiteUri": "https://raleigh-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-114": {
+      "id": "fixture-google-114",
+      "displayName": {
+        "text": "Raleigh Warming Center"
+      },
+      "formattedAddress": "472 Market Street, Raleigh, NC 10113, USA",
+      "location": {
+        "latitude": 35.7836,
+        "longitude": -78.6422
+      },
+      "nationalPhoneNumber": "(314) 555-1114",
+      "websiteUri": "https://raleigh-warming-center.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 PM - 8:00 AM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-115": {
+      "id": "fixture-google-115",
+      "displayName": {
+        "text": "Cleveland Homeless Shelter"
+      },
+      "formattedAddress": "480 Market Street, Cleveland, OH 10114, USA",
+      "location": {
+        "latitude": 41.4993,
+        "longitude": -81.6944
+      },
+      "nationalPhoneNumber": "(315) 555-1115",
+      "websiteUri": "https://cleveland-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-116": {
+      "id": "fixture-google-116",
+      "displayName": {
+        "text": "Cleveland Family Shelter"
+      },
+      "formattedAddress": "481 Market Street, Cleveland, OH 10115, USA",
+      "location": {
+        "latitude": 41.5013,
+        "longitude": -81.6964
+      },
+      "nationalPhoneNumber": "(316) 555-1116",
+      "websiteUri": "https://cleveland-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-117": {
+      "id": "fixture-google-117",
+      "displayName": {
+        "text": "Cleveland Drop-In Center"
+      },
+      "formattedAddress": "482 Market Street, Cleveland, OH 10116, USA",
+      "location": {
+        "latitude": 41.5033,
+        "longitude": -81.6984
+      },
+      "nationalPhoneNumber": "(317) 555-1117",
+      "websiteUri": "https://cleveland-drop-in-center.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 8:00 AM - 6:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-118": {
+      "id": "fixture-google-118",
+      "displayName": {
+        "text": "Virginia Beach Homeless Shelter"
+      },
+      "formattedAddress": "490 Market Street, Virginia Beach, VA 10117, USA",
+      "location": {
+        "latitude": 36.8529,
+        "longitude": -75.978
+      },
+      "nationalPhoneNumber": "(318) 555-1118",
+      "websiteUri": "https://virginia-beach-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-119": {
+      "id": "fixture-google-119",
+      "displayName": {
+        "text": "Virginia Beach Family Shelter"
+      },
+      "formattedAddress": "491 Market Street, Virginia Beach, VA 10118, USA",
+      "location": {
+        "latitude": 36.8549,
+        "longitude": -75.98
+      },
+      "nationalPhoneNumber": "(319) 555-1119",
+      "websiteUri": "https://virginia-beach-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-120": {
+      "id": "fixture-google-120",
+      "displayName": {
+        "text": "Virginia Beach Rescue Mission"
+      },
+      "formattedAddress": "492 Market Street, Virginia Beach, VA 10119, USA",
+      "location": {
+        "latitude": 36.8569,
+        "longitude": -75.982
+      },
+      "nationalPhoneNumber": "(320) 555-1120",
+      "websiteUri": "https://virginia-beach-rescue-mission.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-121": {
+      "id": "fixture-google-121",
+      "displayName": {
+        "text": "Minneapolis Homeless Shelter"
+      },
+      "formattedAddress": "500 Market Street, Minneapolis, MN 10120, USA",
+      "location": {
+        "latitude": 44.9778,
+        "longitude": -93.265
+      },
+      "nationalPhoneNumber": "(321) 555-1121",
+      "websiteUri": "https://minneapolis-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-122": {
+      "id": "fixture-google-122",
+      "displayName": {
+        "text": "Minneapolis Family Shelter"
+      },
+      "formattedAddress": "501 Market Street, Minneapolis, MN 10121, USA",
+      "location": {
+        "latitude": 44.9798,
+        "longitude": -93.267
+      },
+      "nationalPhoneNumber": "(322) 555-1122",
+      "websiteUri": "https://minneapolis-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-123": {
+      "id": "fixture-google-123",
+      "displayName": {
+        "text": "Minneapolis Safe Haven"
+      },
+      "formattedAddress": "502 Market Street, Minneapolis, MN 10122, USA",
+      "location": {
+        "latitude": 44.9818,
+        "longitude": -93.269
+      },
+      "nationalPhoneNumber": "(323) 555-1123",
+      "websiteUri": "https://minneapolis-safe-haven.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-124": {
+      "id": "fixture-google-124",
+      "displayName": {
+        "text": "New Orleans Homeless Shelter"
+      },
+      "formattedAddress": "510 Market Street, New Orleans, LA 10123, USA",
+      "location": {
+        "latitude": 29.9511,
+        "longitude": -90.0715
+      },
+      "nationalPhoneNumber": "(324) 555-1124",
+      "websiteUri": "https://new-orleans-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-125": {
+      "id": "fixture-google-125",
+      "displayName": {
+        "text": "New Orleans Family Shelter"
+      },
+      "formattedAddress": "511 Market Street, New Orleans, LA 10124, USA",
+      "location": {
+        "latitude": 29.9531,
+        "longitude": -90.0735
+      },
+      "nationalPhoneNumber": "(325) 555-1125",
+      "websiteUri": "https://new-orleans-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-126": {
+      "id": "fixture-google-126",
+      "displayName": {
+        "text": "New Orleans Navigation Center"
+      },
+      "formattedAddress": "512 Market Street, New Orleans, LA 10125, USA",
+      "location": {
+        "latitude": 29.9551,
+        "longitude": -90.0755
+      },
+      "nationalPhoneNumber": "(326) 555-1126",
+      "websiteUri": "https://new-orleans-navigation-center.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM - 7:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-127": {
+      "id": "fixture-google-127",
+      "displayName": {
+        "text": "Cincinnati Homeless Shelter"
+      },
+      "formattedAddress": "520 Market Street, Cincinnati, OH 10126, USA",
+      "location": {
+        "latitude": 39.1031,
+        "longitude": -84.512
+      },
+      "nationalPhoneNumber": "(327) 555-1127",
+      "websiteUri": "https://cincinnati-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-128": {
+      "id": "fixture-google-128",
+      "displayName": {
+        "text": "Cincinnati Family Shelter"
+      },
+      "formattedAddress": "521 Market Street, Cincinnati, OH 10127, USA",
+      "location": {
+        "latitude": 39.1051,
+        "longitude": -84.514
+      },
+      "nationalPhoneNumber": "(328) 555-1128",
+      "websiteUri": "https://cincinnati-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-129": {
+      "id": "fixture-google-129",
+      "displayName": {
+        "text": "Cincinnati Veterans Shelter"
+      },
+      "formattedAddress": "522 Market Street, Cincinnati, OH 10128, USA",
+      "location": {
+        "latitude": 39.1071,
+        "longitude": -84.516
+      },
+      "nationalPhoneNumber": "(329) 555-1129",
+      "websiteUri": "https://cincinnati-veterans-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM - 9:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-130": {
+      "id": "fixture-google-130",
+      "displayName": {
+        "text": "Pittsburgh Homeless Shelter"
+      },
+      "formattedAddress": "530 Market Street, Pittsburgh, PA 10129, USA",
+      "location": {
+        "latitude": 40.4406,
+        "longitude": -79.9959
+      },
+      "nationalPhoneNumber": "(330) 555-1130",
+      "websiteUri": "https://pittsburgh-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-131": {
+      "id": "fixture-google-131",
+      "displayName": {
+        "text": "Pittsburgh Family Shelter"
+      },
+      "formattedAddress": "531 Market Street, Pittsburgh, PA 10130, USA",
+      "location": {
+        "latitude": 40.4426,
+        "longitude": -79.9979
+      },
+      "nationalPhoneNumber": "(331) 555-1131",
+      "websiteUri": "https://pittsburgh-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-132": {
+      "id": "fixture-google-132",
+      "displayName": {
+        "text": "Pittsburgh Warming Center"
+      },
+      "formattedAddress": "532 Market Street, Pittsburgh, PA 10131, USA",
+      "location": {
+        "latitude": 40.4446,
+        "longitude": -79.9999
+      },
+      "nationalPhoneNumber": "(332) 555-1132",
+      "websiteUri": "https://pittsburgh-warming-center.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 PM - 8:00 AM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-133": {
+      "id": "fixture-google-133",
+      "displayName": {
+        "text": "Buffalo Homeless Shelter"
+      },
+      "formattedAddress": "540 Market Street, Buffalo, NY 10132, USA",
+      "location": {
+        "latitude": 42.8864,
+        "longitude": -78.8784
+      },
+      "nationalPhoneNumber": "(333) 555-1133",
+      "websiteUri": "https://buffalo-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-134": {
+      "id": "fixture-google-134",
+      "displayName": {
+        "text": "Buffalo Family Shelter"
+      },
+      "formattedAddress": "541 Market Street, Buffalo, NY 10133, USA",
+      "location": {
+        "latitude": 42.8884,
+        "longitude": -78.8804
+      },
+      "nationalPhoneNumber": "(334) 555-1134",
+      "websiteUri": "https://buffalo-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-135": {
+      "id": "fixture-google-135",
+      "displayName": {
+        "text": "Buffalo Drop-In Center"
+      },
+      "formattedAddress": "542 Market Street, Buffalo, NY 10134, USA",
+      "location": {
+        "latitude": 42.8904,
+        "longitude": -78.8824
+      },
+      "nationalPhoneNumber": "(335) 555-1135",
+      "websiteUri": "https://buffalo-drop-in-center.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 8:00 AM - 6:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-136": {
+      "id": "fixture-google-136",
+      "displayName": {
+        "text": "St. Louis Homeless Shelter"
+      },
+      "formattedAddress": "550 Market Street, St. Louis, MO 10135, USA",
+      "location": {
+        "latitude": 38.627,
+        "longitude": -90.1994
+      },
+      "nationalPhoneNumber": "(336) 555-1136",
+      "websiteUri": "https://st-louis-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-137": {
+      "id": "fixture-google-137",
+      "displayName": {
+        "text": "St. Louis Family Shelter"
+      },
+      "formattedAddress": "551 Market Street, St. Louis, MO 10136, USA",
+      "location": {
+        "latitude": 38.629,
+        "longitude": -90.2014
+      },
+      "nationalPhoneNumber": "(337) 555-1137",
+      "websiteUri": "https://st-louis-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-138": {
+      "id": "fixture-google-138",
+      "displayName": {
+        "text": "St. Louis Rescue Mission"
+      },
+      "formattedAddress": "552 Market Street, St. Louis, MO 10137, USA",
+      "location": {
+        "latitude": 38.631,
+        "longitude": -90.2034
+      },
+      "nationalPhoneNumber": "(338) 555-1138",
+      "websiteUri": "https://st-louis-rescue-mission.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-139": {
+      "id": "fixture-google-139",
+      "displayName": {
+        "text": "Salt Lake City Homeless Shelter"
+      },
+      "formattedAddress": "560 Market Street, Salt Lake City, UT 10138, USA",
+      "location": {
+        "latitude": 40.7608,
+        "longitude": -111.891
+      },
+      "nationalPhoneNumber": "(339) 555-1139",
+      "websiteUri": "https://salt-lake-city-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-140": {
+      "id": "fixture-google-140",
+      "displayName": {
+        "text": "Salt Lake City Family Shelter"
+      },
+      "formattedAddress": "561 Market Street, Salt Lake City, UT 10139, USA",
+      "location": {
+        "latitude": 40.7628,
+        "longitude": -111.893
+      },
+      "nationalPhoneNumber": "(340) 555-1140",
+      "websiteUri": "https://salt-lake-city-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-141": {
+      "id": "fixture-google-141",
+      "displayName": {
+        "text": "Salt Lake City Safe Haven"
+      },
+      "formattedAddress": "562 Market Street, Salt Lake City, UT 10140, USA",
+      "location": {
+        "latitude": 40.7648,
+        "longitude": -111.895
+      },
+      "nationalPhoneNumber": "(341) 555-1141",
+      "websiteUri": "https://salt-lake-city-safe-haven.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-142": {
+      "id": "fixture-google-142",
+      "displayName": {
+        "text": "Boise Homeless Shelter"
+      },
+      "formattedAddress": "570 Market Street, Boise, ID 10141, USA",
+      "location": {
+        "latitude": 43.615,
+        "longitude": -116.2023
+      },
+      "nationalPhoneNumber": "(342) 555-1142",
+      "websiteUri": "https://boise-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-143": {
+      "id": "fixture-google-143",
+      "displayName": {
+        "text": "Boise Family Shelter"
+      },
+      "formattedAddress": "571 Market Street, Boise, ID 10142, USA",
+      "location": {
+        "latitude": 43.617,
+        "longitude": -116.2043
+      },
+      "nationalPhoneNumber": "(343) 555-1143",
+      "websiteUri": "https://boise-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-144": {
+      "id": "fixture-google-144",
+      "displayName": {
+        "text": "Boise Navigation Center"
+      },
+      "formattedAddress": "572 Market Street, Boise, ID 10143, USA",
+      "location": {
+        "latitude": 43.619,
+        "longitude": -116.2063
+      },
+      "nationalPhoneNumber": "(344) 555-1144",
+      "websiteUri": "https://boise-navigation-center.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM - 7:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-145": {
+      "id": "fixture-google-145",
+      "displayName": {
+        "text": "Providence Homeless Shelter"
+      },
+      "formattedAddress": "580 Market Street, Providence, RI 10144, USA",
+      "location": {
+        "latitude": 41.824,
+        "longitude": -71.4128
+      },
+      "nationalPhoneNumber": "(345) 555-1145",
+      "websiteUri": "https://providence-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-146": {
+      "id": "fixture-google-146",
+      "displayName": {
+        "text": "Providence Family Shelter"
+      },
+      "formattedAddress": "581 Market Street, Providence, RI 10145, USA",
+      "location": {
+        "latitude": 41.826,
+        "longitude": -71.4148
+      },
+      "nationalPhoneNumber": "(346) 555-1146",
+      "websiteUri": "https://providence-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-147": {
+      "id": "fixture-google-147",
+      "displayName": {
+        "text": "Providence Veterans Shelter"
+      },
+      "formattedAddress": "582 Market Street, Providence, RI 10146, USA",
+      "location": {
+        "latitude": 41.828,
+        "longitude": -71.4168
+      },
+      "nationalPhoneNumber": "(347) 555-1147",
+      "websiteUri": "https://providence-veterans-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM - 9:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-148": {
+      "id": "fixture-google-148",
+      "displayName": {
+        "text": "Miami Homeless Shelter"
+      },
+      "formattedAddress": "590 Market Street, Miami, FL 10147, USA",
+      "location": {
+        "latitude": 25.7617,
+        "longitude": -80.1918
+      },
+      "nationalPhoneNumber": "(348) 555-1148",
+      "websiteUri": "https://miami-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-149": {
+      "id": "fixture-google-149",
+      "displayName": {
+        "text": "Miami Family Shelter"
+      },
+      "formattedAddress": "591 Market Street, Miami, FL 10148, USA",
+      "location": {
+        "latitude": 25.7637,
+        "longitude": -80.1938
+      },
+      "nationalPhoneNumber": "(349) 555-1149",
+      "websiteUri": "https://miami-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-150": {
+      "id": "fixture-google-150",
+      "displayName": {
+        "text": "Miami Warming Center"
+      },
+      "formattedAddress": "592 Market Street, Miami, FL 10149, USA",
+      "location": {
+        "latitude": 25.7657,
+        "longitude": -80.1958
+      },
+      "nationalPhoneNumber": "(350) 555-1150",
+      "websiteUri": "https://miami-warming-center.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 PM - 8:00 AM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-151": {
+      "id": "fixture-google-151",
+      "displayName": {
+        "text": "Tampa Homeless Shelter"
+      },
+      "formattedAddress": "600 Market Street, Tampa, FL 10150, USA",
+      "location": {
+        "latitude": 27.9506,
+        "longitude": -82.4572
+      },
+      "nationalPhoneNumber": "(351) 555-1151",
+      "websiteUri": "https://tampa-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-152": {
+      "id": "fixture-google-152",
+      "displayName": {
+        "text": "Tampa Family Shelter"
+      },
+      "formattedAddress": "601 Market Street, Tampa, FL 10151, USA",
+      "location": {
+        "latitude": 27.9526,
+        "longitude": -82.4592
+      },
+      "nationalPhoneNumber": "(352) 555-1152",
+      "websiteUri": "https://tampa-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-153": {
+      "id": "fixture-google-153",
+      "displayName": {
+        "text": "Tampa Drop-In Center"
+      },
+      "formattedAddress": "602 Market Street, Tampa, FL 10152, USA",
+      "location": {
+        "latitude": 27.9546,
+        "longitude": -82.4612
+      },
+      "nationalPhoneNumber": "(353) 555-1153",
+      "websiteUri": "https://tampa-drop-in-center.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 8:00 AM - 6:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-154": {
+      "id": "fixture-google-154",
+      "displayName": {
+        "text": "Orlando Homeless Shelter"
+      },
+      "formattedAddress": "610 Market Street, Orlando, FL 10153, USA",
+      "location": {
+        "latitude": 28.5383,
+        "longitude": -81.3792
+      },
+      "nationalPhoneNumber": "(354) 555-1154",
+      "websiteUri": "https://orlando-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-155": {
+      "id": "fixture-google-155",
+      "displayName": {
+        "text": "Orlando Family Shelter"
+      },
+      "formattedAddress": "611 Market Street, Orlando, FL 10154, USA",
+      "location": {
+        "latitude": 28.5403,
+        "longitude": -81.3812
+      },
+      "nationalPhoneNumber": "(355) 555-1155",
+      "websiteUri": "https://orlando-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-156": {
+      "id": "fixture-google-156",
+      "displayName": {
+        "text": "Orlando Rescue Mission"
+      },
+      "formattedAddress": "612 Market Street, Orlando, FL 10155, USA",
+      "location": {
+        "latitude": 28.5423,
+        "longitude": -81.3832
+      },
+      "nationalPhoneNumber": "(356) 555-1156",
+      "websiteUri": "https://orlando-rescue-mission.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-157": {
+      "id": "fixture-google-157",
+      "displayName": {
+        "text": "Birmingham Homeless Shelter"
+      },
+      "formattedAddress": "620 Market Street, Birmingham, AL 10156, USA",
+      "location": {
+        "latitude": 33.5186,
+        "longitude": -86.8104
+      },
+      "nationalPhoneNumber": "(357) 555-1157",
+      "websiteUri": "https://birmingham-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-158": {
+      "id": "fixture-google-158",
+      "displayName": {
+        "text": "Birmingham Family Shelter"
+      },
+      "formattedAddress": "621 Market Street, Birmingham, AL 10157, USA",
+      "location": {
+        "latitude": 33.5206,
+        "longitude": -86.8124
+      },
+      "nationalPhoneNumber": "(358) 555-1158",
+      "websiteUri": "https://birmingham-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-159": {
+      "id": "fixture-google-159",
+      "displayName": {
+        "text": "Birmingham Safe Haven"
+      },
+      "formattedAddress": "622 Market Street, Birmingham, AL 10158, USA",
+      "location": {
+        "latitude": 33.5226,
+        "longitude": -86.8144
+      },
+      "nationalPhoneNumber": "(359) 555-1159",
+      "websiteUri": "https://birmingham-safe-haven.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-160": {
+      "id": "fixture-google-160",
+      "displayName": {
+        "text": "Richmond Homeless Shelter"
+      },
+      "formattedAddress": "630 Market Street, Richmond, VA 10159, USA",
+      "location": {
+        "latitude": 37.5407,
+        "longitude": -77.436
+      },
+      "nationalPhoneNumber": "(360) 555-1160",
+      "websiteUri": "https://richmond-homeless-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-161": {
+      "id": "fixture-google-161",
+      "displayName": {
+        "text": "Richmond Family Shelter"
+      },
+      "formattedAddress": "631 Market Street, Richmond, VA 10160, USA",
+      "location": {
+        "latitude": 37.5427,
+        "longitude": -77.438
+      },
+      "nationalPhoneNumber": "(361) 555-1161",
+      "websiteUri": "https://richmond-family-shelter.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00 AM - 10:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    },
+    "fixture-google-162": {
+      "id": "fixture-google-162",
+      "displayName": {
+        "text": "Richmond Navigation Center"
+      },
+      "formattedAddress": "632 Market Street, Richmond, VA 10161, USA",
+      "location": {
+        "latitude": 37.5447,
+        "longitude": -77.44
+      },
+      "nationalPhoneNumber": "(362) 555-1162",
+      "websiteUri": "https://richmond-navigation-center.example.org",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 7:00 AM - 7:00 PM",
+          "Tuesday: 8:00 AM - 6:00 PM"
+        ]
+      },
+      "types": [
+        "shelter"
+      ]
+    }
+  }
+}

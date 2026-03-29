@@ -10,7 +10,6 @@ RUN mvn package -pl homeless-shelter-availability-api -am -DskipTests -B
 
 # Run stage
 FROM eclipse-temurin:21-jre-alpine
-ARG JAR_FILE
 WORKDIR /app
 COPY --from=builder /app/homeless-shelter-availability-api/target/homeless-shelter-availability-api-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8080

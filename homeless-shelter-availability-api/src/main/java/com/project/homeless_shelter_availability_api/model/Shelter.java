@@ -7,7 +7,16 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Builder @Data
-@Entity @Table(name = "shelters") 
+@Entity
+@Table(
+        name = "shelters",
+        indexes = {
+                @Index(name = "idx_shelters_state", columnList = "state"),
+                @Index(name = "idx_shelters_city_state", columnList = "city,state"),
+                @Index(name = "idx_shelters_zip_code", columnList = "zip_code"),
+                @Index(name = "idx_shelters_available_beds", columnList = "available_beds")
+        }
+)
 @NoArgsConstructor
 @AllArgsConstructor
 public class Shelter {
@@ -28,17 +37,18 @@ public class Shelter {
     @Column(nullable = false)
     private String state;
 
-    @Column(nullable = false)
+    @Column(name = "zip_code", nullable = false)
     private String zipCode;
 
+    @Column(name = "phone_number")
     private String phoneNumber;
 
     private String email;
 
-    @Column(nullable = false)
+    @Column(name = "total_beds", nullable = false)
     private Integer totalBeds;
 
-    @Column(nullable = false)
+    @Column(name = "available_beds", nullable = false)
     private Integer availableBeds;
 
     private String description;

@@ -1,4 +1,7 @@
 homeless-shelter-availability-web/dist/config.js
+homeless-shelter-availability-web/coverage/
+homeless-shelter-availability-api/target/
+.scannerwork/
 .env
 .env.*
 *.log

@@ -4,11 +4,15 @@ import com.project.homeless_shelter_availability_api.model.Shelter;
 import com.project.homeless_shelter_availability_api.service.ShelterService;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.CacheControl;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.lang.NonNull;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.Duration;
 import java.util.List;
+import java.util.Objects;
 
 @RestController
 @RequestMapping("/api/shelters")
@@ -17,27 +21,39 @@ public class ShelterController {
 
     private final ShelterService shelterService;
 
+    private static @NonNull CacheControl publicShelterCacheControl() {
+        Duration cacheDuration = Objects.requireNonNull(Duration.ofMinutes(5), "cache duration must not be null");
+        return CacheControl.maxAge(cacheDuration).cachePublic();
+    }
+
     @GetMapping
-    public ResponseEntity<List<Shelter>> getAllShelters() {
-        return ResponseEntity.ok(shelterService.getAllShelters());
+    public ResponseEntity<List<Shelter>> getAllShelters(@RequestParam(required = false) String state) {
+        List<Shelter> shelters = state == null || state.isBlank()
+                ? shelterService.getAllShelters()
+                : shelterService.getSheltersByState(state);
+        return ResponseEntity.ok()
+                .cacheControl(publicShelterCacheControl())
+                .body(shelters);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Shelter> getShelterById(@PathVariable Long id) {
+    public ResponseEntity<Shelter> getShelterById(@PathVariable @NonNull Long id) {
         try {
-            return ResponseEntity.ok(shelterService.getShelterById(id));
+            return ResponseEntity.ok()
+                    .cacheControl(publicShelterCacheControl())
+                    .body(shelterService.getShelterById(id));
         } catch (EntityNotFoundException e) {
             return ResponseEntity.notFound().build();
         }
     }
 
     @PostMapping
-    public ResponseEntity<Shelter> createShelter(@RequestBody Shelter shelter) {
+    public ResponseEntity<Shelter> createShelter(@RequestBody @NonNull Shelter shelter) {
         return ResponseEntity.status(HttpStatus.CREATED).body(shelterService.createShelter(shelter));
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Shelter> updateShelter(@PathVariable Long id, @RequestBody Shelter shelter) {
+    public ResponseEntity<Shelter> updateShelter(@PathVariable @NonNull Long id, @RequestBody @NonNull Shelter shelter) {
         try {
             return ResponseEntity.ok(shelterService.updateShelter(id, shelter));
         } catch (EntityNotFoundException e) {
@@ -46,7 +62,7 @@ public class ShelterController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteShelter(@PathVariable Long id) {
+    public ResponseEntity<Void> deleteShelter(@PathVariable @NonNull Long id) {
         try {
             shelterService.deleteShelter(id);
             return ResponseEntity.noContent().build();
