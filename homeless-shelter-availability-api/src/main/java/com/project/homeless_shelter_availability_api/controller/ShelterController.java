@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Objects;
 
 @RestController
 @RequestMapping("/api/shelters")
@@ -20,13 +21,18 @@ public class ShelterController {
 
     private final ShelterService shelterService;
 
+    private static @NonNull CacheControl publicShelterCacheControl() {
+        Duration cacheDuration = Objects.requireNonNull(Duration.ofMinutes(5), "cache duration must not be null");
+        return CacheControl.maxAge(cacheDuration).cachePublic();
+    }
+
     @GetMapping
     public ResponseEntity<List<Shelter>> getAllShelters(@RequestParam(required = false) String state) {
         List<Shelter> shelters = state == null || state.isBlank()
                 ? shelterService.getAllShelters()
                 : shelterService.getSheltersByState(state);
         return ResponseEntity.ok()
-                .cacheControl(CacheControl.maxAge(Duration.ofMinutes(5)).cachePublic())
+                .cacheControl(publicShelterCacheControl())
                 .body(shelters);
     }
 
@@ -34,7 +40,7 @@ public class ShelterController {
     public ResponseEntity<Shelter> getShelterById(@PathVariable @NonNull Long id) {
         try {
             return ResponseEntity.ok()
-                    .cacheControl(CacheControl.maxAge(Duration.ofMinutes(5)).cachePublic())
+                    .cacheControl(publicShelterCacheControl())
                     .body(shelterService.getShelterById(id));
         } catch (EntityNotFoundException e) {
             return ResponseEntity.notFound().build();

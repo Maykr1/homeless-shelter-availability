@@ -20,11 +20,15 @@ public class ShelterServiceImpl implements ShelterService {
 
     private final ShelterRepository shelterRepository;
 
+    private static @NonNull List<Shelter> nonNullShelters(List<Shelter> shelters) {
+        return Objects.requireNonNull(shelters, "repository returned null shelter list");
+    }
+
     @Override
     @Transactional(readOnly = true)
     @Cacheable(value = "shelterList", key = "'all'")
     public @NonNull List<Shelter> getAllShelters() {
-        return shelterRepository.findAll();
+        return nonNullShelters(shelterRepository.findAll());
     }
 
     @Override
@@ -32,7 +36,7 @@ public class ShelterServiceImpl implements ShelterService {
     @Cacheable(value = "shelterListByState", key = "#state.trim().toUpperCase()")
     public @NonNull List<Shelter> getSheltersByState(@NonNull String state) {
         String normalizedState = Objects.requireNonNull(state, "state must not be null").trim();
-        return shelterRepository.findAllByStateIgnoreCaseOrderByCityAscNameAsc(normalizedState);
+        return nonNullShelters(shelterRepository.findAllByStateIgnoreCaseOrderByCityAscNameAsc(normalizedState));
     }
 
     @Override
