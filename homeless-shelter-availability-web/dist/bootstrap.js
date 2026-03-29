@@ -47,6 +47,8 @@ function buildFindHelpUrl(currentLocation) {
   if (currentLocation) {
     targetUrl.searchParams.set("lat", String(currentLocation.latitude));
     targetUrl.searchParams.set("lng", String(currentLocation.longitude));
+    targetUrl.searchParams.set("originLat", String(currentLocation.latitude));
+    targetUrl.searchParams.set("originLng", String(currentLocation.longitude));
   }
 
   return targetUrl;
@@ -132,6 +134,8 @@ async function bootstrap() {
       if (currentLocation) {
         targetUrl.searchParams.set("lat", String(currentLocation.latitude));
         targetUrl.searchParams.set("lng", String(currentLocation.longitude));
+        targetUrl.searchParams.set("originLat", String(currentLocation.latitude));
+        targetUrl.searchParams.set("originLng", String(currentLocation.longitude));
 
         if (!targetUrl.searchParams.get("radius")) {
           targetUrl.searchParams.set("radius", defaultRadiusMiles);
@@ -149,6 +153,8 @@ async function bootstrap() {
     if (currentLocation) {
       currentUrl.searchParams.set("lat", String(currentLocation.latitude));
       currentUrl.searchParams.set("lng", String(currentLocation.longitude));
+      currentUrl.searchParams.set("originLat", String(currentLocation.latitude));
+      currentUrl.searchParams.set("originLng", String(currentLocation.longitude));
 
       if (!currentUrl.searchParams.get("radius")) {
         currentUrl.searchParams.set("radius", defaultRadiusMiles);

@@ -36,6 +36,8 @@ test("bootstrap requests current location for find-help navigation before loadin
   assert.match(bootstrap, /window\.location\.assign/);
   assert.match(bootstrap, /searchParams\.set\("lat"/);
   assert.match(bootstrap, /searchParams\.set\("lng"/);
+  assert.match(bootstrap, /searchParams\.set\("originLat"/);
+  assert.match(bootstrap, /searchParams\.set\("originLng"/);
   assert.match(bootstrap, /searchParams\.set\("radius", defaultRadiusMiles\)/);
   assert.match(bootstrap, /import\(bundlePath\)/);
 });
